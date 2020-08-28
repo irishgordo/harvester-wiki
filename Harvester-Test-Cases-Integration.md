@@ -44,7 +44,8 @@
    - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved ann created a new VM 
    - [ ] Clone as form, check if the original content displays correctly, change the hostname to make it unique, it can be saved and created a new VM
    - [ ] Clone as YAML, check if the original content displays correctly, change the hostname to make it unique and remove some other useless info, it can be saved and created a new VM
-
+   - [ ] Download YAML, a YAML file can be downloaded successfully
+   - [ ] Delete a VM, it can be deleted successfully
 
 ## Images
 
