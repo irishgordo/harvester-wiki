@@ -1,7 +1,7 @@
 # Harvester test cases
 
 ## Virtual Machines
- ### 1. Create page
+ ### 1. Create kubevirt.io.virtualmachine
    - [ ] Create a VM without selecting anything on the page, check the page output
    - [ ] Create a VM by selecting one of the images on the page, check the page output
    - [ ] Check the search functionality by typing in vary content, like something that there is no match in the list or something capitalized or not
@@ -21,7 +21,19 @@
    - [ ] Add a networking interface, change all the values to make sure that they are not the default ones, save successfully
    - [ ] Modify a networking interface, change all the values to make sure that they are not the old ones, save successfully
    - [ ] Delete a networking interface, it can be deleted successfully
- 
+   - [ ] Add cloud-init, it can be saved successfully
+
+ ### 2. Create from YAML
+   - [ ] Create from YAML, save it with nothing, no VM can be created
+   - [ ] Create from YAML, save it with invalid content, no VM can be created
+   - [ ] Create from YAML, save it with valid content, a new VM item can be created
+   - [ ] Create from YAML, once a new item has been created, check the status, its status should be running if there is nothing incorrect in YAML˜
+
+ ### 3. VM list
+   - [ ] Select one of the VM items in the list, click Download YAML button, a YAML file will be downloaded, check if the content is correct
+   - [ ] Select several of the VM items in the list, click Download YAML button, a YAML file will be downloaded, check if the content is correct
+   - [ ] Select one of the VM items in the list, click Delete button, a YAML file will be downloaded, check if the content is correct
+   - [ ] Select several of the VM items in the list, click Download YAML button, a YAML file will be downloaded, check if the content is correct
 
 ## Images
 
