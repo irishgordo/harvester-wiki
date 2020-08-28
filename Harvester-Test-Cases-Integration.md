@@ -34,6 +34,17 @@
    - [ ] Select several of the VM items in the list, click Download YAML button, a YAML file will be downloaded, check if the content is correct
    - [ ] Select one of the VM items in the list, click Delete button, a YAML file will be downloaded, check if the content is correct
    - [ ] Select several of the VM items in the list, click Download YAML button, a YAML file will be downloaded, check if the content is correct
+   - [ ] Stop a running VM, it will be stopped successfully and the status will be updated to "stopped", Node and Address will be no longer available
+   - [ ] Restart a running VM, it will be restarted successfully and the status will be updated to "restarting" and finally back to "running", Node and Address will be available again
+   - [ ] Restart a running VM, it will be restarted successfully and the status will be updated to "restarting" and finally back to "running", Node and Address will be available again
+   - [ ] Open console of a running VM, a console window will be open and it is functional
+   - [ ] Open console of a running VM, a console window will be open and it is functional
+   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved ann created a new VM 
+   - [ ] Clone as form, check if the original content displays correctly, change the hostname to make it unique, it can be saved and created a new VM
+   - [ ] Clone as YAML, check if the original content displays correctly, change the hostname to make it unique and remove some other useless info, it can be saved and created a new VM
+
 
 ## Images
 
