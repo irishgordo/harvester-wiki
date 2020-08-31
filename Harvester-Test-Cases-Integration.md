@@ -56,6 +56,9 @@
    - [ ] Create a VM without filling a name on the page, check the page output
    - [ ] Create a VM filling a valid name on the page, check the page output
    - [ ] Create a VM filling an invalid name on the page, check the page output
+   - [ ] Create a VM filling all the required fields, alongside descriptions, check the page output
+   - [ ] Create a VM filling all the required fields, alongside labels, check the page output
+   - [ ] Create a VM filling all the required fields, alongside annotations, check the page output
 
 
 ## Key Pairs
