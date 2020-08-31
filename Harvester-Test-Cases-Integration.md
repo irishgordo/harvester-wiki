@@ -48,6 +48,15 @@
    - [ ] Delete a VM, it can be deleted successfully
 
 ## Images
+### 1. Create harvester.cattle.io.virtualmachineimage
+   - [ ] Create a VM without filling anything on the page, check the page output
+   - [ ] Create a VM without filling an image URL on the page, check the page output
+   - [ ] Create a VM filling a valid image URL on the page, check the page output
+   - [ ] Create a VM filling an invalid image URL on the page, check the page output
+   - [ ] Create a VM without filling a name on the page, check the page output
+   - [ ] Create a VM filling a valid name on the page, check the page output
+   - [ ] Create a VM filling an invalid name on the page, check the page output
+
 
 ## Key Pairs
 
