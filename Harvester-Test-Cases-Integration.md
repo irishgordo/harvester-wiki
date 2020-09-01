@@ -41,7 +41,8 @@
    - [ ] Open console of a running VM, a console window will be open and it is functional
    - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
    - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
-   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved ann created a new VM 
+   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new VM 
+   - [ ] Edit as YAML, read from a file, choose a large file, check if the file can be imported successfully, click show diff button to see if it is functional
    - [ ] Clone as form, check if the original content displays correctly, change the hostname to make it unique, it can be saved and created a new VM
    - [ ] Clone as YAML, check if the original content displays correctly, change the hostname to make it unique and remove some other useless info, it can be saved and created a new VM
    - [ ] Download YAML, a YAML file can be downloaded successfully
@@ -62,6 +63,7 @@
    - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
    - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
    - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new image
+   - [ ] Edit as YAML, read from a file, choose a large file, check if the file can be imported successfully, click show diff button to see if it is functional
    - [ ] Clone as form, check if the original content displays correctly, change the image name to make it unique, it can be saved and created a new image
    - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique and remove some other useless info, it can be saved and created a new image
    - [ ] Download YAML, a YAML file can be downloaded successfully
