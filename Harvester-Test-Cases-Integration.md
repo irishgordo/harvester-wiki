@@ -62,6 +62,9 @@
 
 
 ## Key Pairs
+   - [ ] Create a key pair without filling anything on the page, check the page output
+   - [ ] Create a key pair without filling an image URL on the page, check the page output
+   - [ ] Create a key pair filling a valid image URL on the page, check the page output
 
 ## Templates
 
