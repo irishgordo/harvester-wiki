@@ -39,7 +39,7 @@
    - [ ] Restart a running VM, it will be restarted successfully and the status will be updated to "restarting" and finally back to "running", Node and Address will be available again
    - [ ] Open console of a running VM, a console window will be open and it is functional
    - [ ] Open console of a running VM, a console window will be open and it is functional
-   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
    - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
    - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved ann created a new VM 
    - [ ] Clone as form, check if the original content displays correctly, change the hostname to make it unique, it can be saved and created a new VM
@@ -59,6 +59,13 @@
    - [ ] Create a VM filling all the required fields, alongside descriptions, check the page output
    - [ ] Create a VM filling all the required fields, alongside labels, check the page output
    - [ ] Create a VM filling all the required fields, alongside annotations, check the page output
+   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
+   - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new image
+   - [ ] Clone as form, check if the original content displays correctly, change the image name to make it unique, it can be saved and created a new image
+   - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique and remove some other useless info, it can be saved and created a new image
+   - [ ] Download YAML, a YAML file can be downloaded successfully
+   - [ ] Delete an image, it can be deleted successfully
 
 
 ## Key Pairs
