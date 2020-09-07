@@ -76,5 +76,7 @@
    - [ ] Create a key pair filling a valid image URL on the page, check the page output
 
 ## Templates
-
+   - [ ] Create a template without filling anything on the page, check the page output
+   - [ ] Create a template filling a template name on the page but without an image, check the page output
+   - [ ] Create a template filling valid template name and image but without CPU and Memory, check the page output
 ## 
