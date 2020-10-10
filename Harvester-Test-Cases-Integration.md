@@ -47,6 +47,10 @@
    - [ ] Clone as YAML, check if the original content displays correctly, change the hostname to make it unique and remove some other useless info, it can be saved and created a new VM
    - [ ] Download YAML, a YAML file can be downloaded successfully
    - [ ] Delete a VM, it can be deleted successfully
+   - [ ] Migrate a VM, the VM will be migrated to another node of the cluster
+   - [ ] Migrate a VM, the VM will be migrated to another node of the cluster
+   - [ ] After Migrating a VM, we can see migration info in the detail page, including start time, end time, source node and target node
+
 
 ## Images
 ### 1. Create harvester.cattle.io.virtualmachineimage
