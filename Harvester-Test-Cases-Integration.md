@@ -88,15 +88,18 @@
    - [ ] Create a volume without filling anything on the page, check the page output
    - [ ] Create a volume filling a volume name on the page but without an image, check the page output
    - [ ] Create a volume filling valid a volume name and image but without CPU and Memory, check the page output
+   - [ ] Create a volume whose disk size is larger than the total size of the machine, it should not be created
+   - [ ] Delete a volume which is not the in-use state, it can be deleted successfully
+   - [ ] Delete a volume which is the in-use state, it cannot be deleted
 
 ## Authentification
    - [ ] Login without any credentials, log in fail
    - [ ] Login using kubeConfig, but with invalid credentials, log in fail
-   - [ ] Login using kubeConfig with valid credentials, log in success
-   - [ ] Login using token, but with invalid credentials, log in fail
-   - [ ] Login using token with invalid credentials, log in success
-   - [ ] Logout first, then login using kubeConfig with valid credentials, log in success
-   - [ ] Logout first, then login using token with valid credentials, log in success
+   - [ ] Login using kubeConfig with valid credentials, log in succeed
+   - [ ] Login using the token, but with invalid credentials, log in fail
+   - [ ] Login using a token with invalid credentials, login success
+   - [ ] Logout first, then log in using kubeConfig with valid credentials, log in succeed
+   - [ ] Logout first, then log in using a token with valid credentials, log in succeed
 
 
 ## Helm Installation
