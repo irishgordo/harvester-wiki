@@ -86,13 +86,15 @@
    - [ ] Create a volume filling valid a volume name and image but without CPU and Memory, check the page output
 
 ## Authentification
-   - [ ] Login without any credentials, login fail
-   - [ ] Login using kubeConfig, but with invalid credentials, login fail
-   - [ ] Login using kubeConfig with valid credentials, login success
-   - [ ] Login using token, but with invalid credentials, login fail
-   - [ ] Login using token with invalid credentials, login success
-   - [ ] Logout first, then login using kubeConfig with valid credentials, login success
-   - [ ] Logout first, then login using token with valid credentials, login success
+   - [ ] Login without any credentials, log in fail
+   - [ ] Login using kubeConfig, but with invalid credentials, log in fail
+   - [ ] Login using kubeConfig with valid credentials, log in success
+   - [ ] Login using token, but with invalid credentials, log in fail
+   - [ ] Login using token with invalid credentials, log in success
+   - [ ] Logout first, then login using kubeConfig with valid credentials, log in success
+   - [ ] Logout first, then login using token with valid credentials, log in success
 
 
 ## Helm Installation
+   - [ ] Helm install Harvester in the default way
+   - [ ] Helm uninstall Harvester
