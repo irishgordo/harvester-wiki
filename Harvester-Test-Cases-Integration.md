@@ -88,4 +88,4 @@
 ## Authentification
 
 
-## Helm installation
+## Helm Installation
