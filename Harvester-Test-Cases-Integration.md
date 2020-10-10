@@ -1,11 +1,11 @@
 # Harvester test cases
 
 ## Virtual Machines
- ### 1. Create kubevirt.io.virtualmachine
+ ### 1. Create Virtual Machine
    - [ ] Create a VM without selecting anything on the page, check the page output
    - [ ] Create a VM by selecting one of the images on the page, check the page output
    - [ ] Check the search functionality by typing in vary content, like something that there is no match in the list or something capitalized or not
-   - [ ] Choose a size, check if the textboxes are allowed to type in a non-numeric value
+   - [ ] Choose a size, check if the text boxes are allowed to type in a non-numeric value
    - [ ] Check the "Use an existing VM Template", select one of the options in the dropdown
    - [ ] Check the "Use an existing VM Template", select one of the options in the dropdown
    - [ ] Add a disk with default configurations, a new disk can be added successfully
