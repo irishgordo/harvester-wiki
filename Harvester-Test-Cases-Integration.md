@@ -84,3 +84,8 @@
    - [ ] Create a volume without filling anything on the page, check the page output
    - [ ] Create a volume filling a volume name on the page but without an image, check the page output
    - [ ] Create a volume filling valid a volume name and image but without CPU and Memory, check the page output
+
+## Authentification
+
+
+## Helm installation
