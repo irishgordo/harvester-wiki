@@ -49,7 +49,7 @@
    - [ ] Delete a VM, it can be deleted successfully
    - [ ] Migrate a VM, the VM will be migrated to another node of the cluster
    - [ ] Migrate a VM, the VM will be migrated to another node of the cluster
-   - [ ] After Migrating a VM, we can see migration info in the detail page, including start time, end time, source node and target node
+   - [ ] After Migrating a VM, we can see migration info on the detail page, including start time, end time, source node and target node
 
 
 ## Images
