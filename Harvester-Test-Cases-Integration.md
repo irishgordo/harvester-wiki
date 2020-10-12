@@ -69,20 +69,38 @@
    - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new image
    - [ ] Edit as YAML, read from a file, choose a large file, check if the file can be imported successfully, click show diff button to see if it is functional
    - [ ] Clone as form, check if the original content displays correctly, change the image name to make it unique, it can be saved and created a new image
-   - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique and remove some other useless info, it can be saved and created a new image
+   - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique, and remove some other useless info, it can be saved and created a new image
    - [ ] Download YAML, a YAML file can be downloaded successfully
    - [ ] Delete an image, it can be deleted successfully
 
 
 ## Key Pairs
    - [ ] Create a key pair without filling anything on the page, check the page output
-   - [ ] Create a key pair without filling an image URL on the page, check the page output
-   - [ ] Create a key pair filling a valid image URL on the page, check the page output
+   - [ ] Create a key pair without filling a pub key on the page, check the page output
+   - [ ] Create a key pair filling a valid pub key on the page, check the page output
+   - [ ] Delete a key pair, it can be deleted successfully
+   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
+   - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new key pair
+   - [ ] Edit as YAML, read from a file, choose a large file, check if the file can be imported successfully, click show diff button to see if it is functional
+   - [ ] Clone as form, check if the original content displays correctly, change the image name to make it unique, it can be saved and created a new key pair
+   - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique, and remove some other useless info, it can be saved and created a new key pair
+   - [ ] Download YAML, a YAML file can be downloaded successfully
+   - [ ] View as YAML, data can be populated successfully
 
 ## Templates
    - [ ] Create a template without filling anything on the page, check the page output
    - [ ] Create a template filling a template name on the page but without an image, check the page output
    - [ ] Create a template filling valid a template name and image but without CPU and Memory, check the page output
+   - [ ] Delete a template, it can be deleted successfully
+   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
+   - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new template
+   - [ ] Edit as YAML, read from a file, choose a large file, check if the file can be imported successfully, click show diff button to see if it is functional
+   - [ ] Clone as form, check if the original content displays correctly, change the image name to make it unique, it can be saved and created a new template
+   - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique, and remove some other useless info, it can be saved and created a new template
+   - [ ] Download YAML, a YAML file can be downloaded successfully
+   - [ ] View as YAML, data can be populated successfully
 
 ## Volumes
    - [ ] Create a volume without filling anything on the page, check the page output
@@ -91,6 +109,14 @@
    - [ ] Create a volume whose disk size is larger than the total size of the machine, it should not be created
    - [ ] Delete a volume which is not the in-use state, it can be deleted successfully
    - [ ] Delete a volume which is the in-use state, it cannot be deleted
+   - [ ] Edit as form, check if the original content displays correctly, edit some of them and save, like adding some labels or annotations, the changes can be applied successfully
+   - [ ] Edit as YAML, check if the YAML content displays correctly, edit some of them and save, the changes can be applied successfully
+   - [ ] Edit as YAML, read from a file, check if the YAML content displays correctly, only if the format is correct that it can be saved and created a new volume
+   - [ ] Edit as YAML, read from a file, choose a large file, check if the file can be imported successfully, click show diff button to see if it is functional
+   - [ ] Clone as form, check if the original content displays correctly, change the image name to make it unique, it can be saved and created a new volume
+   - [ ] Clone as YAML, check if the original content displays correctly, change the image name to make it unique, and remove some other useless info, it can be saved and created a new volume
+   - [ ] Download YAML, a YAML file can be downloaded successfully
+   - [ ] View as YAML, data can be populated successfully
 
 ## Authentification
    - [ ] Login without any credentials, log in fail
