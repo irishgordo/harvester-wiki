@@ -41,13 +41,11 @@ Two modes:
 
 # Future Releases
 ### Networking
-* VPC
-* Load balancer
+* VXLAN
 
 ### Authentication
-* RBAC
 * LDAP/AD
 
 ### Monitoring
-* Monitoring
+* Monitoring Dashboard (Prometheus integration)
 * Alert and notification
