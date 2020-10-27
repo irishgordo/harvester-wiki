@@ -31,6 +31,7 @@ Two modes:
 # Harvester v0.2.0
 ### Storage
 * Live migration
+* VM snapshot/backup/restore
 
 ### Image management
 * HA for image store
@@ -40,8 +41,13 @@ Two modes:
 
 # Future Releases
 ### Networking
-* VPC 
+* VPC
+* Load balancer
 
 ### Authentication
 * RBAC
 * LDAP/AD
+
+### Monitoring
+* Monitoring
+* Alert and notification
