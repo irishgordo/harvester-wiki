@@ -28,19 +28,20 @@ Two modes:
 ### Image management
 * Built-in image repo (backing by MinIO)
 
-# Future Releases
+# Harvester v0.2.0
 ### Storage
 * Live migration
-
-### Networking
-* VPC 
-
-### Authentication
-* RBAC
-* LDAP/AD
 
 ### Image management
 * HA for image store
 
 ### Maintenance
 * Zero downtime upgrade
+
+# Future Releases
+### Networking
+* VPC 
+
+### Authentication
+* RBAC
+* LDAP/AD
