@@ -6,4 +6,4 @@ For testing purposes, users can create a Harvester cluster using VMware ESXi wit
 1. Click Finish and launch to start installing the Harvester to this virtual machine.
 
 <small>Customize VM settings</small>
-![esxi.png](https://ibb.co/Vm4Zh6c)
+![](https://ibb.co/Vm4Zh6c)
