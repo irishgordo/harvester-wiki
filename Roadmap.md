@@ -27,14 +27,14 @@ Two modes:
 
 ### Image management
 * Built-in image repo (backing by MinIO)
+* HA for image store
 
 # Harvester v0.2.0
 ### Storage
 * Live migration
 * VM snapshot/backup/restore
 
-### Image management
-* HA for image store
+### PXE support
 
 ### Maintenance
 * Zero downtime upgrade
