@@ -1,3 +1,25 @@
+
+# Harvester v0.2.0
+### Storage
+* Live migration
+* VM snapshot/backup/restore
+
+### PXE support
+
+### Maintenance
+* Zero downtime upgrade
+
+# Future Releases
+### Networking
+* VXLAN
+
+### Authentication
+* LDAP/AD
+
+### Monitoring
+* Monitoring Dashboard (Prometheus integration)
+* Alert and notification
+
 # Harvester v0.1.0 (alpha)
 ### Installation
 Two modes:
@@ -28,24 +50,3 @@ Two modes:
 ### Image management
 * Built-in image repo (backing by MinIO)
 * HA for image store
-
-# Harvester v0.2.0
-### Storage
-* Live migration
-* VM snapshot/backup/restore
-
-### PXE support
-
-### Maintenance
-* Zero downtime upgrade
-
-# Future Releases
-### Networking
-* VXLAN
-
-### Authentication
-* LDAP/AD
-
-### Monitoring
-* Monitoring Dashboard (Prometheus integration)
-* Alert and notification
