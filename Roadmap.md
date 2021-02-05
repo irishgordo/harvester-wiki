@@ -1,5 +1,5 @@
 
-# Harvester v0.2.0
+# Harvester v0.2.0 (alpha)
 ### Storage
 * Live migration
 * VM snapshot/backup/restore
