@@ -1,7 +1,16 @@
-# Setting Up for Harvester Development
-
 This page will go over setting up your environment for development work on the current version of the Harvester. This is primarily built on the premise of setting up in a MacOS environment, but most of it should carry over to Linux as well.
+#### Table of contents
 
+1. [Install Dependencies](#install-dependencies)
+    - [Go](#go)
+2. [Install Harvester](#install-harvester)
+    - [HCI Mode](#hci-moderecommended)
+    - [Helm Mode](#helm-mode)
+3. [IDE](#ide)
+4. [Harvester Repos](#harvester-repos)
+5. [Set up GoLand](#set-up-goland)
+6. [Scale Harvester Pod Down to 0](#scale-the-harvester-pod-down-to-0)
+7. [Run](#run)
 
 ## Install Dependencies
 ### Go
