@@ -4,7 +4,7 @@ This page will go over setting up your environment for development work on the c
 
 
 ## Install Dependencies
-- ### Go
+### Go
 
 Harvester is built in Go, which can be downloaded here: https://golang.org/dl/. Alternatively, on macOS it can be installed with [homebrew](https://brew.sh/) using the following command: `brew install go`
 
@@ -17,7 +17,7 @@ export PATH=${GOPATH//://bin:}/bin:$PATH
   
 ## Install Harvester
 
-- ### HCI Mode(Recommended)
+### HCI Mode(Recommended)
 
 You should be able to download the latest Harvester ISO from [here](https://releases.rancher.com/harvester/master/harvester-amd64.iso). The CI in [rancher/harvester-installer](https://github.com/rancher/harvester-installer) repo will auto-build the newest ISO image upon every merged PRs, it will also run a daily cronjob at 00:00 am (UTC time) to build a daily newest ISO image.
 
@@ -26,15 +26,15 @@ For `initrd` and `vmlinuz` files they are available at:
 - [harvester-vmlinuz-amd64](https://releases.rancher.com/harvester/master/harvester-vmlinuz-amd64)
 
 
-- #### Option 1) On the Bare-metal Server
+#### Option 1) On the Bare-metal Server
 
 Follow the [ISO installation](https://github.com/rancher/harvester/blob/master/docs/iso-installation.md) guideline to set up your Harvester server, and get the `KubeConfig` file from the management node at `/etc/rancher/k3s/k3s.yaml`.
 
 
-- #### Option 2) Using Vagrant
+#### Option 2) Using Vagrant
 
 
-- #### Option 3) Using VirtualBox
+#### Option 3) Using VirtualBox
 
 Download and install the [Virtualbox 6.x](https://www.virtualbox.org/), click to create a new VM with the following configuration:
  - choose `Type: Linux` and `Version: Other Linux(64-bit)`
@@ -48,7 +48,7 @@ VBoxManage modifyvm "$custom-name" --nested-hw-virt on
  - lastly, follow the [ISO installation](https://github.com/rancher/harvester/blob/master/docs/iso-installation.md) and install the Harvester to your VM.
  - optionally you can create more VMs to form a cluster.
 
-- ### Helm Mode
+### Helm Mode
 
 The local Harvester instance will be hosted in an installation of Kubernetes. Typically this will be done with a local cluster, but you can also launch one in the cloud and simply point your Kubeconfig there. The easiest way to spin up a k8s cluster in the cloud would be using the Rancher's RKE or k3s:
  - [Rancher](https://rancher.com/docs/rancher/v2.x/en/)
@@ -74,7 +74,7 @@ As of Harvester development, you will likely only need the [rancher/harvester](h
 - [Harvester Node Driver](https://github.com/harvester/docker-machine-driver-harvester) - Harvester node driver based on the Docker machine
 - [GO Harvester](https://github.com/rancher/go-harvester) - a Go client library for the Harvester
 
-- ### Setting up remotes
+### Setting up remotes
 In order to avoid accidentally creating a branch in the rancher/harvester repo please set your remote accordingly with your fork. 
 
 ```console
