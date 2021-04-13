@@ -1,4 +1,7 @@
 This page will go over setting up your environment for development work on the current version of the Harvester. This is primarily built on the premise of setting up in a MacOS environment, but most of it should carry over to Linux as well.
+
+We're using ZenHub for project management. Install [ZenHub Chrome Extension](https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd?hl=en-US) to see the project management view in GitHub.
+
 #### Table of contents
 
 1. [Install Dependencies](#install-dependencies)
