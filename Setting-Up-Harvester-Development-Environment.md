@@ -114,9 +114,6 @@ Click the `Run` menu option and select `Edit Configurations`. Click the + to add
   - In files select the main.go file
   - add environment variable `KUBECONFIG` set to `{homedirectory}/.kube/config` (on mac `/Users/<username>/.kube/config`)
   - add env variable `NAMESPACE` set to `harvester-system` (the default namespace to store management resources)
-  - add env variable `IMAGE_STORAGE_ENDPOINT` set to `http://cluster_url:minio-nodePort` (minio service type is default to use ClusterIP)
-  - add env variable `IMAGE_STORAGE_ACCESS_KEY` set to `YOURACCESSKEY`
-  - add env variable `IMAGE_STORAGE_SECRET_KEY` set to `YOURSECRETKEY`
   - set program arguments to `--authentication-mode=rancher --rancher-embedded=true rancher-server-url=https://cluster_url:30444`(if you are testing Rancher integration)
    - add env variable `HARVESTER_AUTHENTICATION_MODE` set to `localUser` if you are not testing with Rancher integration
 ![Imgur](https://i.imgur.com/mZIiUr2.png)
