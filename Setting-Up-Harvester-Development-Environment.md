@@ -111,12 +111,14 @@ As discussed above, we primarily use GoLand for development. There are a few thi
 ### Set up the build target
 Click the `Run` menu option and select `Edit Configurations`. Click the + to add a template and select `Go Build`
 
-  - In files select the main.go file
-  - add environment variable `KUBECONFIG` set to `{homedirectory}/.kube/config` (on mac `/Users/<username>/.kube/config`)
-  - add env variable `NAMESPACE` set to `harvester-system` (the default namespace to store management resources)
-  - set program arguments to `--authentication-mode=rancher --rancher-embedded=true rancher-server-url=https://cluster_url:30444`(if you are testing Rancher integration)
-   - add env variable `HARVESTER_AUTHENTICATION_MODE` set to `localUser` if you are not testing with Rancher integration
+  - In files select the main.go file.
+  - add environment variable `KUBECONFIG` set to `{homedirectory}/.kube/config` (on mac `/Users/<username>/.kube/config`).
+  - add env variable `NAMESPACE` set to `harvester-system` (the default namespace to store management resources).
+  - (optional) add env variable `HARVESTER_AUTHENTICATION_MODE` set to `localUser` if you are not testing with Rancher integration
+  - set env variable `HARVESTER_AUTHENTICATION_MODE: rancher`, `RANCHER_EMBEDDED: true` and `RANCHER_SERVER_URL: rancher-server-url=https://cluster_url:30444` if you are testing Rancher integration mode.
+
 ![Imgur](https://i.imgur.com/mZIiUr2.png)
+
 
 ## Scale the Harvester pod down to 0
 By default, there are 3 Harvester pod get deployed with the Harvester installation, you will need to scale the pod number down to 0 to test the controller logic at `pkg/controller/master`:
@@ -126,4 +128,4 @@ kubectl scale --replicas=0 deployment/harvester -n harvester-system
 if you need testing the HA scenario, you can scale the pod number back to 2 and modify the code in `pkg/controller/global` accordingly.
 
 ## Run!
-Start the build-in GoLand. The service will be available at `https://localhost:8443`. Ignore the scary cert warning.
+Start the built-in GoLand. The service will be available at `https://localhost:8443`. Ignore the scary cert warning.
