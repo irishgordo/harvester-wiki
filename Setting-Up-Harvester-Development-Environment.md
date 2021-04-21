@@ -116,6 +116,7 @@ Click the `Run` menu option and select `Edit Configurations`. Click the + to add
   - add env variable `NAMESPACE` set to `harvester-system` (the default namespace to store management resources).
   - (optional) add env variable `HARVESTER_AUTHENTICATION_MODE` set to `localUser` if you are not testing with Rancher integration
   - set env variable `HARVESTER_AUTHENTICATION_MODE: rancher`, `RANCHER_EMBEDDED: true` and `RANCHER_SERVER_URL: rancher-server-url=https://cluster_url:30444` if you are testing Rancher integration mode.
+  - set env variable `HCI_MODE: true` if you are testing HCI mode controllers, e.g zero-downtime upgrade
 
 ![Imgur](https://i.imgur.com/mZIiUr2.png)
 
