@@ -31,7 +31,7 @@ export PATH=${GOPATH//://bin:}/bin:$PATH
 
 ### HCI Mode(Recommended)
 
-You should be able to download the latest Harvester ISO from [here](https://releases.rancher.com/harvester/master/harvester-amd64.iso). The CI in [rancher/harvester-installer](https://github.com/rancher/harvester-installer) repo will auto-build the newest ISO image upon every merged PRs, it will also run a daily cronjob at 00:00 am (UTC) to build a daily newest ISO image.
+You should be able to download the latest Harvester ISO from [here](https://releases.rancher.com/harvester/master/harvester-amd64.iso). The CI in [harvester/harvester-installer](https://github.com/harvester/harvester-installer) repo will auto-build the newest ISO image upon every merged PRs, it will also run a daily cronjob at 00:00 am (UTC) to build a daily newest ISO image.
 
 For `initrd` and `vmlinuz` files they are available at:
 - [harvester-initrd-amd64](https://releases.rancher.com/harvester/master/harvester-initrd-amd64)
@@ -40,7 +40,7 @@ For `initrd` and `vmlinuz` files they are available at:
 
 #### Option 1) On the Bare-metal Server
 
-Follow the [ISO installation](https://github.com/rancher/harvester/blob/master/docs/iso-installation.md) guideline to set up your Harvester server, and get the `KubeConfig` file from the management node at `/etc/rancher/k3s/k3s.yaml`.
+Follow the [ISO installation](https://github.com/harvester/harvester/blob/master/docs/iso-installation.md) guideline to set up your Harvester server, and get the `KubeConfig` file from the management node at `/etc/rancher/k3s/k3s.yaml`.
 
 
 #### Option 2) Using Vagrant
@@ -57,7 +57,7 @@ Download and install the [Virtualbox 6.x](https://www.virtualbox.org/), click to
 VBoxManage modifyvm "$custom-name" --nested-hw-virt on
 ```
  - go to the networks panel and enable the second network adaptor with either attached to the `Host-only Adaptor` or any other type of adaptor that can be accessed from your local network later.
- - lastly, follow the [ISO installation](https://github.com/rancher/harvester/blob/master/docs/iso-installation.md) and install the Harvester to your VM.
+ - lastly, follow the [ISO installation](https://github.com/harvester/harvester/blob/master/docs/iso-installation.md) and install the Harvester to your VM.
  - optionally you can create more VMs to form a cluster.
 
 ### Helm Mode
@@ -66,7 +66,7 @@ The local Harvester instance will be hosted in an installation of Kubernetes. Ty
  - [Rancher](https://rancher.com/docs/rancher/v2.x/en/)
  - [k3s](https://k3s.io/)
 
-App mode installation guidance would be available at [here](https://github.com/rancher/harvester/blob/master/docs/app-mode-installation.md), please be aware that the Kubernetes node must have hardware virtualization support to test the VM features in the Harvester.
+App mode installation guidance would be available at [here](https://github.com/harvester/harvester/blob/master/docs/app-mode-installation.md), please be aware that the Kubernetes node must have hardware virtualization support to test the VM features in the Harvester.
     
     
 ## IDE
@@ -78,22 +78,22 @@ Most of us at the Harvester team uses GoLand, and the rest of this document will
  - [Atom + go-plus](https://atom.io/packages/go-plus)
 
 ## Harvester Repos
-As of Harvester development, you will likely only need the [rancher/harvester](https://github.com/rancher/harvester). But here is a list of available reports of its related development usage.
+As of Harvester development, you will likely only need the [harvester/harvester](https://github.com/harvester/harvester). But here is a list of available reports of its related development usage.
 
-- [Harvester UI](https://github.com/rancher/harvester-ui) - Harvester UI
-- [Harvester Network Controller](https://github.com/rancher/harvester-network-controller) - Harvester network controller of managing additional networks like VLAN
-- [Harvester Installer](https://github.com/rancher/harvester-installer) - Harvester installer for building the ISO image
+- [Harvester UI](https://github.com/harvester/harvester-ui) - Harvester UI
+- [Harvester Network Controller](https://github.com/harvester/harvester-network-controller) - Harvester network controller of managing additional networks like VLAN
+- [Harvester Installer](https://github.com/harvester/harvester-installer) - Harvester installer for building the ISO image
 - [Harvester Node Driver](https://github.com/harvester/docker-machine-driver-harvester) - Harvester node driver based on the Docker machine
 - [GO Harvester](https://github.com/rancher/go-harvester) - a Go client library for the Harvester
 
 ### Setting up remotes
-To avoid accidentally creating a branch in the rancher/harvester repo please set your remote accordingly with your fork. 
+To avoid accidentally creating a branch in the harvester/harvester repo please set your remote accordingly with your fork. 
 
 ```console
 origin    git@github.com:AwesomeContributor/harvester.git (fetch)
 origin    git@github.com:AwesomeContributor/harvester.git (push)
-upstream    https://github.com/rancher/harvester.git (fetch)
-upstream    https://github.com/rancher/harvester.git (push)
+upstream    https://github.com/harvester/harvester.git (fetch)
+upstream    https://github.com/harvester/harvester.git (push)
 ```
 
 HTTPS URLs allow for unauthenticated cloning and pulling. To get the most up-to-date version run:
