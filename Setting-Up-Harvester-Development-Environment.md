@@ -84,7 +84,7 @@ As of Harvester development, you will likely only need the [harvester/harvester]
 - [Harvester Network Controller](https://github.com/harvester/harvester-network-controller) - Harvester network controller of managing additional networks like VLAN
 - [Harvester Installer](https://github.com/harvester/harvester-installer) - Harvester installer for building the ISO image
 - [Harvester Node Driver](https://github.com/harvester/docker-machine-driver-harvester) - Harvester node driver based on the Docker machine
-- [GO Harvester](https://github.com/rancher/go-harvester) - a Go client library for the Harvester
+- [GO Harvester](https://github.com/harvester/go-harvester) - a Go client library for the Harvester
 
 ### Setting up remotes
 To avoid accidentally creating a branch in the harvester/harvester repo please set your remote accordingly with your fork. 
