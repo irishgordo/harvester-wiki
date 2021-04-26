@@ -15,7 +15,7 @@ Harvester v0.2.0 (Apr 2021, Beta)
 *   [Provision Kubernetes cluster using Harvester and Rancher](https://github.com/rancher/harvester/issues/512)  
 *   [Support bundle](https://github.com/rancher/harvester/issues/579)
 
-Harvester v0.3.0 (July 2021)
+Harvester v0.3.0 (Q3 2021)
 ------------------
 
 *   [End-to-end test framework](https://github.com/rancher/harvester/issues/551)
@@ -46,7 +46,7 @@ Harvester v0.3.0 (July 2021)
 
 
 
-v1.0.0 GA (Sept 2021)
+v1.0.0 GA (Q4 2021)
 ---------------------
 
 *   Stabilization
