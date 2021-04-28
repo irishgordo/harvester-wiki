@@ -46,7 +46,8 @@ As a client implementation example, you may refer to the [go-harvester](https://
 ### GET /v1
 since `/v1` API is secured with the authentication, so u will need to add the `R_SESS: token-xxx` to the request headers.
 
-[Imgur](https://imgur.com/k5dRbrm)
+
+![Imgur](https://imgur.com/k5dRbrm.png)
 
 ### POST /v1
 e.g if u want to create a VM using the RESTful API you can make a POST request of the `/v1/kubevirt.io.virtualmachines`, 
