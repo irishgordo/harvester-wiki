@@ -1,11 +1,10 @@
-
 ## Prerequisites
 
 A running Harvester Environment.
 
 
 ## APIs
-Here we are referring to the Harvester HCI mode installation, the server endpoint will be `https://harvester-ip:30443`, and this is the base URL of all of the API calls.
+We will use Harvester HCI mode installation as an example, the server endpoint will be something similar to `https://harvester-ip:30443`, and this is the base URL of all of the API calls.
 
 ### Authentication & Authorization
 
@@ -32,20 +31,20 @@ login using the username and password: `v3-public/localProviders/local?action=lo
     "ttl":57600000
 }
 ```
-the response cookies will contain a `R_SESS` key, save this token and it will be used for those authorized API calls:
+the response cookies will send a `R_SESS` key, save this token somewhere and it will be used for future authorized API calls:
 ```
 R_SESS: token-hbxw6%3Attcmtwrrk2l7p4sshklpjnmx27gzk5mgz9cxzrtm75qlh47mkx2m7b
 ```
 
 ## /v1 APIs
 Go to the `https://harvester-ip:30443/v1`, this is the standard RESTful API of Harvester server, the API spec reference can be found in [here](https://github.com/rancher/api-spec/blob/master/specification.md).
-It will list and watch all the Kubernetes CRD resources, and users can perform a regular CRUD operation against those CRD objects.
+This API will list and watch all the Kubernetes CRDs, and users can perform a regular CRUD operation against those CRD objects.
 
-As a client implementation example, you may refer to the [go-harvester](https://github.com/harvester/go-harvester) which is a Go client implementation for the Harvester.
+As a client implementation example, you may refer to the [go-harvester](https://github.com/harvester/go-harvester) which is a Go client implementation for the Harvester API.
 
 
 ### GET /v1
-since `/v1` API is secured behind the authentication, so u will need to add the `R_SESS: token-xxx` to the request headers.
+since `/v1` API is secured with the authentication, so u will need to add the `R_SESS: token-xxx` to the request headers.
 
 [Imgur](https://imgur.com/k5dRbrm)
 
