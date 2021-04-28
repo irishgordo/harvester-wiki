@@ -8,9 +8,9 @@ We will use Harvester HCI mode installation as an example, the server endpoint w
 
 ### Authentication & Authorization
 
-Harvester defaults to using `rancher` mode authentication, this mode uses the Rancher server as a middleware for both authentication and authorization. For other types of supported authentication mode, you may refer to the doc [here](https://github.com/harvester/harvester/blob/master/docs/authentication.md).
+Harvester defaults to using `rancher` mode authentication. In this mode, the Harvester uses the Rancher server as a middleware for both authentication and authorization. For other supported authentication types, please refer to the docs [here](https://github.com/harvester/harvester/blob/master/docs/authentication.md).
 
-to check the auth-mode of your Harvester server u can use the `/v1-public/auth-modes`
+To check the auth-mode of your Harvester server visit the `/v1-public/auth-modes`
 
 ```JSON
 {
@@ -20,7 +20,7 @@ to check the auth-mode of your Harvester server u can use the `/v1-public/auth-m
 }
 ```
 
-login using the username and password: `v3-public/localProviders/local?action=login`
+Users can login using the username and password with: `/v3-public/localProviders/local?action=login`
 
 ```JSON
 {
@@ -31,7 +31,7 @@ login using the username and password: `v3-public/localProviders/local?action=lo
     "ttl":57600000
 }
 ```
-the response cookies will send a `R_SESS` key, save this token somewhere and it will be used for future authorized API calls:
+the response cookies will contains a `R_SESS` key and a token, save this token somewhere and it will be used for future authenticated API calls: e.g,
 ```
 R_SESS: token-hbxw6%3Attcmtwrrk2l7p4sshklpjnmx27gzk5mgz9cxzrtm75qlh47mkx2m7b
 ```
