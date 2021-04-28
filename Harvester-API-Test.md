@@ -41,7 +41,7 @@ R_SESS: token-hbxw6%3Attcmtwrrk2l7p4sshklpjnmx27gzk5mgz9cxzrtm75qlh47mkx2m7b
 Go to the `https://harvester-ip:30443/v1`, this is the standard RESTful API of Harvester server, the API spec reference can be found in [here](https://github.com/rancher/api-spec/blob/master/specification.md).
 It will list and watch all the Kubernetes CRD resources, and users can perform a regular CRUD operation against those CRD objects.
 
-As a client implmentation example, you may refer to the [go-harvester](https://github.com/harvester/go-harvester) which is a Go client implementation for the Harvester.
+As a client implementation example, you may refer to the [go-harvester](https://github.com/harvester/go-harvester) which is a Go client implementation for the Harvester.
 
 
 ### GET /v1
@@ -50,7 +50,7 @@ since `/v1` API is secured behind the authentication, so u will need to add the 
 [Imgur](https://imgur.com/k5dRbrm)
 
 ### POST /v1
-e.g if u want to create a VM using the RESTful API you can make POST request of the `/v1/kubevirt.io.virtualmachines`, 
+e.g if u want to create a VM using the RESTful API you can make a POST request of the `/v1/kubevirt.io.virtualmachines`, 
 
 and an example of request data will be:
 
