@@ -12,6 +12,10 @@ Check https://github.com/harvester/harvester/tree/master/docs instead for the Ha
 
 [[Setting Up Harvester Development Environment]]
 
+[[Harvester Development Overview]]
+
+[[Example: Adding new API object types and controllers]]
+
 [[Development Best Practices]]
 
 [[Harvester API Test]]
