@@ -1,0 +1,39 @@
+__TOC__  
+
+==Never change the name of a remove handler==
+When you register a remove handler with a piece of code like this:
+```
+virtualMachineController.OnRemove(ctx, name, sync)
+```
+The name you supply is used to generate a finalizer on resources. If you change that name, then after a user upgrades Harvester, the controller will not match the finalizer for resources from before the upgrade and they will not be delete-able.
+
+==Retrieve resources from a cache==
+When you want to get or list resources, you should retrieve from a cache. It helps to reduce the overhead of apiserver.
+
+==DeepCopy for modifications==
+
+When retrieving an object from a K8S cache (ie a lister or a custom index) you MUST deepCopy that object if you are going to modify it. If you don't you are corrupting the cached copy and negatively impacting other handlers/api components that use it. Example:
+```
+func (h *Handler) syncVM(vmi *v1.VirtualMachineInstance) error {
+	vm, err := h.vmCache.Get(vmi.Namespace, vmi.Name)
+	if err != nil {
+		return err
+	}
+	toUpdateVM := vm.DeepCopy()
+	if toUpdateVM.Annotations == nil {
+		toUpdateVM.Annotations = make(map[string]string)
+	}
+	toUpdateVM.Annotations[util.AnnotationTimestamp] = time.Now().Format(time.RFC3339)
+
+	_, err = h.vms.Update(toUpdateVM)
+	return err
+}
+```
+
+==Be mindful of ERROR logging==
+Users alert on Harvester logs that are at ERROR level. Only log something at error if you expect a user to take action on it
+
+==Good commit messages==
+
+Commit message subject lines should be 50 characters or less. Commit body lines should be 72 characters or shorter. Have meaningful commit messages that explain the problem and the solution. Use this as a guide: https://chris.beams.io/posts/git-commit/
+
