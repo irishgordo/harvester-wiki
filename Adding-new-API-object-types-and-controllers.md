@@ -68,7 +68,15 @@ Untracked files:
 	pkg/generated/controllers/harvesterhci.io/v1beta1/downloadurl.go
 ```
 
-By applying the CRD, downloadurl resource is available in Harvester APIs.
+By applying the CRD or add it to `pkg/controller/crds/setup.go` as the following, DownloadURL resource is available in Harvester APIs.
+```golang
+factory.BatchCreateCRDsIfNotExisted(
+			crd.FromGV(harvesterv1.SchemeGroupVersion, "DownloadURL"),
+			//...
+			createNetworkAttachmentDefinitionCRD(),
+		)
+```
+
 
 ![image](https://user-images.githubusercontent.com/5697937/117624775-db30df00-b1a7-11eb-9e18-0c5d1f0ebfd8.png)
 
