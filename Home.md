@@ -12,4 +12,6 @@ Check https://github.com/harvester/harvester/tree/master/docs instead for the Ha
 
 [[Setting Up Harvester Development Environment]]
 
+[[Development Best Practices]]
+
 [[Harvester API Test]]
