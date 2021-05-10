@@ -1,5 +1,3 @@
-# Adding new API object types and controllers
-
 Here's an example of how to add new API object types and controllers. Assume that we want a new resource type called DownloadURL. If a DownloadURL resource is created, the Harvester server tries to download from that URL.
 
 1. Add a `/pkg/apis/harvesterhci.io/v1beta1/downloadurl.go` file
