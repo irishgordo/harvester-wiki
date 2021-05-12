@@ -1,20 +1,5 @@
 **HCI/Appliance mode support only**
 
-Harvester v0.2.0 (Apr 2021, Beta)
------------------------
-
-*   [VM Live Migration](https://github.com/rancher/harvester/issues/384)
-*   [VM backup/restore](https://github.com/harvester/harvester/issues/385)
-*   [Backing image support to shorten the VM starting time](https://github.com/rancher/harvester/issues/227)
-*   [PXE support](https://github.com/rancher/harvester/issues/217) 
-    *   iPXE on Packet
-*   [Zero downtime upgrade](https://github.com/rancher/harvester/issues/383)
-    *   **NOTE: Due to pending OS changes in the future, the upgrade might be unsupported until GA release.**
-*   [Per node NIC configuration](https://github.com/harvester/harvester/issues/369)
-*   [Install Rancher with Harvester](https://github.com/rancher/harvester/issues/513)
-*   [Provision Kubernetes cluster using Harvester and Rancher](https://github.com/rancher/harvester/issues/512)  
-*   [Support bundle](https://github.com/rancher/harvester/issues/579)
-
 Harvester v0.3.0 (Q3 2021)
 ------------------
 
@@ -60,3 +45,20 @@ Future
 *   VXLAN
 *   Support local path provisioner (no VM migration/HA)
 *   Differential / layered image downloaded (to reduce network traffic with large images)
+
+Past releases
+---
+Harvester v0.2.0 (Apr 2021, Beta)
+-----------------------
+
+*   [VM Live Migration](https://github.com/rancher/harvester/issues/384)
+*   [VM backup/restore](https://github.com/harvester/harvester/issues/385)
+*   [Backing image support to shorten the VM starting time](https://github.com/rancher/harvester/issues/227)
+*   [PXE support](https://github.com/rancher/harvester/issues/217) 
+    *   iPXE on Packet
+*   [Zero downtime upgrade](https://github.com/rancher/harvester/issues/383)
+    *   **NOTE: Due to pending OS changes in the future, the upgrade might be unsupported until GA release.**
+*   [Per node NIC configuration](https://github.com/harvester/harvester/issues/369)
+*   [Install Rancher with Harvester](https://github.com/rancher/harvester/issues/513)
+*   [Provision Kubernetes cluster using Harvester and Rancher](https://github.com/rancher/harvester/issues/512)  
+*   [Support bundle](https://github.com/rancher/harvester/issues/579)
