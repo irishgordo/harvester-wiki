@@ -19,3 +19,5 @@ Check https://github.com/harvester/harvester/tree/master/docs instead for the Ha
 [[Development Best Practices]]
 
 [[Harvester API Test]]
+
+* [[Authn Initialization Automation]]
