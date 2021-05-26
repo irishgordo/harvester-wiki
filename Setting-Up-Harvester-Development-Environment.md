@@ -74,7 +74,7 @@ App mode installation guidance would be available at [here](https://github.com/h
 Most of us at the Harvester team uses GoLand, and the rest of this document will be written assuming you are as well, but there are several options
  - [GoLand](https://www.jetbrains.com/go/)
  - [vim + vim-go](https://github.com/fatih/vim-go)
- - [VS Code + vscode-go](https://github.com/Microsoft/vscode-go)
+ - [VS Code + vscode-go](https://github.com/golang/vscode-go)
  - [Atom + go-plus](https://atom.io/packages/go-plus)
 
 ## Harvester Repos
