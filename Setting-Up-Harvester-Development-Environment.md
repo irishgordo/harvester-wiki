@@ -66,7 +66,7 @@ The local Harvester instance will be hosted in an installation of Kubernetes. Ty
  - [Rancher](https://rancher.com/docs/rancher/v2.x/en/)
  - [k3s](https://k3s.io/)
 
-App mode installation guidance would be available at [here](https://github.com/harvester/harvester/blob/master/docs/app-mode-installation.md), please be aware that the Kubernetes node must have hardware virtualization support to test the VM features in the Harvester.
+App mode installation guidance would be available at [here](https://docs.harvesterhci.io/v0.2/dev/dev-mode/), please be aware that the Kubernetes node must have hardware virtualization support to test the VM features in the Harvester.
     
     
 ## IDE
