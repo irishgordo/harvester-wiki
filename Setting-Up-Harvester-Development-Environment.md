@@ -130,3 +130,5 @@ if you need testing the HA scenario, you can scale the pod number back to 2 and 
 
 ## Run!
 Start the built-in GoLand. The service will be available at `https://localhost:8443`. Ignore the scary cert warning.
+
+Note that if you encounter "too many open files" error while running harvester backend from host, please run `ulimit -a` to check whether maximum file descriptors limit is adequate. For macOS users, chances are that the default limit is quite small (256), so you may need to set a larger limit such as `ulimit -n 65536` for current shell session.
