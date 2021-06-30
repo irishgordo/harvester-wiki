@@ -15,7 +15,6 @@ Harvester v0.3.0 (Q3 2021)
     *   Provide bare metal storage via Longhorn to the VM Kubernetes clusters inside the Harvester.
 *   [Multi-tenant](https://github.com/rancher/harvester/issues/582)
     *   [Including Rancher authentication integration](https://github.com/rancher/harvester/issues/552)
-*   [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
 *   [Node eviction](https://github.com/rancher/harvester/issues/573)
 *   [Replace K3OS](https://github.com/rancher/harvester/issues/581)
 *   [Monitoring dashboard and endpoint for Prometheus](https://github.com/rancher/harvester/issues/576)
@@ -23,7 +22,6 @@ Harvester v0.3.0 (Q3 2021)
 *   [Log collection and export](https://github.com/rancher/harvester/issues/577)
     *   Syslog forwarding of hypervisor host logs
 *   [Event recording](https://github.com/rancher/harvester/issues/578)
-*   [VM clone](https://github.com/rancher/harvester/issues/569)
 *   [Template from VM including root and data disk](https://github.com/rancher/harvester/issues/571)
 *   [Image upload](https://github.com/rancher/harvester/issues/570)
 *   [Create image from volume](https://github.com/rancher/harvester/issues/568)
@@ -36,6 +34,10 @@ v1.0.0 GA (Q4 2021)
 
 *   Stabilization
 
+v1.1.0
+------
+*   [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
+*   [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
 
 Future
 ------
