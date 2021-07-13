@@ -4,7 +4,6 @@ The wiki is used for development documentations.
 
 Check https://github.com/harvester/harvester/tree/master/docs instead for the Harvester user documentations.
 
-Latest image (master unstable build) is available at: https://releases.rancher.com/harvester/master/harvester-amd64.iso 
 
 ## Harvester Roadmap:
 
@@ -23,3 +22,8 @@ Latest image (master unstable build) is available at: https://releases.rancher.c
 [[Harvester API Test]]
 
 * [[Authn Initialization Automation]]
+
+## Dev image
+The master build **unstable** image is available at: https://releases.rancher.com/harvester/master/harvester-amd64.iso
+* There is no support or guarantee of any kind available to the master build image.
+* Feel free to report issues regarding the master build images.
