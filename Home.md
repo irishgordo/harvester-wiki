@@ -4,6 +4,8 @@ The wiki is used for development documentations.
 
 Check https://github.com/harvester/harvester/tree/master/docs instead for the Harvester user documentations.
 
+Latest image (master unstable build) is available at: https://releases.rancher.com/harvester/master/harvester-amd64.iso 
+
 ## Harvester Roadmap:
 
 [[Roadmap]]
