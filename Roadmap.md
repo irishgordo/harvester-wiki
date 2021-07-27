@@ -1,5 +1,3 @@
-**HCI/Appliance mode support only**
-
 Harvester v0.3.0 (Q3 2021)
 ------------------
 
