@@ -121,7 +121,8 @@ Click the `Run` menu option and select `Edit Configurations`. Click the + to add
 ![Imgur](https://i.imgur.com/mZIiUr2.png)
 
 
-## Scale the Harvester pod down to 0
+## A few tips to boost your dev productivity
+### Scale the Harvester pod down to 0
 By default, there are 3 Harvester pod get deployed with the Harvester installation, you will need to scale the pod number down to 0 to test the controller logic at `pkg/controller/master`:
 ```
 kubectl scale --replicas=0 deployment/harvester -n harvester-system
@@ -134,6 +135,7 @@ If you find that the harvester pod keeps coming back, you might need to remove t
 The quickest way to do it might be running the following command:
 > `kubectl edit deploy harvester -n harvester-system`
 
+### Enable local ui for harvester
 Another good practice to make your dev life easier is to enable "local ui" for harvester especially when you are testing a branch starting with "v***" which is a release candidate. And the way to do so is to run the following command to check the value of "ui-source" and make sure it is set to "external".
 > `kubectl get settings ui-source -n harvester-system`
 
