@@ -44,6 +44,9 @@ Future
 *   VXLAN
 *   Support local path provisioner (no VM migration/HA)
 *   Differential / layered image downloaded (to reduce network traffic with large images)
+* Enhanced Integration with Rancher for massive edge deployments
+* Network enhancement: support telco network solutions
+* Support seamless migration from other virtualization platforms.
 
 Past releases
 ---
