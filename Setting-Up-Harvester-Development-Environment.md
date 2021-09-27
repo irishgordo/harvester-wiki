@@ -126,7 +126,19 @@ By default, there are 3 Harvester pod get deployed with the Harvester installati
 ```
 kubectl scale --replicas=0 deployment/harvester -n harvester-system
 ```
-if you need testing the HA scenario, you can scale the pod number back to 2 and modify the code in `pkg/controller/global` accordingly.
+If you need testing the HA scenario, you can scale the pod number back to 2 and modify the code in `pkg/controller/global` accordingly.  
+
+If you find that the harvester pod keeps coming back, you might need to remove the following line from the yaml file of deployment/harvester:
+> _"management.cattle.io/scale-available": "3"_
+
+The quickest way to do it might be running the following command:
+> `kubectl edit deploy harvester -n harvester-system`
+
+Another good practice to make your dev life easier is to enable "local ui" for harvester especially when you are testing a branch starting with "v***" which is a release candidate. And the way to do so is to run the following command to check the value of "ui-source" and make sure it is set to "external".
+> `kubectl get settings ui-source -n harvester-system`
+
+If the value is not correct, add the following line to the yaml of that setting:
+> _"value: external"_
 
 ## Run!
 Start the built-in GoLand. The service will be available at `https://localhost:8443`. Ignore the scary cert warning.
