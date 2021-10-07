@@ -24,6 +24,6 @@ Check https://github.com/harvester/harvester/tree/master/docs instead for the Ha
 * [[Authn Initialization Automation]]
 
 ## Dev image
-The master build **unstable** image is available at: https://releases.rancher.com/harvester/master/harvester-amd64.iso
+The master build **unstable** image is available at: https://releases.rancher.com/harvester/master/harvester-master-amd64.iso
 * There is no support or guarantee of any kind available to the master build image.
 * Feel free to report issues regarding the master build images.
