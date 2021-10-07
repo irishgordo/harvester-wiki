@@ -31,11 +31,11 @@ export PATH=${GOPATH//://bin:}/bin:$PATH
 
 ### HCI Mode(Recommended)
 
-You should be able to download the latest Harvester ISO from [here](https://releases.rancher.com/harvester/master/harvester-amd64.iso). The CI in [harvester/harvester-installer](https://github.com/harvester/harvester-installer) repo will auto-build the newest ISO image upon every merged PRs, it will also run a daily cronjob at 00:00 am (UTC) to build a daily newest ISO image.
+You should be able to download the latest Harvester ISO from [here](https://releases.rancher.com/harvester/master/harvester-master-amd64.iso). The CI in [harvester/harvester-installer](https://github.com/harvester/harvester-installer) repo will auto-build the newest ISO image upon every merged PRs, it will also run a daily cronjob at 00:00 am (UTC) to build a daily newest ISO image.
 
 For `initrd` and `vmlinuz` files they are available at:
-- [harvester-initrd-amd64](https://releases.rancher.com/harvester/master/harvester-initrd-amd64)
-- [harvester-vmlinuz-amd64](https://releases.rancher.com/harvester/master/harvester-vmlinuz-amd64)
+- [harvester-initrd-amd64](https://releases.rancher.com/harvester/master/harvester-master-initrd-amd64)
+- [harvester-vmlinuz-amd64](https://releases.rancher.com/harvester/master/harvester-master-vmlinuz-amd64)
 
 
 #### Option 1) On the Bare-metal Server
