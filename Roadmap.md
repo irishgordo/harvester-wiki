@@ -10,15 +10,17 @@ v1.1.0
 *   [Log collection and export](https://github.com/rancher/harvester/issues/577)
     *   Syslog forwarding of hypervisor host logs
 *   [Event recording](https://github.com/rancher/harvester/issues/578)
+* Support seamless migration from other virtualization platforms.
+* Restore Harvester VMs into a new Harvester cluster.
 
 Future
 ------
 
+* GPU passthrough support.
 *   Container and VM network integration or path to communication 
 *   VXLAN
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
-* Support seamless migration from other virtualization platforms.
 *   Differential / layered image downloaded (to reduce network traffic with large images)
 
 
