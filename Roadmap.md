@@ -13,15 +13,14 @@ v1.1.0
 * Support seamless migration from other virtualization platforms.
 * Restore Harvester VMs into a new Harvester cluster.
 
+
 Future
 ------
-
 * GPU passthrough support.
-*   Container and VM network integration or path to communication 
-*   VXLAN
+* Container and VM network integration or path to communication 
+* VXLAN
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
-*   Differential / layered image downloaded (to reduce network traffic with large images)
 
 
 Past releases
