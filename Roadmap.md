@@ -5,13 +5,14 @@ v1.0.0 GA (Q4 2021)
 
 v1.1.0
 ------
-*   [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
-*   [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
-*   [Log collection and export](https://github.com/rancher/harvester/issues/577)
-    *   Syslog forwarding of hypervisor host logs
-*   [Event recording](https://github.com/rancher/harvester/issues/578)
+* [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
+* [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
+* [Log collection and export](https://github.com/rancher/harvester/issues/577)
+  *   Syslog forwarding of hypervisor host logs
+* [Event recording](https://github.com/rancher/harvester/issues/578)
 * Support seamless migration from other virtualization platforms.
 * Restore Harvester VMs into a new Harvester cluster.
+* Exhance Windows experience
 
 
 Future
