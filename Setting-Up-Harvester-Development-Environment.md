@@ -40,7 +40,7 @@ For `initrd` and `vmlinuz` files they are available at:
 
 #### Option 1) On the Bare-metal Server
 
-Follow the [ISO installation](https://github.com/harvester/harvester/blob/master/docs/iso-installation.md) guideline to set up your Harvester server, and get the `KubeConfig` file from the management node at `/etc/rancher/k3s/k3s.yaml`.
+Follow the [ISO installation](https://github.com/harvester/docs/blob/main/docs/install/iso-install.md) guideline to set up your Harvester server, and get the `KubeConfig` file from the management node at `/etc/rancher/rke2/rke2.yaml`.
 
 
 #### Option 2) Using Vagrant
@@ -57,13 +57,14 @@ Download and install the [Virtualbox 6.x](https://www.virtualbox.org/), click to
 VBoxManage modifyvm "$custom-name" --nested-hw-virt on
 ```
  - go to the networks panel and enable the second network adaptor with either attached to the `Host-only Adaptor` or any other type of adaptor that can be accessed from your local network later.
- - lastly, follow the [ISO installation](https://github.com/harvester/harvester/blob/master/docs/iso-installation.md) and install the Harvester to your VM.
+ - lastly, follow the [ISO installation](https://github.com/harvester/docs/blob/main/docs/install/iso-install.md) and install the Harvester to your VM.
  - optionally you can create more VMs to form a cluster.
 
 ### Helm Mode
 
-The local Harvester instance will be hosted in an installation of Kubernetes. Typically this will be done with a local cluster, but you can also launch one in the cloud and simply point your Kubeconfig there. The easiest way to spin up a k8s cluster in the cloud would be using the Rancher's RKE or k3s:
- - [Rancher](https://rancher.com/docs/rancher/v2.x/en/)
+The local Harvester instance will be hosted in an installation of Kubernetes. Typically this will be done with a local cluster, but you can also launch one in the cloud and simply point your Kubeconfig there. The easiest way to spin up a k8s cluster in the cloud would be using the Rancher's RKE/RKE2/k3s:
+ - [rke](https://rancher.com/docs/rke/latest/en/installation/)
+ - [rke2](https://docs.rke2.io/)
  - [k3s](https://k3s.io/)
 
 App mode installation guidance would be available at [here](https://docs.harvesterhci.io/v0.2/dev/dev-mode/), please be aware that the Kubernetes node must have hardware virtualization support to test the VM features in the Harvester.
@@ -84,7 +85,6 @@ As of Harvester development, you will likely only need the [harvester/harvester]
 - [Harvester Network Controller](https://github.com/harvester/harvester-network-controller) - Harvester network controller of managing additional networks like VLAN
 - [Harvester Installer](https://github.com/harvester/harvester-installer) - Harvester installer for building the ISO image
 - [Harvester Node Driver](https://github.com/harvester/docker-machine-driver-harvester) - Harvester node driver based on the Docker machine
-- [GO Harvester](https://github.com/harvester/go-harvester) - a Go client library for the Harvester
 
 ### Setting up remotes
 To avoid accidentally creating a branch in the harvester/harvester repo please set your remote accordingly with your fork. 
@@ -114,12 +114,8 @@ Click the `Run` menu option and select `Edit Configurations`. Click the + to add
   - In files select the main.go file.
   - add environment variable `KUBECONFIG` set to `{homedirectory}/.kube/config` (on mac `/Users/<username>/.kube/config`).
   - add env variable `NAMESPACE` set to `harvester-system` (the default namespace to store management resources).
-  - (optional) add env variable `HARVESTER_AUTHENTICATION_MODE` set to `localUser` if you are not testing with Rancher integration. Use the default `admin:password` to login in this case.
-  - set env variable `HARVESTER_AUTHENTICATION_MODE: rancher`, `RANCHER_EMBEDDED: true` and `RANCHER_SERVER_URL: rancher-server-url=https://cluster_url:30444` if you are testing Rancher integration mode.
+  - set env variable `RANCHER_EMBEDDED: true` if you are testing Rancher integration mode.
   - set env variable `HCI_MODE: true` if you are testing HCI mode controllers, e.g zero-downtime upgrade
-
-![Imgur](https://i.imgur.com/mZIiUr2.png)
-
 
 ## A few tips to boost your dev productivity
 ### Scale the Harvester pod down to 0
