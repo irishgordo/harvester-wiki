@@ -13,11 +13,11 @@ v1.1.0
 * Support seamless migration from other virtualization platforms.
 * Restore Harvester VMs into a new Harvester cluster.
 * Exhance Windows experience
+* GPU passthrough support.
 
 
 Future
 ------
-* GPU passthrough support.
 * Container and VM network integration or path to communication 
 * VXLAN
 * Enhanced Integration with Rancher for massive edge deployments
