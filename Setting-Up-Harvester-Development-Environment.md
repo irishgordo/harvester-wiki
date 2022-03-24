@@ -81,7 +81,7 @@ Most of us at the Harvester team uses GoLand, and the rest of this document will
 ## Harvester Repos
 As of Harvester development, you will likely only need the [harvester/harvester](https://github.com/harvester/harvester). But here is a list of available reports of its related development usage.
 
-- [Harvester UI](https://github.com/harvester/harvester-ui) - Harvester UI
+- [Harvester UI](https://github.com/harvester/dashboard) - Harvester UI (Dashboard)
 - [Harvester Network Controller](https://github.com/harvester/harvester-network-controller) - Harvester network controller of managing additional networks like VLAN
 - [Harvester Installer](https://github.com/harvester/harvester-installer) - Harvester installer for building the ISO image
 - [Harvester Node Driver](https://github.com/harvester/docker-machine-driver-harvester) - Harvester node driver based on the Docker machine
