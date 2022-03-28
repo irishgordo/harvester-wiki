@@ -44,7 +44,7 @@ Follow the [ISO installation](https://github.com/harvester/docs/blob/main/docs/i
 
 
 #### Option 2) Using Vagrant
-
+Follow the examples in [Vagrant iPXE Examples](https://github.com/harvester/ipxe-examples/tree/main/vagrant-pxe-harvester) repo 
 
 #### Option 3) Using VirtualBox
 
