@@ -4,7 +4,7 @@ A running Harvester Environment.
 
 
 ## APIs
-We will use Harvester HCI mode installation as an example, the server endpoint will be something similar to `https://harvester-ip:30443`, and this is the base URL of all of the API calls.
+We will use Harvester HCI mode installation as an example, the server endpoint will be something similar to `https://harvester-ip:443`, and this is the base URL of all of the API calls.
 
 ### Authentication & Authorization
 
