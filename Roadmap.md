@@ -20,7 +20,6 @@ v1.1.0
 Future
 ------
 * Container and VM network integration or path to communication 
-* VXLAN
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
 
