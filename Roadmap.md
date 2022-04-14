@@ -14,7 +14,8 @@ v1.1.0
 * Restore Harvester VMs into a new Harvester cluster.
 * Enhance Windows experience
 * GPU passthrough support.
-
+* VXLAN
+* Enhanced Cloud Provider support.
 
 Future
 ------
