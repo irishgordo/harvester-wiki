@@ -1,7 +1,11 @@
-v1.0.0 GA (Q4 2021)
----------------------
-
-*   Stabilization
+v1.0.2 (May 2022)
+------
+* [Upgrade from v1.0.1](https://github.com/harvester/harvester/issues/1861)
+* [Support bundle for a single node](https://github.com/harvester/harvester/issues/1864)
+* [Legacy Iso for older servers](https://github.com/harvester/harvester/issues/2023)
+* [Enhancement of qemu-guest-agent design](https://github.com/harvester/harvester/issues/2002)
+* [WebUI adds setting of monitoring-prometheus-node-exporter](https://github.com/harvester/harvester/issues/2075)
+* [Harvester NODE IP, VIP enhancement](https://github.com/harvester/harvester/issues/1683)
 
 v1.1.0
 ------
@@ -26,6 +30,22 @@ Future
 
 Past releases
 ---
+
+Harvester v1.0.1 (Apr 2022)
+---------------------
+
+* [Upgrade from v1.0.0](https://docs.harvesterhci.io/v1.0/upgrade/automatic/)
+* [Harvester RKE2 node driver enhancement](https://github.com/harvester/harvester/issues?q=is%3Aissue+label%3Aarea%2Fnode-driver+milestone%3Av1.0.1+)
+* [VM soft reboot/shutdown](https://github.com/harvester/harvester/issues/574)
+* [Allow using additional data disks during installation](https://github.com/harvester/harvester/issues/1728)
+* [Windows Server (2019 & 2022) Support Enhancement](https://github.com/harvester/harvester/issues?q=is%3Aissue+windows+label%3Aarea%2Fwindows+milestone%3Av1.0.1+)
+* [Load Balancer Enhancement of the Harvester node driver cluster](https://github.com/harvester/harvester/issues?q=is%3Aissue+label%3Aarea%2Fload-balancer+milestone%3Av1.0.1+)
+
+Harvester v1.0.0 GA (Dec 2021)
+---------------------
+
+*   Stabilization
+
 Harvester v0.2.0 (Apr 2021, Beta)
 -----------------------
 
