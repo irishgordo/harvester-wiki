@@ -9,17 +9,20 @@ v1.0.2 (May 2022)
 
 v1.1.0
 ------
+* Support seamless migration from other virtualization platforms.
 * [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
 * [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
+* Storage Area Network
 * [Log collection and export](https://github.com/rancher/harvester/issues/577)
   *   Syslog forwarding of hypervisor host logs
 * [Event recording](https://github.com/rancher/harvester/issues/578)
-* Support seamless migration from other virtualization platforms.
-* Restore Harvester VMs into a new Harvester cluster.
-* Enhance Windows experience
+* SR-IOV
 * GPU passthrough support.
 * VXLAN
 * Enhanced Cloud Provider support.
+* Enhanced Windows experience
+* Restore Harvester VMs into a new Harvester cluster.
+
 
 Future
 ------
