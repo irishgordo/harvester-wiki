@@ -23,6 +23,7 @@ v1.1.0
 * Enhanced Windows experience
 * Restore Harvester VMs into a new Harvester cluster.
 * Support configure Harvester cluster after installation (https://github.com/harvester/harvester/issues/2198)
+* Enhanced image management
 
 
 Future
