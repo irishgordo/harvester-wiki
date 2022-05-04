@@ -24,13 +24,15 @@ v1.1.0
 * Restore Harvester VMs into a new Harvester cluster.
 * Support configure Harvester cluster after installation (https://github.com/harvester/harvester/issues/2198)
 * Enhanced image management
-* Container and VM network integration or path to communication 
 
 
 Future
 ------
+* Container and VM network integration or path to communication 
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
+* VLAN for mgmt network
+* Hardware error detection
 
 
 Past releases
