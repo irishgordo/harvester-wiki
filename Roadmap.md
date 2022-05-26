@@ -1,28 +1,23 @@
-v1.0.2 (May 2022)
+v1.0.3
 ------
-* [Upgrade from v1.0.1](https://github.com/harvester/harvester/issues/1861)
-* [Support bundle for a single node](https://github.com/harvester/harvester/issues/1864)
-* [Legacy Iso for older servers](https://github.com/harvester/harvester/issues/2023)
-* [Enhancement of qemu-guest-agent design](https://github.com/harvester/harvester/issues/2002)
-* [WebUI adds setting of monitoring-prometheus-node-exporter](https://github.com/harvester/harvester/issues/2075)
-* [Harvester NODE IP, VIP enhancement](https://github.com/harvester/harvester/issues/1683)
+* [Rebase Harvester on SLE Micro for Rancher](https://github.com/harvester/harvester/issues/1933)
 
 v1.1.0
 ------
-* Support seamless migration from other virtualization platforms.
+* [Support seamless migration from other virtualization platforms.](https://github.com/harvester/harvester/issues/2274)
 * [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
 * [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
-* Storage Network
+* [Storage Network](https://github.com/harvester/harvester/issues/1055)
 * [Log collection and export](https://github.com/rancher/harvester/issues/577)
   *   Syslog forwarding of hypervisor host logs
 * [Event recording](https://github.com/rancher/harvester/issues/578)
-* SR-IOV
-* GPU passthrough support.
+* [SR-IOV](https://github.com/harvester/harvester/issues/992)
+* [GPU passthrough support.](https://github.com/harvester/harvester/issues/1029)
 * VXLAN
-* Enhanced Cloud Provider support.
+* [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
 * Enhanced Windows experience
 * Restore Harvester VMs into a new Harvester cluster.
-* Support configure Harvester cluster after installation (https://github.com/harvester/harvester/issues/2198)
+* [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
 * Enhanced image management
 
 
@@ -37,6 +32,15 @@ Future
 
 Past releases
 ---
+
+v1.0.2 (May 2022)
+------
+* [Upgrade from v1.0.1](https://github.com/harvester/harvester/issues/1861)
+* [Support bundle for a single node](https://github.com/harvester/harvester/issues/1864)
+* [Legacy Iso for older servers](https://github.com/harvester/harvester/issues/2023)
+* [Enhancement of qemu-guest-agent design](https://github.com/harvester/harvester/issues/2002)
+* [WebUI adds setting of monitoring-prometheus-node-exporter](https://github.com/harvester/harvester/issues/2075)
+* [Harvester NODE IP, VIP enhancement](https://github.com/harvester/harvester/issues/1683)
 
 Harvester v1.0.1 (Apr 2022)
 ---------------------
