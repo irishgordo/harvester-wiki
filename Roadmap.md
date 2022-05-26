@@ -15,10 +15,11 @@ v1.1.0
 * [GPU passthrough support.](https://github.com/harvester/harvester/issues/1029)
 * VXLAN
 * [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
-* Enhanced Windows experience
-* Restore Harvester VMs into a new Harvester cluster.
+* [Enhanced Windows experience](https://github.com/harvester/harvester/issues/1836)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
-* Enhanced image management
+* [Enhanced image management](https://github.com/harvester/harvester/issues/2319)
+* [VLAN for mgmt network](https://github.com/harvester/harvester/issues/2236)
+* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
 
 Future
@@ -26,8 +27,7 @@ Future
 * Container and VM network integration or path to communication 
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
-* VLAN for mgmt network
-* Hardware error detection
+* Restore Harvester VMs into a new Harvester cluster.
 
 
 Past releases
