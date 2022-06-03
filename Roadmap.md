@@ -20,6 +20,7 @@ v1.1.0
 * [Enhanced image management](https://github.com/harvester/harvester/issues/2319)
 * [VLAN for mgmt network](https://github.com/harvester/harvester/issues/2236)
 * [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
+* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237).
 
 
 Future
@@ -27,7 +28,6 @@ Future
 * Container and VM network integration or path to communication 
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
-* Restore Harvester VMs into a new Harvester cluster.
 
 
 Past releases
