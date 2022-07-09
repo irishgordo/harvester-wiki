@@ -13,15 +13,17 @@ v1.1.0
 * [Event recording](https://github.com/rancher/harvester/issues/578)
 * [SR-IOV](https://github.com/harvester/harvester/issues/992)
 * [GPU passthrough support.](https://github.com/harvester/harvester/issues/1029)
-* [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
 * [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
-* [Enhanced Windows experience](https://github.com/harvester/harvester/issues/1836)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
 * [Enhanced image management](https://github.com/harvester/harvester/issues/2319)
 * [VLAN for mgmt network](https://github.com/harvester/harvester/issues/2236)
 * [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237).
 
+v1.2.0
+-----
+* [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
+* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 
 Future
 ------
