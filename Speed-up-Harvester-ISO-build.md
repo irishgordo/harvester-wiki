@@ -39,7 +39,7 @@ Steps
   rm -f $BUNDLE_CACHE/harvester/images/harvester-repo-images*
   rm -f $BUNDLE_CACHE/harvester/images-lists/harvester-repo-images*
   ```
-- Edit `harvester-installer/Dockerfile.dapper`, bind-mount the bundle cache directory to `/bundle`:
+- Edit `harvester-installer/Dockerfile.dapper`, bind-mount the bundle cache directory `/srv/www/htdocs/harvester/bundle` to `/bundle`:
   ```
   ENV DAPPER_RUN_ARGS "-v /run/containerd/containerd.sock:/run/containerd/containerd.sock -v harvester-installer-go:/root/go -v harvester-installer-cache:/root/.cache -v /srv/www/htdocs/harvester/bundle:/bundle"
   ```
@@ -58,7 +58,7 @@ Steps
   HARVESTER_INSTALLER_OFFLINE_BUILD=y make
   ```
 
-## Use local RKE2 images files
+## Use RKE2 images files in a local server
 **NOTE**: Don't use this with the image tarball cache tip.
 
 - Check the current RKE2 version
@@ -91,7 +91,7 @@ Steps
   $ ./get-rke2.sh v1.22.12-rc3+rke2r1
   # this saves to folder `v1.22.12-rc3+rke2r1`
   ```
-- Host the files in a webserver and build with it, e.g.:
+- Host the files in a web server and build with it, e.g.:
   ```
   RKE2_IMAGE_REPO=http://192.168.2.106/harvester/rke2/ make
   ```
