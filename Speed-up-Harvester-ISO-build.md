@@ -96,7 +96,7 @@ Steps
   RKE2_IMAGE_REPO=http://192.168.2.106/harvester/rke2/ make
   ```
 
-## Use zstd compression for squash image
+## Use zstd compression for squashfs image
 Edit `package/harvester-os/iso.yaml`.
 
 ```
