@@ -53,6 +53,7 @@ Steps
     exit 0
   fi
   ```
+  TODO: fix in this PR: https://github.com/harvester/harvester-installer/pull/309
 - Build an ISO
   ```
   HARVESTER_INSTALLER_OFFLINE_BUILD=y make
