@@ -17,7 +17,7 @@ The build process can be summarized as:
 
 There are some tips to speed up the build.
 
-## Skip images pulling in `scripts/build-bundle` stage
+## Skip images pulling in `build-bundle` stage
 
 We can first build an ISO and extract image tarballs from the ISO as a cache to speed up the build.
 
@@ -57,3 +57,59 @@ Steps
   ```
   HARVESTER_INSTALLER_OFFLINE_BUILD=y make
   ```
+
+## Use local RKE2 images files
+**NOTE**: Don't use this with the image tarball cache tip.
+
+- Check the current RKE2 version
+  ```
+  # in harvester-installer
+  $ cat scripts/version-rke2
+  RKE2_VERSION="v1.22.12-rc3+rke2r1"
+  ```
+- Mirror RKE2 image tarballs to a place. The script should help:
+  ```
+  $ cat get-rke2.sh
+  #!/bin/bash -eux
+
+  VERSION=$1
+
+  mkdir -p $VERSION
+
+  cd $VERSION
+
+  wget https://github.com/rancher/rke2/releases/download/$VERSION/rke2-images.linux-amd64.tar.zst
+  wget https://github.com/rancher/rke2/releases/download/$VERSION/rke2-images.linux-amd64.txt
+  wget https://github.com/rancher/rke2/releases/download/$VERSION/rke2-images-multus.linux-amd64.txt
+  wget https://github.com/rancher/rke2/releases/download/$VERSION/rke2-images-harvester.linux-amd64.tar.zst
+  wget https://github.com/rancher/rke2/releases/download/$VERSION/rke2-images-harvester.linux-amd64.txt
+
+  # verify
+  wget https://github.com/rancher/rke2/releases/download/$VERSION/sha256sum-amd64.txt
+  sha256sum -c --ignore-missing sha256sum-amd64.txt
+
+  $ ./get-rke2.sh v1.22.12-rc3+rke2r1
+  # this saves to folder `v1.22.12-rc3+rke2r1`
+  ```
+- Host the files in a webserver and build with it, e.g.:
+  ```
+  RKE2_IMAGE_REPO=http://192.168.2.106/harvester/rke2/ make
+  ```
+
+## Use zstd compression for squash image
+Edit `package/harvester-os/iso.yaml`.
+
+```
+diff --git a/package/harvester-os/iso.yaml b/package/harvester-os/iso.yaml
+index 5ccc95d..66137d6 100644
+--- a/package/harvester-os/iso.yaml
++++ b/package/harvester-os/iso.yaml
+@@ -21,4 +21,4 @@ luet:
+         - quay.io/costoolkit/releases-green
+       type: docker
+ squashfs_options:
+-  compression: xz
++  compression: zstd
+```
+
+ 
