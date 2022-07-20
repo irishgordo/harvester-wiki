@@ -24,5 +24,36 @@ We can first build an ISO and extract image tarballs from the ISO as a cache to 
 > **Warning**
 > 
 > This works only:
-> - You don't modify any image tags in harvester/harvester charts and its dependency charts.
+> - You don't modify any image tags in harvester/harvester charts and its dependency charts. In short, container images are not changed.
 > - You don't need to bump RKE2 version or Rancher versions.
+
+Steps
+- Build an ISO first.
+- Extract the bundle, the following script should help:
+  ```
+  # Modify paths if needed
+  export ISO=/tmp/harvester.iso
+  export BUNDLE_CACHE=/srv/www/htdocs/harvester/bundle
+
+  xorriso -osirrox on -indev ${ISO} -extract /bundle $BUNDLE_CACHE
+  rm -f $BUNDLE_CACHE/harvester/images/harvester-repo-images*
+  rm -f $BUNDLE_CACHE/harvester/images-lists/harvester-repo-images*
+  ```
+- Edit `harvester-installer/Dockerfile.dapper`, bind-mount the bundle cache directory to `/bundle`:
+  ```
+  ENV DAPPER_RUN_ARGS "-v /run/containerd/containerd.sock:/run/containerd/containerd.sock -v harvester-installer-go:/root/go -v harvester-installer-cache:/root/.cache -v /srv/www/htdocs/harvester/bundle:/bundle"
+  ```
+- Edit `harvester-installer/scripts/build-bundle`
+  ```
+  if [ -n "$HARVESTER_INSTALLER_OFFLINE_BUILD" -a -e /bundle ]; then
+    cp -rf /bundle/* ${BUNDLE_DIR}/
+    pushd ${harvester_path}
+    git checkout -- ./deploy/charts
+    popd
+    exit 0
+  fi
+  ```
+- Build an ISO
+  ```
+  HARVESTER_INSTALLER_OFFLINE_BUILD=y make
+  ```
