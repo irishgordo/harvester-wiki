@@ -1,7 +1,3 @@
-v1.0.3
-------
-* [Rebase Harvester on SLE Micro for Rancher](https://github.com/harvester/harvester/issues/1933)
-
 v1.1.0
 ------
 * [Support seamless migration from other virtualization platforms.](https://github.com/harvester/harvester/issues/2274)
@@ -35,8 +31,12 @@ Future
 Past releases
 ---
 
-v1.0.2 (May 2022)
-------
+Harvester v1.0.3 (Aug 2022)
+---------------------
+* [Rebase Harvester on SLE Micro for Rancher](https://github.com/harvester/harvester/issues/1933)
+
+Harvester v1.0.2 (May 2022)
+---------------------
 * [Upgrade from v1.0.1](https://github.com/harvester/harvester/issues/1861)
 * [Support bundle for a single node](https://github.com/harvester/harvester/issues/1864)
 * [Legacy Iso for older servers](https://github.com/harvester/harvester/issues/2023)
