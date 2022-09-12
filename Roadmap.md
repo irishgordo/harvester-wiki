@@ -1,16 +1,16 @@
 v1.1.0
 ------
-* [Support seamless migration from other virtualization platforms.](https://github.com/harvester/harvester/issues/2274)
-* [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
-* [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
-* [Storage Network](https://github.com/harvester/harvester/issues/1055)
-* [Log collection and export](https://github.com/rancher/harvester/issues/577)
+* [Log collection and export](https://github.com/rancher/harvester/issues/577) and [Event recording](https://github.com/rancher/harvester/issues/578)
   *   Syslog forwarding of hypervisor host logs
-* [Event recording](https://github.com/rancher/harvester/issues/578)
-* [SR-IOV](https://github.com/harvester/harvester/issues/992)
-* [GPU passthrough support.](https://github.com/harvester/harvester/issues/1029)
+* PCI-E Passthrough and [SRIOV](https://github.com/harvester/harvester/issues/992)/[GPU passthrough support.](https://github.com/harvester/harvester/issues/1029)
+* VM Snapshot enhancement
+  * [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
+  * [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
+* [Storage Network](https://github.com/harvester/harvester/issues/1055)
 * [Enhanced image management](https://github.com/harvester/harvester/issues/2319)
 * [VLAN for mgmt network](https://github.com/harvester/harvester/issues/2236)
+* [Support seamless migration from other virtualization platforms.](https://github.com/harvester/harvester/issues/2274)
+
 
 v1.2.0
 -----
