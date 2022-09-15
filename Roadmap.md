@@ -14,6 +14,9 @@ v1.1.0
 
 v1.2.0
 -----
+* [Harvester extension](https://github.com/harvester/harvester/issues/2769)
+* [vGPU support](https://github.com/harvester/harvester/issues/2764)
+* [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
 * [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
 * [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
