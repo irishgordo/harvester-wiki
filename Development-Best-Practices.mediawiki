@@ -42,7 +42,7 @@ Commit message subject lines should be 50 characters or less. Commit body lines 
 When creating any dev branches, it is recommended to name the branch with a meaningful name but not too long. If the length of the branch name is longer than 47 characters, though the build will pass (we're planning to add some checks to fail the build in the early time), it will cause problems in the runtime later:
 
 ```bash
-helm history harvester -n harvester-system
+$ helm history harvester -n harvester-system
 REVISION        UPDATED                         STATUS  CHART                                                                                   APP VERSION                                                            DESCRIPTION
 
 1               Mon Sep 12 10:31:51 2022        failed  harvester-0.0.0-2431-feature-check-version-compatibility-during-an-upgrade-6a66cad      2431-feature-check-version-compatibility-during-an-upgrade-6a66cad     Release "harvester" failed: ServiceAccount "harvester" is invalid: [metadata.labels: Invalid value: "2431-feature-check-version-compatibility-during-an-upgrade-6a66cad": must be no more than 63 characters, metadata.labels: Invalid value: "harvester-0.0.0-2431-feature-check-version-compatibility-during-an-upgrade-6a66cad": must be no more than 63 characters]
