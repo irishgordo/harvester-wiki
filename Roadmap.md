@@ -2,7 +2,7 @@ v1.1.0
 ------
 * [Log collection and export](https://github.com/rancher/harvester/issues/577) and [Event recording](https://github.com/rancher/harvester/issues/578)
   *   Syslog forwarding of hypervisor host logs
-* PCI-E Passthrough and [SRIOV](https://github.com/harvester/harvester/issues/992)/[GPU passthrough support.](https://github.com/harvester/harvester/issues/1029)
+* [PCI-E passthrough (and GPU support)](https://github.com/harvester/harvester/issues/992)
 * VM Snapshot enhancement
   * [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
   * [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
@@ -23,6 +23,7 @@ v1.2.0
 * [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237).
+* [SR-IOV Support](https://github.com/harvester/harvester/issues/2763)
 
 Future
 ------
