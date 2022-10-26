@@ -7,9 +7,19 @@ If you're testing the upgrade path from v1.0.3 to v1.1.0, both parts are worth r
 
 ## Enabling rancher-logging in v1.0.3
 
+> The following instructions might put the Harvester cluster into an unstable state, please do not try it on the production environment.
+
+The main idea is to apply `rancher-logging` and `rancher-logging-crd` `ManagedCharts` to the v1.0.3 cluster. But before that, let's first set the image tag of the harvester-cluster-repo Deployment to the new one, i.e. v1.1.0:
+
+```bash
+kubectl -n cattle-system set image deploy/harvester-cluster-repo httpd=rancher/harvester-cluster-repo:v1.1.0
+```
+
+Note: you have to preload the image onto each node for the rollout to succeed. Since the `rancher/harvester-cluster-repo` is not publicly published as of now, it is essential to build one at your hand.
+
+```bash
+```
 ## Setting up rancher-logging for upgrade-related logs
-
-
 
 If your Elasticsearch node(s) has basic authn & authz configured, you will need to create a Secret resource for rancher-logging to reference. In `elastic-user-secret.yaml`:
 
