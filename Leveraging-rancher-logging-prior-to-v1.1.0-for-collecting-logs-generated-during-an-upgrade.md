@@ -9,8 +9,19 @@ If you're testing the upgrade path from v1.0.3 to v1.1.0, both parts are worth r
 
 ## Setting up rancher-logging for upgrade-related logs
 
+In `elastic-user-secret.yaml`:
+
 ```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: elastic-user
+  namespace: cattle-logging-system
+data:
+  PASSWORD: password
 ```
+
+In `es-co.yaml`:
 
 ```yaml
 apiVersion: logging.banzaicloud.io/v1beta1
@@ -40,6 +51,8 @@ spec:
       timekey_wait: 30s
       timekey_use_utc: true
 ```
+
+In `upgrade-related-cf.yaml`:
 
 ```yaml
 apiVersion: logging.banzaicloud.io/v1beta1
