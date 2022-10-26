@@ -18,6 +18,13 @@ kubectl -n cattle-system set image deploy/harvester-cluster-repo httpd=rancher/h
 Note: you have to preload the image onto each node for the rollout to succeed. Since the `rancher/harvester-cluster-repo` is not publicly published as of now, it is essential to build one at your hand.
 
 ```bash
+git clone https://github.com/harvester/harvester.git
+cd harvester/
+make build-iso
+docker save rancher/harvester-cluster-repo:master | gzip > harvester-cluster-repo-master.tar.gz
+```
+
+```bash
 ```
 
 Apply the `rancher-logging` and `rancher-logging-crd` ManagedCharts with the following command:
