@@ -9,7 +9,9 @@ If you're testing the upgrade path from v1.0.3 to v1.1.0, both parts are worth r
 
 ## Setting up rancher-logging for upgrade-related logs
 
-In `elastic-user-secret.yaml`:
+
+
+If your Elasticsearch node(s) has basic authn & authz configured, you will need to create a Secret resource for rancher-logging to reference. In `elastic-user-secret.yaml`:
 
 ```yaml
 apiVersion: v1
@@ -21,7 +23,7 @@ data:
   PASSWORD: password
 ```
 
-In `es-co.yaml`:
+Set up a ClusterOutput CR regarding Elasticsearch so that logs associated with this ClusterOutput will be routed to the Elasticsearch node(s). In `es-co.yaml`:
 
 ```yaml
 apiVersion: logging.banzaicloud.io/v1beta1
@@ -32,6 +34,10 @@ metadata:
 spec:
   elasticsearch:
     hosts: "es-01.example.com:9200,es-02.example.com:9200,es-03.example.com:9200"
+    ## If you have only one elasticsearch node, the following will work, too
+    # host: es.example.com
+    # port: 9200
+    ## If the elasticsearch node(s) is set up without any credentials, the user and password can be omitted
     user: elastic
     password:
       valueFrom:
@@ -42,10 +48,10 @@ spec:
     logstash_prefix: fluentd
     include_timestamp: true
     suppress_type_name: true
+    log_es_400_reason: true
     scheme: https
     ssl_verify: true
     ssl_version: TLSv1_2
-    log_es_400_reason: true
     buffer:
       timekey: 1m
       timekey_wait: 30s
