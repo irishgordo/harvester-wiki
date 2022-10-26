@@ -9,7 +9,7 @@ If you're testing the upgrade path from v1.0.3 to v1.1.0, both parts are worth r
 
 > The following instructions might put the Harvester cluster into an unstable state, please do not try it on the production environment.
 
-The main idea is to apply `rancher-logging` and `rancher-logging-crd` `ManagedCharts` to the v1.0.3 cluster. But before that, let's first set the image tag of the harvester-cluster-repo Deployment to the new one, i.e. v1.1.0:
+The main idea is to apply `rancher-logging` and `rancher-logging-crd` ManagedCharts to the v1.0.3 cluster. But before that, let's first set the image tag of the `harvester-cluster-repo` Deployment to the new one, i.e. v1.1.0:
 
 ```bash
 kubectl -n cattle-system set image deploy/harvester-cluster-repo httpd=rancher/harvester-cluster-repo:v1.1.0
@@ -20,7 +20,7 @@ Note: you have to preload the image onto each node for the rollout to succeed. S
 ```bash
 ```
 
-Apply the `rancher-logging` and `rancher-logging-crd` `ManagedCharts` with the following command:
+Apply the `rancher-logging` and `rancher-logging-crd` ManagedCharts with the following command:
 
 ```bash
 kubectl apply -f https://github.com/harvester/harvester/blob/v1.1.0/package/upgrade/migrations/managed_charts/logging-audit-v1.0.3.yaml
@@ -82,7 +82,7 @@ spec:
       timekey_use_utc: true
 ```
 
-You can also set another ClusterOutput with the `file` output plugin. Note that the logs will be archived under the designated path **in the fluend Pod**, which means the logs are ephemeral. This is just for verifying that the desired logs are actually being processed by rancher-logging. In `file-co.yaml`:
+You can also set another ClusterOutput with the **file** output plugin. Note that the logs will be archived under the designated path **in the fluend Pod**, which means the logs are ephemeral. This is just for verifying that the desired logs are actually being processed by rancher-logging. In `file-co.yaml`:
 
 ```yaml
 apiVersion: logging.banzaicloud.io/v1beta1
