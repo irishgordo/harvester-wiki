@@ -20,24 +20,56 @@ Note: you have to preload the image onto each node for the rollout to succeed. S
 ```bash
 git clone https://github.com/harvester/harvester.git
 cd harvester/
-make build-iso
-docker save rancher/harvester-cluster-repo:master | gzip > harvester-cluster-repo-master.tar.gz
+git checkout tags/v1.1.0 -b v1.1.0
+make build-iso  # This might take some time since it builds almost everything including the ISO image we don't need here
+docker save -o harvester-cluster-repo-master.tar rancher/harvester-cluster-repo:master
 ```
 
+Transfer the archived image to each Harvester node via `scp` then load the image:
+
 ```bash
+docker load -i /tmp/harvester-cluster-repo-master.tar
 ```
 
-Apply the `rancher-logging` and `rancher-logging-crd` ManagedCharts with the following command:
+After the `harvester-cluster-repo` Pod went back online, apply the `rancher-logging` and `rancher-logging-crd` ManagedCharts with the following command:
 
 ```bash
-kubectl apply -f https://github.com/harvester/harvester/blob/v1.1.0/package/upgrade/migrations/managed_charts/logging-audit-v1.0.3.yaml
+kubectl apply -f https://raw.githubusercontent.com/harvester/harvester/v1.1.0/package/upgrade/migrations/managed_charts/logging-audit-v1.0.3.yaml
 ```
 
 Please wait a moment for it to reflect the changes on the cluster. You can see the ManagedCharts are deployed and in the desired state:
 
 ```bash
-kubectl -n fleet-local describe managedcharts rancher-logging
-kubectl -n cattle-logging-system get pods
+$ kubectl -n fleet-local get managedcharts rancher-logging rancher-logging-crd -o json | jq '.items[].status.conditions[] | select(.type == "Ready")'
+{
+  "lastUpdateTime": "2022-10-26T10:48:45Z",
+  "status": "True",
+  "type": "Ready"
+}
+{
+  "lastUpdateTime": "2022-10-26T10:48:33Z",
+  "status": "True",
+  "type": "Ready"
+}
+$ kubectl -n cattle-logging-system get pods
+NAME                                                      READY   STATUS      RESTARTS   AGE
+rancher-logging-574448c578-x668q                          1/1     Running     0          3m8s
+rancher-logging-kube-audit-fluentbit-8rjhz                1/1     Running     0          2m36s
+rancher-logging-kube-audit-fluentbit-mgqsm                1/1     Running     0          2m36s
+rancher-logging-kube-audit-fluentbit-rfqdl                1/1     Running     0          2m36s
+rancher-logging-kube-audit-fluentbit-xppsj                1/1     Running     0          2m36s
+rancher-logging-kube-audit-fluentd-0                      2/2     Running     0          2m38s
+rancher-logging-kube-audit-fluentd-configcheck-ac2d4553   0/1     Completed   0          2m53s
+rancher-logging-rke2-journald-aggregator-q6g5p            1/1     Running     0          3m8s
+rancher-logging-rke2-journald-aggregator-w2mwz            1/1     Running     0          3m8s
+rancher-logging-rke2-journald-aggregator-w6dqf            1/1     Running     0          3m8s
+rancher-logging-rke2-journald-aggregator-wrr46            1/1     Running     0          3m8s
+rancher-logging-root-fluentbit-ddrhx                      1/1     Running     0          2m38s
+rancher-logging-root-fluentbit-gvklq                      1/1     Running     0          2m38s
+rancher-logging-root-fluentbit-sn4t7                      1/1     Running     0          2m38s
+rancher-logging-root-fluentbit-tr7gj                      1/1     Running     0          2m38s
+rancher-logging-root-fluentd-0                            2/2     Running     0          2m39s
+rancher-logging-root-fluentd-configcheck-ac2d4553         0/1     Completed   0          2m52s
 ```
 
 ## Setting up rancher-logging for upgrade-related logs
