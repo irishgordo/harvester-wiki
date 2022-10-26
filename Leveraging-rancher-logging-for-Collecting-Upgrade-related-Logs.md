@@ -19,6 +19,20 @@ Note: you have to preload the image onto each node for the rollout to succeed. S
 
 ```bash
 ```
+
+Apply the `rancher-logging` and `rancher-logging-crd` `ManagedCharts` with the following command:
+
+```bash
+kubectl apply -f https://github.com/harvester/harvester/blob/v1.1.0/package/upgrade/migrations/managed_charts/logging-audit-v1.0.3.yaml
+```
+
+Please wait a moment for it to reflect the changes on the cluster. You can see the ManagedCharts are deployed and in the desired state:
+
+```bash
+kubectl -n fleet-local describe managedcharts rancher-logging
+kubectl -n cattle-logging-system get pods
+```
+
 ## Setting up rancher-logging for upgrade-related logs
 
 If your Elasticsearch node(s) has basic authn & authz configured, you will need to create a Secret resource for rancher-logging to reference. In `elastic-user-secret.yaml`:
