@@ -74,16 +74,18 @@ rancher-logging-root-fluentd-configcheck-ac2d4553         0/1     Completed   0 
 
 ## Setting up rancher-logging for upgrade-related logs
 
-If your Elasticsearch node(s) has basic authn & authz configured, you will need to create a Secret resource for rancher-logging to reference. In `elastic-user-secret.yaml`:
+If your Elasticsearch node(s) has basic authn & authz configured, you will need to create a Secret resource for rancher-logging to reference.
 
-```yaml
+```bash
+$ kubectl -n cattle-logging-system create secret generic elastic-user --from-literal=PASSWORD=password -o yaml --dry-run=client | tee -a elastic-user-secret.yaml
 apiVersion: v1
+data:
+  PASSWORD: cGFzc3dvcmQ=
 kind: Secret
 metadata:
+  creationTimestamp: null
   name: elastic-user
   namespace: cattle-logging-system
-data:
-  PASSWORD: password
 ```
 
 Set up a ClusterOutput CR regarding Elasticsearch so that logs associated with this ClusterOutput will be routed to the Elasticsearch node(s). In `es-co.yaml`:
