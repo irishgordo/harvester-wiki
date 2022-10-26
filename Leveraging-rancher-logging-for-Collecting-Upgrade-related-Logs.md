@@ -52,6 +52,24 @@ spec:
       timekey_use_utc: true
 ```
 
+In `file-co.yaml`:
+
+```yaml
+apiVersion: logging.banzaicloud.io/v1beta1
+kind: ClusterOutput
+metadata:
+  name: file-output
+  namespace: cattle-logging-system
+spec:
+  file:
+    path: /tmp/logs/${tag}/%Y/%m/%d.%H.%M
+    append: true
+    buffer:
+      timekey: 1m
+      timekey_wait: 10s
+      timekey_use_utc: true
+```
+
 In `upgrade-related-cf.yaml`:
 
 ```yaml
@@ -104,5 +122,5 @@ spec:
 ```
 
 ```bash
-kubectl apply -f elastic-user-secret.yaml -f es-co.yaml -f upgrade-related-cf.yaml
+kubectl apply -f elastic-user-secret.yaml -f es-co.yaml -f file-co.yaml -f upgrade-related-cf.yaml
 ```
