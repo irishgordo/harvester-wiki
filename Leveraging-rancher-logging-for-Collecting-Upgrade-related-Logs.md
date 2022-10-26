@@ -231,5 +231,5 @@ Finally, we're all set. It's time to kick start the upgrade! And from Kibana UI 
 Or by query Elasticsearch's API by `curl`:
 
 ```bash
-curl -s -u elastic:password -H "Content-Type: application/json" https://es.example.com:9200/fluentd-2022.10.26/_search -d '{"_source": ["@timestamp", "kubernetes.pod_name", "message", "kubernetes.host"]}' | jq -r .
+curl -s -u elastic:password -H "Content-Type: application/json" https://es.example.com:9200/fluentd-*/_search -d '{"_source": ["@timestamp", "kubernetes.pod_name", "message", "kubernetes.host"]}' | jq -r .
 ```
