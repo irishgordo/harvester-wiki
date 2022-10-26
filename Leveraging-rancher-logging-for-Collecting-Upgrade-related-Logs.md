@@ -205,3 +205,31 @@ After that, apply the manifest files:
 ```bash
 kubectl apply -f elastic-user-secret.yaml -f es-co.yaml -f file-co.yaml -f upgrade-related-cf.yaml
 ```
+
+A corresponding `fluentd.conf` will be generated according to the ClusterFlow & ClusterOutput we specified, then the `fluentd` will reload the config. If something goes wrong, you can exec into the `fluentd` Pod to check out the log:
+
+```bash
+$ kubectl -n cattle-logging-system exec -it rancher-logging-root-fluentd-0 -c fluentd -- /bin/sh
+/ $ tail -F /fluentd/log/out
+2022-10-26 11:11:09 +0000 [info]: #0 [clusterflow:cattle-logging-system:upgrade-related-flow:0] DeDot will recurse nested hashes and arrays
+2022-10-26 11:11:09 +0000 [info]: adding match in @1a41c9f7fc433d203d284e4be1d86ddd pattern="**" type="copy"
+2022-10-26 11:11:09 +0000 [info]: adding match in @FLUENT_LOG pattern="fluent.*" type="null"
+2022-10-26 11:11:09 +0000 [info]: adding match in @ERROR pattern="**" type="null"
+2022-10-26 11:11:09 +0000 [info]: adding match pattern="**" type="label_router"
+2022-10-26 11:11:09 +0000 [info]: adding match pattern="**" type="null"
+2022-10-26 11:11:09 +0000 [info]: adding source type="forward"
+2022-10-26 11:11:09 +0000 [info]: #0 starting fluentd worker pid=28 ppid=7 worker=0
+2022-10-26 11:11:09 +0000 [info]: #0 [main_forward] listening port port=24240 bind="0.0.0.0"
+2022-10-26 11:11:09 +0000 [info]: #0 fluentd worker is now running worker=0
+...
+```
+
+Finally, we're all set. It's time to kick start the upgrade! And from Kibana UI you can see the logs showing up:
+
+<img width="1589" alt="Screen Shot 2022-10-26 at 23 13 29" src="https://user-images.githubusercontent.com/1827717/198065361-30641432-8273-48ed-9d4b-fe4b9118ec22.png">
+
+Or by query Elasticsearch's API by `curl`:
+
+```bash
+curl -s -u elastic:password -H "Content-Type: application/json" https://es.example.com:9200/fluentd-2022.10.26/_search -d '{"_source": ["@timestamp", "kubernetes.pod_name", "message", "kubernetes.host"]}' | jq -r .
+```
