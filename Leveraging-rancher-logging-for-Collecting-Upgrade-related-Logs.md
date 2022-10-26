@@ -102,3 +102,7 @@ spec:
   - es-output
   - file-output
 ```
+
+```bash
+kubectl apply -f elastic-user-secret.yaml -f es-co.yaml -f upgrade-related-cf.yaml
+```
