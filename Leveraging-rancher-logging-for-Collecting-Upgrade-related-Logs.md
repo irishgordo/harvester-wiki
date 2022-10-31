@@ -163,6 +163,7 @@ metadata:
   namespace: cattle-logging-system
 spec:
   filters:
+  # https://github.com/uken/fluent-plugin-elasticsearch/issues/787#issuecomment-706139320
   - dedot:
       de_dot_separator: "-"
       de_dot_nested: true
