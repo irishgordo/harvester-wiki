@@ -1,17 +1,3 @@
-v1.1.0
-------
-* [Log collection and export](https://github.com/rancher/harvester/issues/577) and [Event recording](https://github.com/rancher/harvester/issues/578)
-  *   Syslog forwarding of hypervisor host logs
-* [PCI-E passthrough (and GPU support)](https://github.com/harvester/harvester/issues/992)
-* VM Snapshot enhancement
-  * [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
-  * [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
-* [Storage Network](https://github.com/harvester/harvester/issues/1055)
-* [Enhanced image management](https://github.com/harvester/harvester/issues/2319)
-* [VLAN for mgmt network](https://github.com/harvester/harvester/issues/2236)
-* [Support seamless migration from other virtualization platforms.](https://github.com/harvester/harvester/issues/2274)
-
-
 v1.2.0
 -----
 * [Harvester extension](https://github.com/harvester/harvester/issues/2769)
@@ -33,7 +19,21 @@ Future
 
 
 Past releases
+
 ---
+
+Harvester v1.1.0 (Oct 2022)
+---------------------
+* [Log collection and export](https://github.com/rancher/harvester/issues/577) and [Event recording](https://github.com/rancher/harvester/issues/578)
+  *   Syslog forwarding of hypervisor host logs
+* [PCI-E passthrough (and GPU support)](https://github.com/harvester/harvester/issues/992)
+* VM Snapshot enhancement
+  * [VM Snapshot/revert](https://github.com/rancher/harvester/issues/553)
+  * [VM clone based on in-cluster snapshot](https://github.com/rancher/harvester/issues/569)
+* [Storage Network](https://github.com/harvester/harvester/issues/1055)
+* [Enhanced image management](https://github.com/harvester/harvester/issues/2319)
+* [VLAN for mgmt network](https://github.com/harvester/harvester/issues/2236)
+* [Support seamless migration from other virtualization platforms.](https://github.com/harvester/harvester/issues/2274)
 
 Harvester v1.0.3 (Aug 2022)
 ---------------------
