@@ -19,7 +19,6 @@ Future
 
 
 Past releases
-
 ---
 
 Harvester v1.1.0 (Oct 2022)
