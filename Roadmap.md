@@ -9,7 +9,6 @@ v1.2.0
 * [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237).
-* [SR-IOV Support](https://github.com/harvester/harvester/issues/2763)
 
 Future
 ------
