@@ -12,6 +12,9 @@ v1.2.0
 
 Future
 ------
+* Out of box Rancher experience
+* Reduced resource footprint
+* Third-party storage support for non-root disk
 * Container and VM network integration or path to communication 
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
