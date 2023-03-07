@@ -1,20 +1,20 @@
 v1.2.0
 -----
 * [Harvester extension](https://github.com/harvester/harvester/issues/2769)
-* [vGPU support](https://github.com/harvester/harvester/issues/2764)
+* [Out of box Rancher experience](https://github.com/harvester/harvester/issues/2679)
+* [Reduced resource footprint](https://github.com/harvester/harvester/issues/3262)
+* [Third-party storage support for non-root disk](https://github.com/harvester/harvester/issues/2405)
 * [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
 * [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
-* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
-* [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
-* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237).
 
 Future
 ------
-* Out of box Rancher experience
-* Reduced resource footprint
-* Third-party storage support for non-root disk
+* [vGPU support](https://github.com/harvester/harvester/issues/2764)
+* [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
+* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
+* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 * Container and VM network integration or path to communication 
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
