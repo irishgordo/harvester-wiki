@@ -7,10 +7,10 @@ v1.2.0 (Q2 2023)
 * [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
 * [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
-* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237).
 
 Future
 ------
+* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
 * [vGPU support](https://github.com/harvester/harvester/issues/2764)
 * [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
