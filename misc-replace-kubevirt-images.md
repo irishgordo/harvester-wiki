@@ -2,7 +2,7 @@ This document describes how to patch `virt-handler` pods with a customized image
 
 ## Steps
 
-1. Make sure you are using a Harvester v1.1.1 cluster.
+1. Make sure you are running a Harvester v1.1.1 cluster.
 2. SSH into a control-plane node and become root.
 3. Run the following command to patch the `virt-handler` pods:
 
@@ -12,9 +12,10 @@ kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"rep
 
 4. Verify that the `virt-controller` pods are restarted and have the patched image:
 
+The output should be:
+
 ```
-kubectl get deployment virt-controller -n harvester-system -o=jsonpath='{$.spec.template.spec.containers[0].image}'
-// result should be `registry.suse.com/harvester-beta/virt-controller:0.54.0-1`
+registry.suse.com/harvester-beta/virt-controller:0.54.0-1
 ```
 
 ## Tests
