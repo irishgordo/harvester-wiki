@@ -1,3 +1,8 @@
+
+> **Warning**
+> The doc is for testing a custom-build image in a specific cluster, please do not follow it without any context.
+
+
 This document describes how to patch `virt-controller` pods with a customized image that solves the issue: [https://github.com/harvester/harvester/issues/3586](https://github.com/harvester/harvester/issues/3586)
 
 ## Steps
