@@ -2,4 +2,4 @@
 
 ## Testing docs
 
-- [Patch KubeVirt images](Replace-KubeVirt-virt-handler-image)
+- [Patch KubeVirt images](Replace-KubeVirt-virt-controller-image)
