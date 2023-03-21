@@ -7,7 +7,7 @@ This document describes how to patch `virt-controller` pods with a customized im
 3. Run the following command to patch the `virt-controller` pods:
 
     ```
-    kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"replace", "path":"/spec/customizeComponents/patches/2/patch", "value":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"resources\":{\"limits\":{\"cpu\":\"800m\",\"memory\":\"1300Mi\"}}, \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\", \"imagePullPolicy\":\"Always\"}]}}}}"}]'
+    kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"add", "path":"/spec/customizeComponents/patches/-", "value": {"patch":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\",\"imagePullPolicy\":\"Always\"}]}}}}", "resourceName": virt-controller, "resourceType": Deployment, "type": strategic}}]'
     ```
 
 4. Verify that the `virt-controller` pods are restarted and have the patched image:
