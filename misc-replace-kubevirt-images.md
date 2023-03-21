@@ -6,17 +6,20 @@ This document describes how to patch `virt-handler` pods with a customized image
 2. SSH into a control-plane node and become root.
 3. Run the following command to patch the `virt-handler` pods:
 
-```
-kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"replace", "path":"/spec/customizeComponents/patches/2/patch", "value":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"resources\":{\"limits\":{\"cpu\":\"800m\",\"memory\":\"1300Mi\"}}, \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\", \"imagePullPolicy\":\"Always\"}]}}}}"}]'
-```
+    ```
+    kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"replace", "path":"/spec/customizeComponents/patches/2/patch", "value":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"resources\":{\"limits\":{\"cpu\":\"800m\",\"memory\":\"1300Mi\"}}, \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\", \"imagePullPolicy\":\"Always\"}]}}}}"}]'
+    ```
 
 4. Verify that the `virt-controller` pods are restarted and have the patched image:
+    ```
+    kubectl get deployment virt-controller -n harvester-system -o=jsonpath='{$.spec.template.spec.containers[0].image}'
+    ```
 
-The output should be:
+    The output should be:
 
-```
-registry.suse.com/harvester-beta/virt-controller:0.54.0-1
-```
+    ```
+    registry.suse.com/harvester-beta/virt-controller:0.54.0-1
+    ```
 
 ## Tests
 
