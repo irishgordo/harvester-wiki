@@ -34,7 +34,7 @@ To do a quick verification if the patch work:
 
 1. Get the `volumeDevices` on the above pod.
     ```
-    # kubectl get pods hp-volume-5kwps -o yaml | yq -e .spec.containers[0].volumeDevices
+    # kubectl get pods hp-volume-5kwps -o yaml | yq -e `.spec.containers[0].volumeDevices`
     - devicePath: /path/vm001-vol001/5ab5bb06-05b3-4faf-a7c5-50f9b45a79aa
       name: vm001-vol001
     ```
@@ -48,7 +48,7 @@ To do a quick verification if the patch work:
 
 1. `hp-volume-zqrdf` is the respawn hp-volume- pod, check `volumeDevices` again. It should be the same as above.
     ```
-    # kubectl get pods hp-volume-zqrdf -o yaml | yq -e .spec.containers[0].volumeDevices
+    # kubectl get pods hp-volume-zqrdf -o yaml | yq -e `.spec.containers[0].volumeDevices`
     - devicePath: /path/vm001-vol001/5ab5bb06-05b3-4faf-a7c5-50f9b45a79aa
       name: vm001-vol001
     ```
