@@ -25,7 +25,7 @@ This document describes how to patch `virt-controller` pods with a customized im
 
 To do a quick verification if the patch work:
 1. Create a VM and hotplug a volume to it.
-1. choose one hp-volume- pod, for example, `hp-volume-5kwps`
+1. Choose one hp-volume- pod. For example, choose `hp-volume-5kwps`.
     ![截圖 2023-03-21 上午9 22 49](https://user-images.githubusercontent.com/1615081/226499717-0f2bcc63-7155-4aea-953e-74368e9be092.png)
 
 1. Get the `volumeDevices` on the above pod.
