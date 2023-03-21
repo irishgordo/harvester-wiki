@@ -1,10 +1,10 @@
-This document describes how to patch `virt-handler` pods with a customized image that solves the issue: [https://github.com/harvester/harvester/issues/3586](https://github.com/harvester/harvester/issues/3586)
+This document describes how to patch `virt-controller` pods with a customized image that solves the issue: [https://github.com/harvester/harvester/issues/3586](https://github.com/harvester/harvester/issues/3586)
 
 ## Steps
 
 1. Make sure you are running a Harvester v1.1.1 cluster.
 2. SSH into a control-plane node and become root.
-3. Run the following command to patch the `virt-handler` pods:
+3. Run the following command to patch the `virt-controller` pods:
 
     ```
     kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"replace", "path":"/spec/customizeComponents/patches/2/patch", "value":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"resources\":{\"limits\":{\"cpu\":\"800m\",\"memory\":\"1300Mi\"}}, \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\", \"imagePullPolicy\":\"Always\"}]}}}}"}]'
