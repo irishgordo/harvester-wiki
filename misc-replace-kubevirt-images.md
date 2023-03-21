@@ -24,29 +24,30 @@ This document describes how to patch `virt-handler` pods with a customized image
 ## Tests
 
 To do a quick verification if the patch work:
-
+1. Create a VM and hotplug a volume to it.
 1. choose one hp-volume- pod, for example, `hp-volume-5kwps`
-![截圖 2023-03-21 上午9 22 49](https://user-images.githubusercontent.com/1615081/226499717-0f2bcc63-7155-4aea-953e-74368e9be092.png)
+    ![截圖 2023-03-21 上午9 22 49](https://user-images.githubusercontent.com/1615081/226499717-0f2bcc63-7155-4aea-953e-74368e9be092.png)
 
-2. Get the `volumeDevices` on the above pod.
-```
-# kubectl get pods hp-volume-5kwps -o yaml | yq -e .spec.containers[0].volumeDevices
-- devicePath: /path/vm001-vol001/5ab5bb06-05b3-4faf-a7c5-50f9b45a79aa
-  name: vm001-vol001
-```
-3. Manually kill the hp-volume- pod, for example, `hp-volume-5kwps`
-```
-# kubectl delete pods hp-volume-5kwps -n default
-pod "hp-volume-5kwps" deleted
-```
-4. Then find the respawn hp-volume- pod.
-![截圖 2023-03-21 上午9 43 06](https://user-images.githubusercontent.com/1615081/226500494-3b72d96f-5046-42a5-8648-b8c577558943.png)
-5. `hp-volume-zqrdf` is the respawn hp-volume- pod, check `volumeDevices` again. It should be the same as above.
-```
-# kubectl get pods hp-volume-zqrdf -o yaml | yq -e .spec.containers[0].volumeDevices
-- devicePath: /path/vm001-vol001/5ab5bb06-05b3-4faf-a7c5-50f9b45a79aa
-  name: vm001-vol001
-```
+1. Get the `volumeDevices` on the above pod.
+    ```
+    # kubectl get pods hp-volume-5kwps -o yaml | yq -e .spec.containers[0].volumeDevices
+    - devicePath: /path/vm001-vol001/5ab5bb06-05b3-4faf-a7c5-50f9b45a79aa
+      name: vm001-vol001
+    ```
+1. Manually kill the hp-volume- pod, for example, `hp-volume-5kwps`
+    ```
+    # kubectl delete pods hp-volume-5kwps -n default
+    pod "hp-volume-5kwps" deleted
+    ```
+1. Then find the respawn hp-volume- pod.
+    ![截圖 2023-03-21 上午9 43 06](https://user-images.githubusercontent.com/1615081/226500494-3b72d96f-5046-42a5-8648-b8c577558943.png)
+
+1. `hp-volume-zqrdf` is the respawn hp-volume- pod, check `volumeDevices` again. It should be the same as above.
+    ```
+    # kubectl get pods hp-volume-zqrdf -o yaml | yq -e .spec.containers[0].volumeDevices
+    - devicePath: /path/vm001-vol001/5ab5bb06-05b3-4faf-a7c5-50f9b45a79aa
+      name: vm001-vol001
+    ```
 
 If the `volumeDevices` exists and is the same as the above, our patch should be fine. Then try to create VMs and do some related tests.
 
