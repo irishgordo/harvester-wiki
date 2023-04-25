@@ -23,6 +23,18 @@ Future
 Past releases
 ---
 
+Harvester v1.1.2 (Apr 2023)
+---------------------
+* Create a template from VM that includes the root and data disks [[#3545](https://github.com/harvester/harvester/issues/3545)]
+* Maintenance mode doesn't drain the node [[#3363](https://github.com/harvester/harvester/issues/3363)]
+* Harvester node driver supports multiple NICs and multiple disks [[#3359](https://github.com/harvester/harvester/issues/3359)]
+* Harvester CSI Driver supports storage tiering [[#3052](https://github.com/harvester/harvester/issues/3052)]
+* terraform-provider-rancher2 to support to add additional NIC and disks [[#2733](https://github.com/harvester/harvester/issues/2733)]
+
+Harvester v1.1.1 (Dec 2022)
+---------------------
+*   Stabilization
+
 Harvester v1.1.0 (Oct 2022)
 ---------------------
 * [Log collection and export](https://github.com/rancher/harvester/issues/577) and [Event recording](https://github.com/rancher/harvester/issues/578)
