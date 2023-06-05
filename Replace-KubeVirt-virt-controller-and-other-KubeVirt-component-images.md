@@ -2,8 +2,11 @@
 > **Warning**
 > The doc is for testing a custom-build image in a specific cluster, please do not follow it without any context.
 
+# 1. virt-controller, virt-api, virt-handler, virt-luancher
 
 This document describes how to patch `virt-controller` pods with a customized image that solves the issue: [https://github.com/harvester/harvester/issues/3586](https://github.com/harvester/harvester/issues/3586)
+
+For `virt-luncher`, `virt-api`, `virt-handler`, the process is similar. For `virt-operator`, read chapter 2.
 
 ## Steps
 
@@ -14,6 +17,18 @@ This document describes how to patch `virt-controller` pods with a customized im
     ```
     kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"add", "path":"/spec/customizeComponents/patches/-", "value": {"patch":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\",\"imagePullPolicy\":\"Always\"}]}}}}", "resourceName": virt-controller, "resourceType": Deployment, "type": strategic}}]'
     ```
+
+note: please add following to `.spec.diff.comparePatches` of managedchart `harvester`
+```
+kubectl edit managedchart -n fleet-local harvester
+    - apiVersion: kubevirt.io/v1
+      jsonPointers:
+      - /spec/customizeComponents/patches
+      kind: KubeVirt
+      name: kubevirt
+```
+
+Without it, the managedchart `harvester` will be complained by `fleet-agent`.
 
 4. Verify that the `virt-controller` pods are restarted and have the patched image:
     ```
@@ -62,3 +77,8 @@ If the `volumeDevices` exists and is the same as the above, our patch should be 
 
 ## References
 - https://kubevirt.io/user-guide/operations/customize_components/
+
+# 2. virt-operator
+
+## References
+- https://github.com/kubevirt/kubevirt/pull/9846
