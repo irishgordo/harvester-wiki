@@ -31,6 +31,8 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 
 [[Leveraging rancher logging for Collecting Upgrade related Logs]]
 
+[[Misc]]
+
 ## Dev image
 The master build **unstable** image is available at: https://releases.rancher.com/harvester/master/harvester-master-amd64.iso
 * There is no support or guarantee of any kind available to the master build image.
