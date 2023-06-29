@@ -7,6 +7,7 @@ v1.2.0 (Q2 2023)
 * [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
 * [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
+* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
 Future
 ------
@@ -14,7 +15,6 @@ Future
 * [vGPU support](https://github.com/harvester/harvester/issues/2764)
 * [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
-* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 * Container and VM network integration or path to communication 
 * Enhanced Integration with Rancher for massive edge deployments
 * Network enhancement: support telco network solutions
