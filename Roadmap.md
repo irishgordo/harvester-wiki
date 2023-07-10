@@ -9,15 +9,25 @@ v1.2.0 (Q2 2023)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
 * [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
+
+v1.3.0 (Q4 2023)
+-----
+* [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
+* Enhanced Integration with Rancher for massive edge deployments
+* [vGPU support](https://github.com/harvester/harvester/issues/2764)
+* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
+* [Two nodes (with witness) support​](https://github.com/harvester/harvester/issues/3266)
+* [CIS Security Benchmark for Linux (Hypervisor)](https://github.com/harvester/harvester/issues/2392) ​
+* Third-party CNI support
+* Third-party Backup Solution support
+* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
+* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
+* Cisco Discovery Protocol and LLDP Support
+
+
 Future
 ------
-* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
-* [vGPU support](https://github.com/harvester/harvester/issues/2764)
 * [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
-* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
-* Container and VM network integration or path to communication 
-* Enhanced Integration with Rancher for massive edge deployments
-* Network enhancement: support telco network solutions
 
 
 Past releases
