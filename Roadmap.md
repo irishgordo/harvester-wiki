@@ -1,11 +1,11 @@
 v1.2.0 (Q2 2023)
 -----
 * [Harvester extension](https://github.com/harvester/harvester/issues/2769)
-* [Out of box Rancher experience](https://github.com/harvester/harvester/issues/2679)
+* [Out of box Rancher experience(Experimental)](https://github.com/harvester/harvester/issues/2679)
 * [Reduced resource footprint](https://github.com/harvester/harvester/issues/3262)
 * [Third-party storage support for non-root disk](https://github.com/harvester/harvester/issues/2405)
-* [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
-* [Enhanced Cloud Provider support.](https://github.com/harvester/harvester/issues/2134)
+* [SRIOV VF passthrough support(Experimental)](https://github.com/harvester/harvester/issues/2763)
+* [Enhanced Cloud Provider support](https://github.com/harvester/harvester/issues/2134)
 * [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
 * [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
