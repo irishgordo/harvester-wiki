@@ -1,4 +1,4 @@
-v1.2.0 (Q2 2023)
+v1.2.0 (Aug 2023)
 -----
 * [Harvester extension](https://github.com/harvester/harvester/issues/2769)
 * [Out of box Rancher experience(Experimental)](https://github.com/harvester/harvester/issues/2679)
