@@ -10,7 +10,7 @@ v1.2.0 (Q3 2023)
 * [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
 
-v1.3.0 (H1 2023)
+v1.3.0 (H1 2024)
 -----
 * [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
 * Enhanced Integration with Rancher for massive edge deployments
