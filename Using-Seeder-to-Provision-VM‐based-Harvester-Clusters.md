@@ -55,7 +55,7 @@ helm repo update
 helm upgrade --install harvester-seeder harvester/harvester-seeder --set=embeddedMode=false --namespace=seeder-system --create-namespace
 ```
 
-Besides the Seeder itself, we also need Tinkerbell Boots & Rufio. They're required for Seeder to provision Harvester clusters.
+Besides the Seeder itself, we also need Tinkerbell Boots. It's required for Seeder to provision Harvester clusters.
 
 Note: We need a custom-built boots container image for Harvester provisioning to work. Hopefully, this will no longer be required in the future.
 
@@ -63,7 +63,6 @@ Note: We need a custom-built boots container image for Harvester provisioning to
 git clone https://github.com/harvester/seeder.git
 cd seeder/
 helm upgrade --install boots chart/seeder/charts/boots --namespace=seeder-system --create-namespace
-helm upgrade --install rufio chart/seeder/charts/rufio --namespace=seeder-system --create-namespace
 ```
 
 Harvester VM Setup
