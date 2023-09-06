@@ -26,8 +26,8 @@ make build-iso
 ```
 
 2. If you only modify the harvester-installer repo, you can run `make build` in the harvester-installer repo.
-3. If you modify both repositories, you can update this line like the following and run `make build` in the harvester-installer repo.
+3. If you modify both repositories, you can update this line like the following and run `make` in the harvester-installer repo.
 
 ```
-ENV DAPPER_RUN_ARGS "-v /var/run/docker/containerd/containerd.sock:/run/containerd/containerd.sock -v /path/to/local/harvester/repo:/go/src/github.com/harvester/harvester"
+ENV DAPPER_RUN_ARGS="-v /var/run/docker/containerd/containerd.sock:/run/containerd/containerd.sock -v /path/to/local/harvester/repo:/go/src/github.com/harvester/harvester" make
 ```
