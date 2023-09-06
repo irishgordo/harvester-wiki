@@ -25,7 +25,7 @@ make
 make build-iso
 ```
 
-2. If you only modify the harvester-installer repo, you can run `make build` in the harvester-installer repo.
+2. If you only modify the harvester-installer repo, you can run `make` in the harvester-installer repo.
 3. If you modify both repositories, you can update this line like the following and run `make` in the harvester-installer repo.
 
 ```
