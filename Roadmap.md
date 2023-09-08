@@ -1,13 +1,5 @@
-v1.2.0 (Q3 2023)
+v1.1.3
 -----
-* [Harvester extension](https://github.com/harvester/harvester/issues/2769)
-* [Out of box Rancher experience(Experimental)](https://github.com/harvester/harvester/issues/2679)
-* [Reduced resource footprint](https://github.com/harvester/harvester/issues/3262)
-* [Third-party storage support for non-root disk](https://github.com/harvester/harvester/issues/2405)
-* [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
-* [Enhanced Cloud Provider support](https://github.com/harvester/harvester/issues/2134)
-* [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
-* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
 
 v1.3.0
@@ -32,6 +24,17 @@ Future
 
 Past releases
 ---
+
+Harvester v1.2.0 (Sept 2023)
+---------------------
+* [Harvester extension](https://github.com/harvester/harvester/issues/2769)
+* [Out of box Rancher experience(Experimental)](https://github.com/harvester/harvester/issues/2679)
+* [Reduced resource footprint](https://github.com/harvester/harvester/issues/3262)
+* [Third-party storage support for non-root disk](https://github.com/harvester/harvester/issues/2405)
+* [SRIOV VF passthrough support](https://github.com/harvester/harvester/issues/2763)
+* [Enhanced Cloud Provider support](https://github.com/harvester/harvester/issues/2134)
+* [Support configure Harvester cluster after installation](https://github.com/harvester/harvester/issues/2198)
+* [Hardware error detection](https://github.com/harvester/harvester/issues/2318)
 
 Harvester v1.1.2 (Apr 2023)
 ---------------------
