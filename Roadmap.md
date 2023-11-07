@@ -1,25 +1,35 @@
+v1.2.2 (TBD)
+-----
+
 v1.1.3 (Dec 2023)
 -----
 
-
 v1.3.0
 -----
-* [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
-* Enhanced Integration with Rancher for massive edge deployments
 * [vGPU support](https://github.com/harvester/harvester/issues/2764)
-* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
+* [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
 * [Two nodes (with witness) support​](https://github.com/harvester/harvester/issues/3266)
-* [CIS Security Benchmark for Linux (Hypervisor)](https://github.com/harvester/harvester/issues/2392) ​
+* Manage DHCP
+* ARM Support (Experimental)
+
+v1.4.0
+-----
+* CPU Pinning
+* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
+* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
+* [Support shared storage for VM workloads - Harvester to use Longhorn RWX](https://github.com/harvester/harvester/issues/1992)
+* [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
 * Third-party CNI support
 * Third-party Backup Solution support
-* [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
-* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Cisco Discovery Protocol and LLDP Support
-
 
 Future
 ------
+* Harvester encryption at rest
 * [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
+* [CIS Security Benchmark for Linux (Hypervisor)](https://github.com/harvester/harvester/issues/2392) ​
+* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
+* Enhanced Integration with Rancher for massive edge deployments
 
 
 Past releases
