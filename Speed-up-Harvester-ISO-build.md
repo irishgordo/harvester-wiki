@@ -43,17 +43,6 @@ Steps
   ```
   ENV DAPPER_RUN_ARGS "-v /run/containerd/containerd.sock:/run/containerd/containerd.sock -v harvester-installer-go:/root/go -v harvester-installer-cache:/root/.cache -v /srv/www/htdocs/harvester/bundle:/bundle"
   ```
-- Edit `harvester-installer/scripts/build-bundle`
-  ```
-  if [ -n "$HARVESTER_INSTALLER_OFFLINE_BUILD" -a -e /bundle ]; then
-    cp -rf /bundle/* ${BUNDLE_DIR}/
-    pushd ${harvester_path}
-    git checkout -- ./deploy/charts
-    popd
-    exit 0
-  fi
-  ```
-  TODO: fix in this PR: https://github.com/harvester/harvester-installer/pull/309
 - Build an ISO
   ```
   HARVESTER_INSTALLER_OFFLINE_BUILD=y make
