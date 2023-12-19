@@ -47,3 +47,5 @@ REVISION        UPDATED                         STATUS  CHART                   
 
 1               Mon Sep 12 10:31:51 2022        failed  harvester-0.0.0-2431-feature-check-version-compatibility-during-an-upgrade-6a66cad      2431-feature-check-version-compatibility-during-an-upgrade-6a66cad     Release "harvester" failed: ServiceAccount "harvester" is invalid: [metadata.labels: Invalid value: "2431-feature-check-version-compatibility-during-an-upgrade-6a66cad": must be no more than 63 characters, metadata.labels: Invalid value: "harvester-0.0.0-2431-feature-check-version-compatibility-during-an-upgrade-6a66cad": must be no more than 63 characters]
 ```
+
+We add the checks for this case (https://github.com/harvester/harvester/pull/4883). Now the branch name is limited to 44 characters. (Because the `-dirty` would increase 6 characters). It will fail on the build time. You may not reencounter the above issue once the build is successful.
