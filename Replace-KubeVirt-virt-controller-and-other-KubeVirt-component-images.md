@@ -25,6 +25,7 @@ kubectl edit managedchart -n fleet-local harvester
 ```
 
 Without it, the managedchart `harvester` will be complained by `fleet-agent`.
+
 4. Run the following command to patch the `virt-controller` pods:
 
     
