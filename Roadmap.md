@@ -1,9 +1,3 @@
-v1.2.2 (TBD)
------
-
-v1.1.3 (Dec 2023)
------
-
 v1.3.0
 -----
 * [vGPU support](https://github.com/harvester/harvester/issues/2764)
