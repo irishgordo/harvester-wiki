@@ -17,11 +17,18 @@ For `virt-luncher`, `virt-api`, `virt-handler`, the process is similar. For `vir
 3. Add following to `.spec.diff.comparePatches` of managedchart `harvester`
 ```
 kubectl edit managedchart -n fleet-local harvester
+spec:
+  diff:
+    comparePatches
     - apiVersion: kubevirt.io/v1
       jsonPointers:
       - /spec/customizeComponents/patches
       kind: KubeVirt
       name: kubevirt
+```
+Or use the following `kubectl patch` command
+```
+kubectl patch managedchart harvester -n fleet-local --type=json -p='[{"op":"add", "path":"/spec/diff/comparePatches/-", "value": {"apiVersion":"storage.k8s.io/v1", "jsonPointers":["/spec/customizeComponents"], "kind":"Kubevirt", "name":"kubevirt"}}]'
 ```
 
 Without it, the managedchart `harvester` will be complained by `fleet-agent`.
