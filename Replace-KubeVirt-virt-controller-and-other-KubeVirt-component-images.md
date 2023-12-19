@@ -28,9 +28,9 @@ Without it, the managedchart `harvester` will be complained by `fleet-agent`.
 
 4. Run the following command to patch the `virt-controller` pods:
 
-    
+    ```    
     kubectl patch kubevirts kubevirt -n harvester-system --type=json -p='[{"op":"add", "path":"/spec/customizeComponents/patches/-", "value": {"patch":"{\"spec\":{\"template\":{\"spec\":{\"containers\":[{\"name\":\"virt-controller\", \"image\":\"registry.suse.com/harvester-beta/virt-controller:0.54.0-1\",\"imagePullPolicy\":\"Always\"}]}}}}", "resourceName": virt-controller, "resourceType": Deployment, "type": strategic}}]'
-    
+    ```    
 
 
 
