@@ -31,6 +31,8 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 
 [[Leveraging rancher logging for Collecting Upgrade related Logs]]
 
+[[Upgrading from an unsupported version]]
+
 [[Misc]]
 
 ## Dev images
