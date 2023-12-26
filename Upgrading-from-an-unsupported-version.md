@@ -32,4 +32,4 @@ Say if you want to upgrade from a dev build `v1.1-head` to `v1.2.1`, normally yo
              value: "8443"
    ```
 
-And initiate the upgrade as usual. When done, change the harvester Deployment by removing the `HARVESTER_SERVER_VERSION` env.
+And initiate the upgrade as usual. When done, change the `harvester` Deployment by removing the `HARVESTER_SERVER_VERSION` env.
