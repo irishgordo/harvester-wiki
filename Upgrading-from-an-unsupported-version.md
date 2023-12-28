@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This guide is merely for testing purposes. **DO NOT** upgrade your production cluster to an unsupported version.
+
 We have a [minimum upgradable version restriction](https://github.com/harvester/harvester/issues/2431) set for each Harvester release. That ensures our support effort can focus only on specific upgrade paths. For example, [the minimum upgradable version of Harvester v1.2.1 release is v1.1.2.](https://github.com/harvester/harvester/blob/9c9e09609559eaaf867fdf881c8d0cb490442b34/package/upgrade-matrix.yaml#L3) That means the user cannot perform an upgrade assuming they have a running v1.1.1 cluster.
 
 Sometimes, the Devs/QAs might want to validate the upgrade behavior from an unsupported version, such as a cluster installed with a dev build, sprint release, or release candidate ISO image. The minimum upgradable version restriction will be their nightmare. Fortunately, we already have a way to work around such restriction. Here's how:
