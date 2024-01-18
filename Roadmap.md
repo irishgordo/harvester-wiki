@@ -4,7 +4,7 @@ v1.3.0
 * [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
 * [Two nodes (with witness) support​](https://github.com/harvester/harvester/issues/3266)
 * Manage DHCP
-* ARM Support (Experimental)
+* ARM Support (Technical preview)
 
 v1.4.0
 -----
