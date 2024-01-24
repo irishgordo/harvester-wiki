@@ -1,4 +1,4 @@
-v1.3.0
+v1.3.0 (Mar 2024)
 -----
 * [vGPU support](https://github.com/harvester/harvester/issues/2764)
 * [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
