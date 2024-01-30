@@ -6,6 +6,9 @@ v1.3.0 (Mar 2024)
 * Manage DHCP
 * ARM Support (Technical preview)
 
+v1.2.2 (May 2024)
+-----
+
 v1.4.0
 -----
 * CPU Pinning
