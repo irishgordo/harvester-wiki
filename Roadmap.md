@@ -32,6 +32,9 @@ Future
 Past releases
 ---
 
+Harvester v1.1.3 (Dec 2023)
+---------------------
+
 Harvester v1.2.1 (Oct 2023)
 ---------------------
 
