@@ -10,6 +10,10 @@ v1.3.0 (Mar 2024)
 v1.2.2 (May 2024)
 -----
 
+* Stabilization
+* Kubernetes upgrade to 1.26
+* Security patches
+
 v1.4.0
 -----
 * ARM Support (Experimental)
