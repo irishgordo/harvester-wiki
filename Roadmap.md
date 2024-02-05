@@ -22,7 +22,7 @@ v1.4.0
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * Harvester Support DR Volumes
 * Third-party Backup Solution support
-* Harvester third-party storage integration for root disk
+* Harvester third-party storage support for diskless servers
 * CPU Pinning
 
 v1.5.0
