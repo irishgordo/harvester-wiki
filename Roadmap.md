@@ -5,28 +5,40 @@ v1.3.0 (Mar 2024)
 * [Two nodes (with witness) support​](https://github.com/harvester/harvester/issues/3266)
 * Manage DHCP
 * ARM Support (Technical preview)
+* Fleet management for Harvester (Technical preview)
 
 v1.2.2 (May 2024)
 -----
 
 v1.4.0
 -----
-* CPU Pinning
-* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
+* ARM Support (Experimental)
+* Fleet management for Harvester (Experimental)
+* [Support shared storage for VM workloads](https://github.com/harvester/harvester/issues/1992)
+* [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
-* [Support shared storage for VM workloads - Harvester to use Longhorn RWX](https://github.com/harvester/harvester/issues/1992)
+* [Provide recurring backup for Virtual Machines and Volumes](https://github.com/harvester/harvester/issues/572)
 * [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
-* Third-party CNI support
+* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
+* Harvester Support DR Volumes
 * Third-party Backup Solution support
+* Harvester third-party storage integration for root disk
+* CPU Pinning
+
+v1.5.0
+-----
+* [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
+* [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
+* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
+* Third-party CNI support
 * Cisco Discovery Protocol and LLDP Support
+* Harvester Encryption of Storage at Rest
+* Improve Security by default on Rancher OS v2
+* Enhanced Integration with Rancher for massive edge deployments
 
 Future
 ------
-* Harvester encryption at rest
-* [VXLAN network.](https://github.com/harvester/harvester/issues/2322)
-* [CIS Security Benchmark for Linux (Hypervisor)](https://github.com/harvester/harvester/issues/2392) ​
-* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
-* Enhanced Integration with Rancher for massive edge deployments
+TBD
 
 
 Past releases
