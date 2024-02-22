@@ -15,4 +15,5 @@
 | https://github.com/harvester/seeder | rancher/harvester-seeder |
 | https://github.com/harvester/eventrouter | rancher/harvester-eventrouter |
 | https://github.com/rancher/support-bundle-kit | rancher/support-bundle-kit |
-| https://github.com/harvester/vm-dhcp-controller | rancher/harvester-vm-dhcp-controller, rancher/harvester-vm-dhcp-webhook, rancher/harvester-vm-dhcp-agent | 
+| https://github.com/harvester/vm-dhcp-controller | rancher/harvester-vm-dhcp-controller, rancher/harvester-vm-dhcp-webhook, rancher/harvester-vm-dhcp-agent |
+| https://github.com/harvester/bot | rancherlabs/harvester-github-bot |
