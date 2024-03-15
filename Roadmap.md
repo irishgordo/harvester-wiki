@@ -1,18 +1,12 @@
-v1.3.0 (Mar 2024)
------
-* [vGPU support](https://github.com/harvester/harvester/issues/2764)
-* [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
-* [Two nodes (with witness) support​](https://github.com/harvester/harvester/issues/3266)
-* Manage DHCP
-* ARM Support (Technical preview)
-* Fleet management for Harvester (Technical preview)
-
 v1.2.2 (May 2024)
 -----
 
 * Stabilization
 * Kubernetes upgrade to 1.26
 * Security patches
+
+v1.3.1
+-----
 
 v1.4.0
 -----
@@ -47,6 +41,15 @@ TBD
 
 Past releases
 ---
+
+Harvester v1.3.0 (Mar 2024)
+---------------------
+* [vGPU support](https://github.com/harvester/harvester/issues/2764)
+* [Optimize for Frequent Power-off/Power-On operating procedures](https://github.com/harvester/harvester/issues/3261)
+* [Two nodes (with witness) support​](https://github.com/harvester/harvester/issues/3266)
+* Manage DHCP
+* ARM Support (Technical preview)
+* Fleet management for Harvester (Technical preview)
 
 Harvester v1.1.3 (Dec 2023)
 ---------------------
