@@ -1,6 +1,6 @@
 | Repository | Owner |
 | --- | --- |
-https://github.com/harvester/bot | |
+https://github.com/harvester/bot | @bk201 @Yu-Jack |
 https://github.com/harvester/charts | |
 https://github.com/harvester/cloud-provider-harvester | |
 https://github.com/harvester/cq-source-harvester | |
