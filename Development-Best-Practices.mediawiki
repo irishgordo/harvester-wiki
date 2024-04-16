@@ -52,8 +52,29 @@ We add the checks for this case (https://github.com/harvester/harvester/pull/488
 
 ==Structured Logging==
 
-Harvester components may need to write log messages in response to various events. Where applicable, these messages should be structured to aide filters, indexing and analysis tools. Read the corresponding HEP[1] for more information.
-Here is an example of how a structured log message may be emitted from Harvester using the **logrus** library:
+Harvester components may need to write log messages in response to various events. Where applicable, these messages should be structured to aide filters, indexing and analysis tools. Read [https://github.com/harvester/harvester/blob/master/enhancements/20240327-structured-logging.md the corresponding HEP] for more information.
+
+Harvester and its components use the [https://pkg.go.dev/github.com/sirupsen/logrus Logrus] library to handle structured logging.
+
+Use these field names, omit inapplicable fields:
+
+{|
+|+ Standard Fields for Structured Logging
+|-
+! Field !! Populate with data from !! Description
+|-
+| namespace || .metadata.namespace || K8s namespace of the subject of the message
+|-
+| name || .metadata.name || Name of the K8s resource which is the subject of the message
+|-
+| kind || .kind || Kind of the K8s resource which is subject of the log message
+|-
+| apiVersion || .apiVersion || K8s API-version and API-group information of the subject of the message
+|-
+| err || n/a || String representation of a builtin.error value
+|}
+
+Here is an example of how a structured log message may be emitted from Harvester using the '''logrus''' library:
 
 ```golang
        if _, err := h.images.Create(vmImage); err != nil {
@@ -67,5 +88,3 @@ Here is an example of how a structured log message may be emitted from Harvester
                return err
        }
 ```
-
-[1]: https://github.com/harvester/harvester/blob/master/enhancements/20240327-structured-logging.md
