@@ -49,3 +49,23 @@ REVISION        UPDATED                         STATUS  CHART                   
 ```
 
 We add the checks for this case (https://github.com/harvester/harvester/pull/4883). Now the branch name is limited to 44 characters. (Because the `-dirty` would increase 6 characters). It will fail on the build time. You may not reencounter the above issue once the build is successful.
+
+==Structured Logging==
+
+Harvester components may need to write log messages in response to various events. Where applicable, these messages should be structured to aide filters, indexing and analysis tools. Read the corresponding HEP[1] for more information.
+Here is an example of how a structured log message may be emitted from Harvester using the **logrus** library:
+
+```golang
+       if _, err := h.images.Create(vmImage); err != nil {
+               logrus.WithFields(logrus.Fields{
+                       "namespace":  pvcNamespace,
+                       "name":       pvcName,
+                       "apiVersion": "v1",
+                       "kind":       "PersistentVolumeClaim",
+                       "err":        err,
+               }).Error("failed to create image from PVC")
+               return err
+       }
+```
+
+[1]: https://github.com/harvester/harvester/blob/master/enhancements/20240327-structured-logging.md
