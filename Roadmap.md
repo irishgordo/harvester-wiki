@@ -15,7 +15,7 @@ v1.4.0 (October, 2024)
 * [Support shared storage for VM workloads](https://github.com/harvester/harvester/issues/1992)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
-* [Provide recurring backup for Virtual Machines and Volumes](https://github.com/harvester/harvester/issues/572)
+* [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
 * [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * Harvester Support DR Volumes
