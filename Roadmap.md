@@ -16,7 +16,6 @@ v1.4.0 (October, 2024)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
 * [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
-* [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * Harvester Support DR Volumes
 * Third-party Backup Solution support
@@ -34,6 +33,7 @@ v1.5.0
 * Harvester Encryption of Storage at Rest
 * Improve Security by default on Rancher OS v2
 * Enhanced Integration with Rancher for massive edge deployments
+* [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
 
 Future
 ------
