@@ -34,6 +34,7 @@ v1.5.0
 * Enhanced Integration with Rancher for massive edge deployments
 * [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
 * Third-party Backup Solution support (note: general or specific backup integration)
+* Third-party storage for VM root partition
 
 Future
 ------
