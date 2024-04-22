@@ -36,9 +36,10 @@ v1.5.0
 * Third-party Backup Solution support (note: general or specific backup integration)
 * Third-party storage for VM root partition
 
+
 Future
 ------
-TBD
+- [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
 
 
 Past releases
