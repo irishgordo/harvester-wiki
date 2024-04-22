@@ -22,6 +22,7 @@ v1.4.0 (October, 2024)
 * Third-party Backup Solution support
 * Harvester third-party storage support for diskless servers
 * CPU Pinning
+* VM Snapshot Space Management
 
 v1.5.0
 -----
