@@ -18,7 +18,6 @@ v1.4.0 (October, 2024)
 * [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * Harvester Support DR Volumes
-* Third-party Backup Solution support
 * Harvester third-party storage support for diskless servers
 * CPU Pinning
 * VM Snapshot Space Management
@@ -34,6 +33,7 @@ v1.5.0
 * Improve Security by default on Rancher OS v2
 * Enhanced Integration with Rancher for massive edge deployments
 * [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
+* Third-party Backup Solution support (note: general or specific backup integration)
 
 Future
 ------
