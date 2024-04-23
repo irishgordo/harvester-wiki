@@ -76,4 +76,4 @@ When you test locally, remember to:
 
 ## Others
 
-We could also use matrix to distribute building to different runners to build binary and image. [In this example PR](https://github.com/Yu-Jack/support-bundle-kit/pull/6), it's not turning runner to specified matrix.platform, [matrix.platform is just a for-loop concept](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs). If we need to build more platform we could refer [distribute-build-across-multiple-runners](https://docs.docker.com/build/ci/github-actions/multi-platform/#distribute-build-across-multiple-runners).
+We could also use matrix to distribute building to different runners to build binary and image. [In this example PR](https://github.com/Yu-Jack/support-bundle-kit/pull/6), it's not turning runner to specified matrix.platform, [matrix.platform is just a for-loop concept](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs). If we need to build more platform in the future, we could refer [distribute-build-across-multiple-runners](https://docs.docker.com/build/ci/github-actions/multi-platform/#distribute-build-across-multiple-runners).
