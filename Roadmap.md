@@ -18,9 +18,9 @@ v1.4.0 (October, 2024)
 * [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * Harvester Support DR Volumes
-* Harvester third-party storage support for diskless servers
-* CPU Pinning
-* VM Snapshot Space Management
+* [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
+* [CPU Pinning](https://github.com/harvester/harvester/issues/2305)
+* [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
 * [Improving Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
 
 
