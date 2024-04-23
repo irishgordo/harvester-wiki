@@ -73,3 +73,7 @@ DOCKER_USERNAME=foo
 When you test locally, remember to: 
 1. Remove `rancher-eio/read-vault-secrets@main` step
 2. Change `env.DOCKER_USERNAME`/`env.DOCKER_PASSWORD` to `secrets.DOCKER_USERNAME`/`secrets.DOCKER_PASSWORD`.
+
+## Others
+
+We could also use matrix to distribute building to different runners to build binary and image. [In this example PR](https://github.com/Yu-Jack/support-bundle-kit/pull/6), it's not turning runner to specified matrix.platform, [matrix.platform is just a for-loop concept](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs). If we need to build more platform we could refer [distribute-build-across-multiple-runners](https://docs.docker.com/build/ci/github-actions/multi-platform/#distribute-build-across-multiple-runners).
