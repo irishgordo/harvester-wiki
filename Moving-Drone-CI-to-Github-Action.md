@@ -56,7 +56,10 @@ Although there might be slightly difference in all projects, but I think this sh
 
 Gaurav recommends https://github.com/nektos/act, it can run Github Action in local. 
 
-Example commands: `act pull_request --secret-file ~/secret.txt --container-architecture linux/amd64`
+Example commands
+
+- Pull Request: `act pull_request --secret-file ~/secret.txt --container-architecture linux/amd64`
+- Push: `act push --secret-file ~/secret.txt --container-architecture linux/amd64`
 
 ```txt
 # secret.txt
