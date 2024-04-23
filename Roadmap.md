@@ -21,6 +21,8 @@ v1.4.0 (October, 2024)
 * Harvester third-party storage support for diskless servers
 * CPU Pinning
 * VM Snapshot Space Management
+* [Improving Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
+
 
 v1.5.0
 -----
@@ -32,7 +34,7 @@ v1.5.0
 * Harvester Encryption of Storage at Rest
 * Improve Security by default on Rancher OS v2
 * Enhanced Integration with Rancher for massive edge deployments
-* [Improve Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/4424)
+* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 * Third-party Backup Solution support (note: general or specific backup integration)
 * Third-party storage for VM root partition
 
