@@ -65,3 +65,9 @@ Example commands
 # secret.txt
 DOCKER_USERNAME=foo
 ```
+
+### Notes
+
+When you test locally, remember to: 
+1. Remove `rancher-eio/read-vault-secrets@main` step
+2. Change `env.DOCKER_USERNAME`/`env.DOCKER_PASSWORD` to `secrets.DOCKER_USERNAME`/`secrets.DOCKER_PASSWORD`.
