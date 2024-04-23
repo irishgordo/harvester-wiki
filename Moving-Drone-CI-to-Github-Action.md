@@ -48,7 +48,9 @@ Let's jump to examples.
 
 - [In this support-bundle-kit PR](https://github.com/rancher/support-bundle-kit/pull/107/files), we removed the `$ARCH` and generate two binaries. But, we built two platform images in scripts/package which is unnecessary because `docker/build-push-action@v5` already did that for us. In this PR. In this case, it slows down local development building time.
 
-- [In this support-bundle-kit PR](https://github.com/rancher/support-bundle-kit/pull/110/files), we only kept a simple command to build image based on your local environment. The `buildx` will pick correct binary for you to build image, so we don't need to specify which platform we need. We could get the [default platform value](https://docs.docker.com/reference/cli/docker/buildx/build/#platform) with `TARGETPLATFORM` in Dockerfile when using `buildx`. It fixes the building time issue.
+- [In this support-bundle-kit PR](https://github.com/rancher/support-bundle-kit/pull/110/files), we only kept a simple command to build image based on your local environment. The `buildx` will pick correct binary for you to build image, so we don't need to specify which platform we need. We could get the [default platform value](https://docs.docker.com/reference/cli/docker/buildx/build/#platform) with `TARGETPLATFORM` in Dockerfile when using `buildx`. It fixes the local building time issue.
+
+> local build command: `./scripts/build` && `./scripts/package`
 
 Although there might be slightly difference in all projects, but I think this should be helpful to move to Github Action.
 
