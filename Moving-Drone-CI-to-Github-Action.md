@@ -40,7 +40,12 @@ The steps would be:
 1. Run `make ci` to generate amd64 and arm64 binaries in our Github runner which is linux/amd64.
 2. Build image with previous binary based on `platforms: linux/amd64,linux/arm64`.
 
-So, we should remove `ARCH` in our scripts/x files, then make sure we generate linux/amd64,linux/arm64 binaries when running `make ci`. After that, let Dockerfile pick correct binary to build image.
+So, we should remove `ARCH` in our scripts/x files, then make sure we generate linux/amd64,linux/arm64 binaries when running `make ci`. After that, let Dockerfile pick correct binary to build image. 
+
+There are few things need to notice:
+
+- Some repos might have command that copy binaries to artifacts folders, but it's not used in the end. Remember to remove this.
+- No need to use `VERSION` with build-args in normal case. Remember to remove this if you don't need that.
 
 ## Examples
 
