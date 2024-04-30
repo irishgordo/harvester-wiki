@@ -42,6 +42,7 @@ v1.5.0
 Future
 ------
 - [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
+- Local volume support for VM hotplug volume
 
 
 Past releases
