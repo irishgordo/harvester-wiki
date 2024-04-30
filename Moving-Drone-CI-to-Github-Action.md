@@ -33,7 +33,7 @@ with:
   tags: {repo_name}:{repo_tag}
 ```
 
-That means we used to build different binaries in different pipelines before, but now we can build different binaries at the same time with `make ci`. 
+That means we used to build different binaries in different platforms before, but now we can only build different binaries at the same time in a single runner by using `make ci`. 
 
 The steps would be:
 
