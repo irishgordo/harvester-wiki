@@ -36,13 +36,13 @@ v1.5.0
 * Enhanced Integration with Rancher for massive edge deployments
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 * Third-party Backup Solution support (note: general or specific backup integration)
-* Third-party storage for VM root partition
 
 
 Future
 ------
 - [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
 - Local volume support for VM hotplug volume
+* Third-party storage for VM root partition
 
 
 Past releases
