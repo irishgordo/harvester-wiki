@@ -31,7 +31,7 @@ v1.5.0
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Third-party CNI support
 * Cisco Discovery Protocol and LLDP Support
-* Harvester Encryption of Storage at Rest
+* [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)
 * Improve Security by default on Rancher OS v2
 * Enhanced Integration with Rancher for massive edge deployments
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
