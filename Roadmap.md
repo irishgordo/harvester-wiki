@@ -1,14 +1,14 @@
-v1.2.2 (May 2024)
+v1.2.2 (May 2024, K8s 1.26)
 -----
 
 * Stabilization
 * Kubernetes upgrade to 1.26
 * Security patches
 
-v1.3.1 (June, 2024)
+v1.3.1 (June 2024, K8s 1.27)
 -----
 
-v1.4.0 (October, 2024)
+v1.4.0 (October 2024)
 -----
 * ARM Support (Experimental)
 * Fleet management for Harvester (Experimental)
