@@ -32,7 +32,7 @@ v1.5.0
 * Third-party CNI support
 * Cisco Discovery Protocol and LLDP Support
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)
-* Improve Security by default on Rancher OS v2
+* [Improve Security by default on Rancher OS v2](https://github.com/harvester/harvester/issues/2392)
 * Enhanced Integration with Rancher for massive edge deployments
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 * Third-party Backup Solution support (note: general or specific backup integration)
