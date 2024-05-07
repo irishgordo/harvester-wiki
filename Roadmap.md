@@ -40,9 +40,8 @@ v1.5.0
 
 Future
 ------
-- [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
+* [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
 * Enhanced Integration with Rancher for massive edge deployments
-
 
 Past releases
 ---
