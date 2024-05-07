@@ -33,16 +33,15 @@ v1.5.0
 * Cisco Discovery Protocol and LLDP Support
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)
 * [Improve Security by default on Rancher OS v2](https://github.com/harvester/harvester/issues/2392)
-* Enhanced Integration with Rancher for massive edge deployments
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
+* Local volume support
+* Third-party storage for VM root partition (ex: via CDI)
 * Third-party Backup Solution support (note: general or specific backup integration)
-
 
 Future
 ------
 - [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
-- Local volume support for VM hotplug volume
-* Third-party storage for VM root partition
+* Enhanced Integration with Rancher for massive edge deployments
 
 
 Past releases
