@@ -49,7 +49,7 @@ v1.4.0 (October 2024)
 * [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
 * [Improving Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
 
-v1.5.0 (March 2025, KubeCon 4/1-4/4)
+v1.5.0 (March 2025)
 -----
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
