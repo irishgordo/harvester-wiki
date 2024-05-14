@@ -1,4 +1,4 @@
-**Welcome to the Harvester wiki!**
+**Welcome to the Harvester Wiki!**
 
 The wiki is used for development documentation.
 
@@ -9,7 +9,7 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 
 - [[Roadmap]]
 
-## Dev resources:
+## Dev Resources
 
 - [[Setting Up Harvester Development Environment]]
 - [[Harvester Development Overview]]
@@ -32,5 +32,5 @@ For daily-build dev images, you can find them via:
 - The `release*` branch images are available at(no daily build, only pushed when it has a new commit): https://releases.rancher.com/harvester/release-1.2/harvester-release-1.2-amd64.iso
 
 > Note:
-> * There is no support or guarantee available to those dev images.
+> * There is no support or guarantee available for those dev images.
 > * Feel free to report issues regarding the dev build images.
