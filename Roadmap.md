@@ -49,8 +49,7 @@ v1.4.0 (October 2024)
 * [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
 * [Improving Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
 
-
-v1.5.0
+v1.5.0 (March 2025, KubeCon 4/1-4/4)
 -----
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
@@ -61,8 +60,16 @@ v1.5.0
 * Improve Security by default on Rancher OS v2
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 * Local volume support w/ live migration (GA)
-* Third-party storage for VM root partition (note: CDI based instead of Backing Image) https://github.com/harvester/harvester/issues/1199
+* [Third-party storage for VM root partition](https://github.com/harvester/harvester/issues/1199)
 * Third-party Backup Solution support (note: general or specific backup integration)
+
+v1.6.0 (July 2025)
+-----
+TBU
+
+v1.7.0 (November 2025)
+-----
+TBU
 
 Future
 ------
