@@ -1,17 +1,43 @@
-v1.2.2 (May 2024, K8s 1.26)
+v1.2.2 (May 2024)
 -----
-
+* Dependent Component Upgrade
+  * K8s v1.26
+  * Longhorn v1.5.5
+  * Rancher v2.8.2
+  * KubeVirt v1.1.1
 * Stabilization
-* Kubernetes upgrade to 1.26
 * Security patches
 
-v1.3.1 (June 2024, K8s 1.27)
+v1.3.1 (June 2024)
 -----
+* Dependent Component Upgrade
+  * K8s v1.27
+  * Longhorn v1.6.2
+  * Rancher v2.8.3
+  * KubeVirt v1.1.1
+* Stabilization
+* Security patches
+
+v1.3.2 (August 2024)
+-----
+* Dependent Component Upgrade
+  * K8s v1.28
+  * Longhorn - TBU
+  * Rancher v2.8.4
+  * KubeVirt - TBU
+* Stabilization
+* Security patches
 
 v1.4.0 (October 2024)
 -----
+* Dependent Component Upgrade
+  * K8s v1.29 (depending on Rancher 2.9 which will support K8s v1.29)
+  * Longhorn v1.7.0
+  * Rancher - TBU (v2.9.x)
+  * KubeVirt - TBU
 * ARM Support (Experimental)
 * Fleet management for Harvester (Experimental)
+* Local volume support w/o live migration (Experimental)
 * [Support shared storage for VM workloads](https://github.com/harvester/harvester/issues/1992)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
@@ -34,7 +60,7 @@ v1.5.0
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)
 * Improve Security by default on Rancher OS v2
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-* Local volume support (note: LVM)
+* Local volume support w/ live migration (GA)
 * Third-party storage for VM root partition (note: CDI based instead of Backing Image) https://github.com/harvester/harvester/issues/1199
 * Third-party Backup Solution support (note: general or specific backup integration)
 
