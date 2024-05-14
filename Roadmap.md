@@ -31,7 +31,7 @@ v1.3.2 (August 2024)
 v1.4.0 (October 2024)
 -----
 * Dependent Component Upgrade
-  * K8s v1.29 (note: Rancher 2.9 is tentatively planned on 7/25 and will support at most K8s v1.30)
+  * K8s v1.29 (note: Rancher 2.9 is tentatively planned on 7/25 and will support at most K8s v1.30. Will have a few following small releases to catch up K8s upstream latest version)
   * Longhorn v1.7.0
   * Rancher - TBU (v2.9.x)
   * KubeVirt - TBU
