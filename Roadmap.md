@@ -35,7 +35,7 @@ v1.5.0
 * Improve Security by default on Rancher OS v2
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 * Local volume support (note: LVM)
-* Third-party storage for VM root partition (note: CDI based instead of Backing Image)
+* Third-party storage for VM root partition (note: CDI based instead of Backing Image) https://github.com/harvester/harvester/issues/1199
 * Third-party Backup Solution support (note: general or specific backup integration)
 
 Future
