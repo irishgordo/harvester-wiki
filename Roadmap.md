@@ -62,9 +62,9 @@ v1.5.0 (March 2025)
 * Local volume support w/ live migration (GA)
 * [Third-party storage for VM root partition](https://github.com/harvester/harvester/issues/1199)
 * Third-party Backup Solution support (note: general or specific backup integration)
-* VM DHCP Controller GA
-* vCluster addon GA
-* Baremetal Container Workload Support GA
+* [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
+* [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
+* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 
 v1.6.0 (July 2025)
 -----
