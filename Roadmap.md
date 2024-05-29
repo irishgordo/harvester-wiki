@@ -35,11 +35,11 @@ v1.4.0 (October 2024)
   * Longhorn v1.7.0
   * Rancher - TBU (v2.9.x)
   * KubeVirt - TBU
-* ARM Support (Experimental)
-* Fleet management for Harvester (Experimental)
 * Local volume support w/o live migration (Experimental)
 * [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
 * [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272)
+* ARM Support (Experimental)
+* Fleet management for Harvester (Experimental)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
 * [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
