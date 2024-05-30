@@ -25,7 +25,7 @@ v1.4.0 (October 2024)
   * Longhorn v1.7.0
   * Rancher - TBU (v2.9.x)
   * KubeVirt - TBU
-* Local volume support w/o live migration (Experimental)
+* [Local volume support w/o live migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
 * [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
 * [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
@@ -37,8 +37,6 @@ v1.4.0 (October 2024)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
-* ARM Support (Experimental)
-* Fleet management for Harvester (Experimental)
 
 v1.5.0 (March 2025)
 -----
@@ -55,7 +53,7 @@ v1.5.0 (March 2025)
 * Third-party Backup Solution support (note: general or specific backup integration)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
-* [Baremetal Container Workload Support](https://github.com/harvester/harvester/issues/5820)
+* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 * [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)
 
 v1.6.0 (July 2025)
@@ -70,6 +68,8 @@ Future
 ------
 * [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
 * Enhanced Integration with Rancher for massive edge deployments
+* ARM Support (Experimental)
+* Fleet management for Harvester (Experimental)
 
 Past releases
 ---
