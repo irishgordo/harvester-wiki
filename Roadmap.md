@@ -1,13 +1,3 @@
-v1.2.2 (May 2024)
------
-* Dependent Component Upgrade
-  * K8s v1.26
-  * Longhorn v1.5.5
-  * Rancher v2.8.2
-  * KubeVirt v1.1.1
-* Stabilization
-* Security patches
-
 v1.3.1 (June 2024)
 -----
 * Dependent Component Upgrade
@@ -83,6 +73,15 @@ Future
 
 Past releases
 ---
+v1.2.2 (May 2024)
+-----
+* Dependent Component Upgrade
+  * K8s v1.26
+  * Longhorn v1.5.5
+  * Rancher v2.8.2
+  * KubeVirt v1.1.1
+* Stabilization
+* Security patches
 
 Harvester v1.3.0 (Mar 2024)
 ---------------------
