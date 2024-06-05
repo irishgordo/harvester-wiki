@@ -27,7 +27,7 @@ v1.4.0 (October 2024)
   * KubeVirt - TBU
 * [Local volume support w/o live migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
 * [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
-* [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272)
+* [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
 * [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
 * [CPU Pinning](https://github.com/harvester/harvester/issues/2305)
