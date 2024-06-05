@@ -36,7 +36,6 @@ v1.4.0 (October 2024)
 * [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
-* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)(*)
 
 v1.5.0 (March 2025)
@@ -55,6 +54,7 @@ v1.5.0 (March 2025)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
+* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 
 v1.6.0 (July 2025)
 -----
