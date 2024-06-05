@@ -37,6 +37,8 @@ v1.4.0 (October 2024)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 * [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)(*)
+* [Continuous enhancement on system robustness and resilience](https://github.com/harvester/harvester/issues/5007)
+* [Cloud-provider-harvester and loadbalancer-harvester enhancement](https://github.com/harvester/harvester/issues/5483)
 
 v1.5.0 (March 2025)
 -----
