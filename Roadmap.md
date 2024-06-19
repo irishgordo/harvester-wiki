@@ -41,7 +41,6 @@ v1.4.0 (October 2024)
 
 **Planed to re-prioritize**
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
-* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
 
 v1.5.0 (March 2025)
@@ -75,6 +74,7 @@ Future
 * Enhanced Integration with Rancher for massive edge deployments
 * ARM Support (Experimental)
 * Fleet management for Harvester (Experimental)
+* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 
 Past releases
 ---
