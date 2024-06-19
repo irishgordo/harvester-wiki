@@ -33,13 +33,15 @@ v1.4.0 (October 2024)
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * [Improving Harvester Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
 * [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
-* [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
-* [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)(*)
+* [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)
 
 **Waiting to review**
-* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [Volume Encryption](https://github.com/harvester/harvester/issues/3129)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
+
+**Planed to re-prioritize**
+* [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
+* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
 
 v1.5.0 (March 2025)
