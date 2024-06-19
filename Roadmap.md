@@ -39,7 +39,7 @@ v1.4.0 (October 2024)
 
 **Waiting to review**
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
-* [Volume Encryption]()
+* [Volume Encryption](https://github.com/harvester/harvester/issues/3129)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 
 v1.5.0 (March 2025)
