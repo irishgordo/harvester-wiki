@@ -1,4 +1,4 @@
-v1.3.2 (August 2024)
+v1.3.2
 -----
 * Dependent Component Upgrade
   * K8s v1.28
