@@ -49,6 +49,7 @@ v1.5.0 (March 2025)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
+* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 
 v1.6.0 (July 2025)
 -----
