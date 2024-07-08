@@ -26,7 +26,7 @@ v1.4.0 (October 2024)
 * [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)
 
 **Waiting to review**
-* [[Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)](https://github.com/harvester/harvester/issues/3129)
+* [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)(https://github.com/harvester/harvester/issues/3129)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 
 **Planed to re-prioritize**
