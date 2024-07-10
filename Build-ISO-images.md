@@ -26,7 +26,16 @@ make build-iso
 ```
 
 2. If you only modify the harvester-installer repo, you can run `make` in the harvester-installer repo.
-3. If you modify both repositories, you can update this line like the following and run `make` in the harvester-installer repo.
+3. If you modify both repositories...
+
++ ...and are using the master branch since https://github.com/harvester/harvester-installer/pull/763 (2024-07-10), you can set the LOCAL_HARVESTER_SRC environment variable then run `make` in the harvester-installer repo:
+
+```bash
+export LOCAL_HARVESTER_SRC=/path/to/local/harvester/repo
+make
+```
+
++ For other branches (v1.3 and earlier) update this line like the following and run `make` in the harvester-installer repo.
 
 ```
 ENV DAPPER_RUN_ARGS "-v /var/run/docker/containerd/containerd.sock:/run/containerd/containerd.sock -v /path/to/local/harvester/repo:/go/src/github.com/harvester/harvester"
