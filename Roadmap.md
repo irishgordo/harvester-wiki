@@ -1,3 +1,6 @@
+> [!Important]
+> The Roadmap presented herein outlines our tentative plans, which are subject to modification based on various factors over time. This document should not be construed as a binding commitment to delivery. Rather, its primary purpose is to provide insight into our intended objectives and strategic direction.
+
 v1.3.2
 -----
 * Dependent Component Upgrade
