@@ -1,5 +1,7 @@
 > [!Important]
 > The Roadmap presented herein outlines our tentative plans, which are subject to modification based on various factors over time. This document should not be construed as a binding commitment to delivery. Rather, its primary purpose is to provide insight into our intended objectives and strategic direction.
+> 
+> For precise release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 
 v1.3.2
 -----
