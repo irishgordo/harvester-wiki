@@ -30,9 +30,10 @@ v1.4.0 (October 2024)
 * [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
 * [Longhorn v2 data engine support](https://github.com/harvester/harvester/issues/5274) (Preview)
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129)
+* [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 
 **Waiting to review**
-* [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
+N/A
 
 **Planed to re-prioritize**
 * [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
