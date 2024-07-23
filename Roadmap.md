@@ -36,7 +36,7 @@ v1.4.0 (October 2024)
 N/A
 
 **Planed to re-prioritize**
-* [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
+N/A
 
 v1.5.0 (March 2025)
 -----
@@ -55,6 +55,7 @@ v1.5.0 (March 2025)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
+* [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
 
 v1.6.0 (July 2025)
 -----
