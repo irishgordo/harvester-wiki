@@ -41,26 +41,26 @@ N/A
 v1.5.0 (March 2025)
 -----
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
+* [Third-party storage for VM root disk](https://github.com/harvester/harvester/issues/1199)
+* Local volume support w/ live migration (GA)
+* Third-party Backup Solution support (note: general or specific backup integration)
+* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
+* [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
+* [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
+* Harvester Encryption of Storage at Rest (GA)
+* [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
+* [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
+* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
+
+v1.6.0 (July 2025)
+-----
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Third-party CNI support
 * Cisco Discovery Protocol and LLDP Support
 * Improve Security by default on Rancher OS v2
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-* Local volume support w/ live migration (GA)
-* [Third-party storage for VM root partition](https://github.com/harvester/harvester/issues/1199)
-* Third-party Backup Solution support (note: general or specific backup integration)
-* [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
-* [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
-* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
-* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
-* [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
-* [NFS for VM workloads](https://github.com/harvester/harvester/issues/2272) (for external NFS instead of builtin NFS provided by Longhorn)
-* Harvester Encryption of Storage at Rest (GA)
 
-v1.6.0 (July 2025)
------
-TBU
 
 v1.7.0 (November 2025)
 -----
