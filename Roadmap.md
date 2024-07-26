@@ -7,9 +7,9 @@ v1.3.2 (August 2024)
 -----
 * Dependent Component Upgrade
   * K8s v1.28
-  * Longhorn - TBU
+  * Longhorn - v1.6.2
   * Rancher v2.8.4
-  * KubeVirt - TBU
+  * KubeVirt - v1.1.1
 * Stabilization
 * Security patches
 
