@@ -6,9 +6,9 @@
 v1.3.2 (August 2024)
 -----
 * Dependent Component Upgrade
-  * K8s v1.28
+  * K8s - v1.28
   * Longhorn - v1.6.2
-  * Rancher v2.8.4
+  * Rancher - v2.8.4
   * KubeVirt - v1.1.1
 * Stabilization
 * Security patches
@@ -16,8 +16,8 @@ v1.3.2 (August 2024)
 v1.4.0 (October 2024)
 -----
 * Dependent Component Upgrade
-  * K8s v1.29 (note: Rancher 2.9 is tentatively planned on 7/25 and will support at most K8s v1.30. Will have a few following small releases to catch up K8s upstream latest version)
-  * Longhorn v1.7.0
+  * K8s - v1.29 (note: Rancher 2.9 is tentatively planned on 7/25 and will support at most K8s v1.30. Will have a few following small releases to catch up K8s upstream latest version)
+  * Longhorn - v1.7.0
   * Rancher - TBU (v2.9.x)
   * KubeVirt - v1.2.2
 * [Local volume support w/o live migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
@@ -32,14 +32,13 @@ v1.4.0 (October 2024)
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129) (Experimental)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 
-**Waiting to review**
-N/A
-
-**Planed to re-prioritize**
-N/A
-
 v1.5.0 (March 2025)
 -----
+* Dependent Component Upgrade
+  * K8s - TBU
+  * Longhorn - v1.8.0
+  * Rancher - TBU (v2.10.x)
+  * KubeVirt - TBU
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party storage for VM root disk](https://github.com/harvester/harvester/issues/1199)
 * Local volume support w/ live migration (GA)
@@ -51,6 +50,12 @@ v1.5.0 (March 2025)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
+
+**Waiting to review**
+N/A
+
+**Planed to re-prioritize**
+N/A
 
 v1.6.0 (July 2025)
 -----
