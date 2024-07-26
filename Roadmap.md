@@ -19,7 +19,7 @@ v1.4.0 (October 2024)
   * K8s v1.29 (note: Rancher 2.9 is tentatively planned on 7/25 and will support at most K8s v1.30. Will have a few following small releases to catch up K8s upstream latest version)
   * Longhorn v1.7.0
   * Rancher - TBU (v2.9.x)
-  * KubeVirt - TBU
+  * KubeVirt - v1.2.2
 * [Local volume support w/o live migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
 * [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
