@@ -45,7 +45,6 @@ v1.5.0 (March 2025)
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party storage for VM root disk](https://github.com/harvester/harvester/issues/1199)
 * Local volume support w/ live migration (GA)
-* Third-party Backup Solution support (note: general or specific backup integration)
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
@@ -81,6 +80,7 @@ Future
 * ARM Support (Experimental)
 * Fleet management for Harvester (Experimental)
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
+* Third-party Backup Solution support (note: general or specific backup integration)
 
 Past releases
 ---
