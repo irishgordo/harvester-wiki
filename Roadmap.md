@@ -10,7 +10,7 @@ v1.3.2 (August 2024)
   * Longhorn - v1.6.2
   * Rancher - v2.8.4
   * KubeVirt - v1.1.1
-  * SLE Micro - 5.4
+  * SLE Micro - v5.4
 * Stabilization
 * Security patches
 
@@ -21,7 +21,7 @@ v1.4.0 (October 2024)
   * Longhorn - v1.7.0
   * Rancher - TBU (v2.9.x)
   * KubeVirt - v1.2.2
-  * SLE Micro - 5.5
+  * SLE Micro - v5.5
 * [Local volume support w/o live migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
 * [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
 * [Restore Harvester VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
@@ -41,7 +41,7 @@ v1.4.1
   * Longhorn - TBU (v1.7.x)
   * Rancher - TBU (v2.9.x)
   * KubeVirt - TBU (v1.2.x)
-  * SLE Micro - 
+  * SLE Micro - v5.5
 
 v1.4.2 (before v1.5.0)
 -----
@@ -50,7 +50,7 @@ v1.4.2 (before v1.5.0)
   * Longhorn - TBU (v1.7.x)
   * Rancher - TBU (v2.9.x)
   * KubeVirt - TBU (v1.2.x)
-  * SLE Micro - 
+  * SLE Micro - v5.5
 
 v1.5.0 (March 2025)
 -----
