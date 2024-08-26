@@ -59,7 +59,7 @@ v1.5.0 (March 2025)
   * Longhorn - v1.8.0
   * Rancher - TBU (v2.10.x)
   * KubeVirt - TBU (v1.3.x)
-  * SLE Micro - TBU
+  * SLE Micro - TBU (v6.0)
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party storage for VM root disk](https://github.com/harvester/harvester/issues/1199)
 * Local volume support w/ live migration (GA)
