@@ -34,10 +34,28 @@ v1.4.0 (October 2024)
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129) (Experimental)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 
+v1.4.1
+-----
+* Dependent Component Upgrade
+  * K8s - v1.30
+  * Longhorn - TBU (v1.7.x)
+  * Rancher - TBU (v2.9.x)
+  * KubeVirt - TBU (v1.3.x)
+  * SLE Micro - 
+
+v1.4.2 (before v1.5.0)
+-----
+* Dependent Component Upgrade
+  * K8s - v1.31
+  * Longhorn - TBU (v1.7.x)
+  * Rancher - TBU (v2.9.x)
+  * KubeVirt - TBU (v1.3.x)
+  * SLE Micro - 
+
 v1.5.0 (March 2025)
 -----
 * Dependent Component Upgrade
-  * K8s - v1.31 (note: require a 1.4 patch to upgrade to v1.30)
+  * K8s - v1.32
   * Longhorn - v1.8.0
   * Rancher - TBU (v2.10.x)
   * KubeVirt - TBU (v1.3.x)
