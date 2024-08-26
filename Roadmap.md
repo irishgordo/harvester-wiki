@@ -40,7 +40,7 @@ v1.4.1
   * K8s - v1.30
   * Longhorn - TBU (v1.7.x)
   * Rancher - TBU (v2.9.x)
-  * KubeVirt - TBU (v1.3.x)
+  * KubeVirt - TBU (v1.2.x)
   * SLE Micro - 
 
 v1.4.2 (before v1.5.0)
@@ -49,7 +49,7 @@ v1.4.2 (before v1.5.0)
   * K8s - v1.31
   * Longhorn - TBU (v1.7.x)
   * Rancher - TBU (v2.9.x)
-  * KubeVirt - TBU (v1.3.x)
+  * KubeVirt - TBU (v1.2.x)
   * SLE Micro - 
 
 v1.5.0 (March 2025)
