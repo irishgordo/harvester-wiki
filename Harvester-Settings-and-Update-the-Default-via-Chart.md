@@ -59,4 +59,42 @@ If it is not eixsting, create a new one.
 If it is existing, use the potential harvester ENV like HARVESTER_OVERCOMMIT_CONFIG to replace the `Value` field of `overcommit-config` settings. note the ENV naming. If the local object `Default` != `Default` of `settings.harvesterhci.io`, replace it.
 
 
-2. How to deal with the dynamic `Default`.
+2. How to deal with the dynamic `Default`? Use ENV `HARVESTER_setting_name_to_uppercase_DEFAULT_VALUE`.
+
+Settings like `support-bundle-image` has a dynamic `Default` value, which is defined in Harvester chart, each Harvester releases has a different value.
+
+https://github.com/harvester/harvester/blob/07610a9958784aa127b578bf83fa4fb3b835d60b/deploy/charts/harvester/values.yaml#L489
+```
+  image:
+    imagePullPolicy: IfNotPresent
+    repository: rancher/support-bundle-kit
+    tag: v0.0.40
+```
+
+https://github.com/harvester/harvester/blob/07610a9958784aa127b578bf83fa4fb3b835d60b/deploy/charts/harvester/templates/deployment.yaml#L79
+
+https://github.com/harvester/harvester/blob/07610a9958784aa127b578bf83fa4fb3b835d60b/deploy/charts/harvester/templates/_helpers.tpl#L121
+
+We can define an ENV like `HARVESTER_SUPPORT_BUNDLE_IMAGE_DEFAULT_VALUE` on Harvester deployment, when Harvester POD starts, it will use this to replace the setting `support-bundle-image` Default field.
+
+==Harvester Settings Usage==
+
+When a controller uses a settings.harvesterhci.io, the general idea is:
+
+```
+value := setting.Value
+
+if value == "" {
+	value = setting.Default
+}
+
+// the `value` can still be `""` as Default can also be `""`
+// if it is used as formats like JSON string, it can be replaced with `"{}"`
+// to meet json.Unmarshal
+if value == "" {
+	value = "{}"
+}
+
+// continue the processing
+
+```
