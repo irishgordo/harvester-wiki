@@ -25,6 +25,34 @@ make
 make build-iso
 ```
 
++  Using local docker cache via ENV **USE_LOCAL_IMAGES** (do not rely on any of the above)
+
+```bash
+(1) git clone ...
+(2) git checkout -b brancher-name ... # add code and commit
+(3) make && make package && make package-webhook && make package-upgrade
+#3 images (harvester, harvester-webhook,harvester-upgrade) taged as `brancher-name-head` are available on local docker cache
+(4) export USE_LOCAL_IMAGES=brancher-name-head
+(5) make build-iso
+```
+```
+there will be such log:
+[ImageCache] docker.io/rancher/harvester-upgrade:fix6486-head meets the specified tag from USE_LOCAL_IMAGES.
+[ImageCache] docker.io/rancher/harvester-upgrade:fix6486-head exists.
+..
+[ImageCache] docker.io/rancher/harvester-webhook:fix6486-head meets the specified tag from USE_LOCAL_IMAGES.
+[ImageCache] docker.io/rancher/harvester-webhook:fix6486-head exists.
+
+[ImageCache] docker.io/rancher/harvester:fix6486-head meets the specified tag from USE_LOCAL_IMAGES.
+[ImageCache] docker.io/rancher/harvester:fix6486-head exists.
+
+The 3 images built from your branch are used for the final Harvester ISO.
+
+```
+
+
+
+
 2. If you only modify the harvester-installer repo, you can run `make` in the harvester-installer repo.
 3. If you modify both repositories...
 
