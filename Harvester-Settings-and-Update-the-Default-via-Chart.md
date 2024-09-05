@@ -1,8 +1,7 @@
-__TOC__  
 
-==Harvester Settings Definition==
+## Harvester Settings Definition
 
-1. CRD definition.
+### CRD definition.
 
 https://github.com/harvester/harvester/blob/3bba1d6dcc17589fe9607aff38bea7614065b8be/pkg/apis/harvesterhci.io/v1beta1/settings.go#L18C1-L35C2
 
@@ -27,7 +26,7 @@ type Setting struct {
 }
 ```
 
-2. Local object definition.
+### Local object definition.
 
 Harvester specific settings are defined in the source code, generally with the `Default` field.
 
@@ -46,20 +45,20 @@ OvercommitConfig                       = NewSetting(OvercommitConfigSettingName,
 
 ```
 
-==Harvester Settings Initializaton and Sync==
+## Harvester Settings Initialization and Sync
 
-1. Local object initialzation and CRD object sync.
+### Local object initialzation and CRD object sync.
 
 https://github.com/harvester/harvester/blob/3bba1d6dcc17589fe9607aff38bea7614065b8be/pkg/controller/global/settings/register.go#L87
 
 When Harvester POD starts, it will init the local `Setting` object and sync with CRD object `settings.harvesterhci.io`:
 
-If it is not eixsting, create a new one.
+- If it is not eixsting, create a new one.
 
-If it is existing, use the potential harvester ENV like HARVESTER_OVERCOMMIT_CONFIG to replace the `Value` field of `overcommit-config` settings. note the ENV naming. If the local object `Default` != `Default` of `settings.harvesterhci.io`, replace it.
+- If it is existing, use the potential harvester ENV like HARVESTER_OVERCOMMIT_CONFIG to replace the `Value` field of `overcommit-config` settings. note the ENV naming. If the local object `Default` != `Default` of `settings.harvesterhci.io`, replace it.
 
 
-2. How to deal with the dynamic `Default`? Use ENV `HARVESTER_setting_name_to_uppercase_DEFAULT_VALUE`.
+### How to deal with the dynamic `Default`? Use ENV `HARVESTER_setting_name_to_uppercase_DEFAULT_VALUE`.
 
 Settings like `support-bundle-image` has a dynamic `Default` value, which is defined in Harvester chart, each Harvester releases has a different value.
 
@@ -77,7 +76,17 @@ https://github.com/harvester/harvester/blob/07610a9958784aa127b578bf83fa4fb3b835
 
 We can define an ENV like `HARVESTER_SUPPORT_BUNDLE_IMAGE_DEFAULT_VALUE` on Harvester deployment, when Harvester POD starts, it will use this to replace the setting `support-bundle-image` Default field.
 
-==Harvester Settings Usage==
+### Summarize
+
+Harvester deployment can have injected ENV:
+
+- Env like `HARVESTER_OVERCOMMIT_CONFIG` is used to replace setting `Value` field.
+
+- Env like `HARVESTER_SUPPORT_BUNDLE_IMAGE_DEFAULT_VALUE` is used to replace setting `Default` field.
+
+Note the ENV naming.
+
+## Harvester Settings Usage
 
 When a controller uses a settings.harvesterhci.io, the general idea is:
 
