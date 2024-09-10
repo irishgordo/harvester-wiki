@@ -34,7 +34,7 @@ v1.4.0 (October 2024)
 * [Harvester Encryption of Storage at Rest](https://github.com/harvester/harvester/issues/3129) (Experimental)
 * [Harvester third-party storage support for diskless servers](https://github.com/harvester/harvester/issues/5150)
 
-v1.4.1
+v1.4.1 (December 2024)
 -----
 * Dependent Component Upgrade
   * K8s - v1.30
@@ -43,7 +43,7 @@ v1.4.1
   * KubeVirt - TBU (v1.2.x)
   * SLE Micro - v5.5
 
-v1.4.2 (before v1.5.0)
+v1.4.2 (January 2025, before v1.5.0)
 -----
 * Dependent Component Upgrade
   * K8s - v1.31
@@ -62,17 +62,12 @@ v1.5.0 (March 2025)
   * SLE Micro - TBU (v6.0)
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party storage for VM root disk](https://github.com/harvester/harvester/issues/1199)
-* Local volume support w/ live migration (GA)
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * [Harvester Complete Cluster Backup](https://github.com/harvester/harvester/issues/3263)
-* [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 * Harvester Encryption of Storage at Rest (GA)
-* [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
-* [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
-* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 
 **Waiting to review**
-N/A
+* [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 
 **Planed to re-prioritize**
 N/A
@@ -86,6 +81,10 @@ v1.6.0 (July 2025)
 * Improve Security by default on Rancher OS v2
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 
+* Local volume support w/ live migration (GA)
+* [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
+* [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
+* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 
 v1.7.0 (November 2025)
 -----
