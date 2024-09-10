@@ -56,10 +56,10 @@ v1.5.0 (March 2025)
 -----
 * Dependent Component Upgrade
   * K8s - v1.32
-  * Longhorn - v1.8.0
-  * Rancher - TBU (v2.10.x)
-  * KubeVirt - TBU (v1.3.x)
-  * SLE Micro - TBU (v6.0)
+  * Longhorn - v1.8
+  * Rancher - TBU (v2.10)
+  * KubeVirt - TBU (v1.3)
+  * SLE Micro - TBU (v5.5 or v6.0)
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
