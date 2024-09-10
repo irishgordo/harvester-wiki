@@ -3,16 +3,6 @@
 > 
 > For precise release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 
-v1.3.2 (August 2024)
------
-* Dependent Component Upgrade
-  * K8s - v1.28
-  * Longhorn - v1.6.2
-  * Rancher - v2.8.4
-  * KubeVirt - v1.1.1
-  * SLE Micro - v5.4
-* Stabilization
-* Security patches
 
 v1.4.0 (October 2024)
 -----
@@ -101,6 +91,17 @@ Future
 
 Past releases
 ---
+
+Harvester v1.3.2 (September 2024)
+-----
+* Dependent Component Upgrade
+  * K8s - v1.28
+  * Longhorn - v1.6.2
+  * Rancher - v2.8.4
+  * KubeVirt - v1.1.1
+  * SLE Micro - v5.4
+* Stabilization
+* Security patches
 
 Harvester v1.3.1 (June 2024)
 ---------------------
