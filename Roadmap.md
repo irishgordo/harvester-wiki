@@ -9,7 +9,7 @@ v1.4.0 (October 2024)
 * Dependent Component Upgrade
   * K8s - v1.29
   * Longhorn - v1.7.0
-  * Rancher - TBU (v2.9.x)
+  * Rancher - v2.9.1
   * KubeVirt - v1.2.2
   * SLE Micro - v5.5
 * [Local volume support w/o live migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
@@ -29,7 +29,7 @@ v1.4.1 (December 2024)
 * Dependent Component Upgrade
   * K8s - v1.30
   * Longhorn - TBU (v1.7.x)
-  * Rancher - TBU (v2.9.x)
+  * Rancher - TBU (v2.9.1)
   * KubeVirt - TBU (v1.2.x)
   * SLE Micro - v5.5
 
@@ -38,7 +38,7 @@ v1.4.2 (January 2025, before v1.5.0)
 * Dependent Component Upgrade
   * K8s - v1.31
   * Longhorn - TBU (v1.7.x)
-  * Rancher - TBU (v2.9.x)
+  * Rancher - TBU (v2.10.x)
   * KubeVirt - TBU (v1.2.x)
   * SLE Micro - v5.5
 
