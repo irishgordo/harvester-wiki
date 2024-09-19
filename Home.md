@@ -26,8 +26,8 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 
 For daily-build dev images, you can find them via:
 - The master build **unstable** image is available at: https://releases.rancher.com/harvester/master/harvester-master-amd64.iso
-- The `v*` branch images are available at:  https://releases.rancher.com/harvester/v1.2/harvester-v1.2-amd64.iso
-- The `release*` branch images are available at(no daily build, only pushed when it has a new commit): https://releases.rancher.com/harvester/release-1.2/harvester-release-1.2-amd64.iso
+- The `v*` branch images are available at:  https://releases.rancher.com/harvester/v1.4/harvester-v1.4-amd64.iso
+- The sprint releases. You can check sprint releases in https://github.com/harvester/harvester/releases. They are named like `v1.4.0-dev-<date>`.
 
 > Note:
 > * There is no support or guarantee available for those dev images.
