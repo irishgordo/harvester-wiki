@@ -15,8 +15,6 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 - [[Harvester Development Overview]]
 - [[Example: Adding new API object types and controllers]]
 - [[Development Best Practices]]
-- [[Harvester API Test]]
-- [[Authn Initialization Automation]]
 - [[Build ISO images]]
 - [[Speed up Harvester ISO build]]
 - [[Replace KubeVirt Virt controller and other KubeVirt component images]]
@@ -34,3 +32,8 @@ For daily-build dev images, you can find them via:
 > Note:
 > * There is no support or guarantee available for those dev images.
 > * Feel free to report issues regarding the dev build images.
+
+
+## Deprecated pages
+- [[Harvester API Test]]
+- [[Authn Initialization Automation]]
