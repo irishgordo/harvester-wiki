@@ -8,7 +8,7 @@ v1.4.0 (October 2024)
 -----
 * Dependent Component Upgrade
   * K8s - v1.29
-  * Longhorn - v1.7.0
+  * Longhorn - v1.7.1
   * Rancher - v2.9.1
   * KubeVirt - v1.2.2
   * SLE Micro - v5.5
