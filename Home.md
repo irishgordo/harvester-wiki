@@ -9,6 +9,10 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 
 - [[Roadmap]]
 
+## Dev guides
+
+- [[Harvester Branch Strategy]]
+
 ## Dev Resources
 
 - [[Setting Up Harvester Development Environment]]
