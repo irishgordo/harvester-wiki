@@ -12,6 +12,12 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 ## Dev guides
 
 - [[Branch Strategy]]
+- [[Repositories]]
+
+## Release guide
+
+- [[Starting a new milestone]]
+- [[Create a Harvester release]]
 
 ## Dev Resources
 
