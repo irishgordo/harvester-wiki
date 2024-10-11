@@ -7,13 +7,10 @@
 
 We need to create stable branches in several repositories. This is a one-time work for every milestone.
 
-> Note: the consequence of having a stable branch is developers need to do a backport when a change is merged in the `master` branch. In general, before the first release candidate of the milestone, I (as a release captain) periodically sync changes from the `master` branch to the stable branch to make engineers’ lives easier.
-> 
-
-The following example assumes we are going to release Harvester `v1.4.0` soon.
+The following example assumes we will release Harvester `v1.4.0` soon.
 
 - Harvester components
-    - Components include dependency charts and addons.
+    - Components include dependency charts and add-ons.
     - Component owners have to create a stable branch.
     - For each component, the component owner has to bump the minor version. This applies to both component charts and image tags.
         - For example, in Harvester `v1.3.x`, the harvester-node-disk-manager component has
@@ -28,24 +25,24 @@ The following example assumes we are going to release Harvester `v1.4.0` soon.
     
     > NOTE: there is an ongoing discussion about whether we should sync the components’ minor version with the Harvester’s minor version. For example, both use v1.4.x in the above example.
     > 
-- [[harvester/addons](https://github.com/harvester/addons/tree/main)](https://github.com/harvester/addons/tree/main)
+- [harvester/addons](https://github.com/harvester/addons/tree/main)
     - Create a new stable branch `v1.4`.
     - Submit a PR to change versions in this branch
         - https://github.com/harvester/addons/blob/main/version_info
         - https://github.com/harvester/addons/blob/main/pkg/templates/rancherd-22-addons.yaml
-- [[harvester/harvester](https://github.com/harvester/harvester)](https://github.com/harvester/harvester)
-    - [[Create a new stable branch](https://github.com/harvester/harvester/branches)](https://github.com/harvester/harvester/branches) `v1.4`, from the `master` branch.
-- [[harvester/harvester-installer](https://github.com/harvester/harvester-installer)](https://github.com/harvester/harvester-installer)
-    - [[Create a new stable](https://github.com/harvester/harvester-installer/branches)](https://github.com/harvester/harvester-installer/branches) branch `v1.4` from the `master` branch.
+- [harvester/harvester](https://github.com/harvester/harvester)
+    - [Create a new stable branch](https://github.com/harvester/harvester/branches) `v1.4` from the `master` branch.
+- [harvester/harvester-installer](https://github.com/harvester/harvester-installer)
+    - [Create a new stable](https://github.com/harvester/harvester-installer/branches) branch `v1.4` from the `master` branch.
     - For this new branch
-        - Update harvester branch
+        - Update the harvester branch
             - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build#L14
             - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build-bundle#L43
         - Update add-ons branch (since v1.4)
             - https://github.com/harvester/harvester-installer/blob/8ed87a5023061308b575227125a351061e6d5161/scripts/build#L33
             - https://github.com/harvester/harvester-installer/blob/8ed87a5023061308b575227125a351061e6d5161/scripts/build-bundle#L15
         - Sample PR: https://github.com/harvester/harvester-installer/pull/761
-- [[harvester/os2](https://github.com/harvester/os2)](https://github.com/harvester/os2)
+- [harvester/os2](https://github.com/harvester/os2)
     - Create new projects in OBS
         - https://build.opensuse.org/project/show/isv:Rancher:Harvester:OS:v1.4
         - https://build.opensuse.org/project/show/isv:Rancher:Harvester:ExtraPackages:v1.4
@@ -56,9 +53,9 @@ The following example assumes we are going to release Harvester `v1.4.0` soon.
         - harvester/harvester-installer: a PR to bump OS
         - harvester/harvester: a PR to bump Nvidia driver addon.
         - Ask some developers to review and merge the PRs.
-- [[harvester/dashboard](https://github.com/harvester/dashboard)](https://github.com/harvester/dashboard)
+- [harvester/dashboard](https://github.com/harvester/dashboard)
     - Ask the UI developer to create the `release-harvester-v1.4` branch.
-- [[harvester/harvester](https://github.com/harvester/harvester)](https://github.com/harvester/harvester)
+- [harvester/harvester](https://github.com/harvester/harvester)
     - For this new branch
         - Update installer branch: https://github.com/harvester/harvester/blob/95b4f9dc3c63421bcb5cfff5fd579c0cee7424b3/scripts/build-iso#L10
         - Update UI-indexes in the **settings** and **Dockerfile**, like https://github.com/harvester/harvester/pull/5857/files
