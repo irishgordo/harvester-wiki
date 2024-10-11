@@ -11,7 +11,7 @@ Check https://docs.harvesterhci.io/ instead for the Harvester user documentation
 
 ## Dev guides
 
-- [[Harvester Branch Strategy]]
+- [[Branch Strategy]]
 
 ## Dev Resources
 
