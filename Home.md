@@ -16,7 +16,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 ## Release guide
 
-- [[Starting a new milestone]]
+- [[Creating a new milestone]]
 - [[Create a Harvester release]]
 
 ## Dev Resources
