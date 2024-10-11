@@ -2,7 +2,7 @@
 
 The wiki is used for development documentation.
 
-Check https://docs.harvesterhci.io/ instead for the Harvester user documentation.
+Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 
 ## Harvester Roadmap
