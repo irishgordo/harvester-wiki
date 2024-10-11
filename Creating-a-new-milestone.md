@@ -35,23 +35,23 @@ The following example assumes we will release Harvester `v1.4.0` soon.
 - [harvester/harvester-installer](https://github.com/harvester/harvester-installer)
     - [Create a new stable](https://github.com/harvester/harvester-installer/branches) branch `v1.4` from the `master` branch.
     - For this new branch
-        - Update the harvester branch
-            - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build#L14
-            - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build-bundle#L43
         - Update add-ons branch (since v1.4)
             - https://github.com/harvester/harvester-installer/blob/8ed87a5023061308b575227125a351061e6d5161/scripts/build#L33
             - https://github.com/harvester/harvester-installer/blob/8ed87a5023061308b575227125a351061e6d5161/scripts/build-bundle#L15
         - Sample PR: https://github.com/harvester/harvester-installer/pull/761
+        - Update the harvester branch (before v1.4)
+            - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build#L14
+            - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build-bundle#L43
 - [harvester/os2](https://github.com/harvester/os2)
     - Create new projects in OBS
         - https://build.opensuse.org/project/show/isv:Rancher:Harvester:OS:v1.4
         - https://build.opensuse.org/project/show/isv:Rancher:Harvester:ExtraPackages:v1.4
     - Create a new stable branch `harvester-v1.4.x`.
     - Update versions: https://github.com/harvester/os2/pull/116/files
-    - Update the action code to create addon: https://github.com/harvester/os2/pull/118
+    - Update the action code to create an addon: https://github.com/harvester/os2/pull/118
     - Tag a new version, CI will create PRs.
         - harvester/harvester-installer: a PR to bump OS
-        - harvester/harvester: a PR to bump Nvidia driver addon.
+        - harvester/addons: a PR to bump Nvidia driver addon.
         - Ask some developers to review and merge the PRs.
 - [harvester/dashboard](https://github.com/harvester/dashboard)
     - Ask the UI developer to create the `release-harvester-v1.4` branch.
