@@ -20,7 +20,7 @@ v1.4.0 (October 2024)
 * [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
 * [Improving Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
 * [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
-* [Longhorn v2 Data Engine support](https://github.com/harvester/harvester/issues/5274) (Preview)
+* [Longhorn v2 Data Engine support](https://github.com/harvester/harvester/issues/5274) (Experimental)
 * [Volume Encryption](https://github.com/harvester/harvester/issues/3129) (Experimental)
 * [Third-Party Storage for Diskless Servers](https://github.com/harvester/harvester/issues/5150)
 
