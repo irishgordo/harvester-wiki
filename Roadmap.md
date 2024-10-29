@@ -4,7 +4,7 @@
 > For precise release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 
 
-v1.4.0 (October 2024)
+v1.4.0 (November 2024)
 -----
 * Dependent Component Upgrade
   * K8s - v1.29
