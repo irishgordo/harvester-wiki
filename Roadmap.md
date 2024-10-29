@@ -49,7 +49,7 @@ v1.5.0 (March 2025)
   * Longhorn - v1.8
   * Rancher - TBU (v2.10)
   * KubeVirt - TBU (v1.3)
-  * SLE Micro - TBU (v5.5 or v6.0)
+  * SLE Micro - TBU (v5.5)
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
@@ -65,6 +65,12 @@ N/A
 
 v1.6.0 (July 2025)
 -----
+* Dependent Component Upgrade
+  * K8s - v1.3x
+  * Longhorn - v1.9
+  * Rancher - TBU (v2.1x)
+  * KubeVirt - TBU (v1.x)
+  * SLE Micro - TBU (v6.x)
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Third-party CNI support
