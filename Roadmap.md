@@ -56,6 +56,7 @@ v1.5.0 (March 2025)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
 * Volume Encryption (GA)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
+* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 
 **Waiting to review**
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
@@ -76,7 +77,6 @@ v1.6.0 (July 2025)
 * Third-party CNI support
 * Cisco Discovery Protocol and LLDP Support
 * Improve Security by default on Rancher OS v2
-* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 
 * Local volume support w/ live migration (GA)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
