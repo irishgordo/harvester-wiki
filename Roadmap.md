@@ -57,6 +57,7 @@ v1.5.0 (March 2025)
 * Volume Encryption (GA)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
+* ARM Support (GA)
 
 **Waiting to review**
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
@@ -91,7 +92,6 @@ Future
 ------
 * [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
 * Enhanced Integration with Rancher for massive edge deployments
-* ARM Support (Experimental)
 * Fleet management for Harvester (Experimental)
 * [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
 * Third-party Backup Solution support (note: general or specific backup integration)
