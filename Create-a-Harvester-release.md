@@ -1,16 +1,65 @@
-TODO: Insert introductory paragraph here which explains:
-  - assumptions about github remotes in examles (upstream == harvester)
-  - need to add section (at the end?) explaining use of `git cherry -v` and caveats, things to look out for
-  - notes about tagging releases and flagging them as prerelease, autogenerate release notes, etc.
-  - There's a lot of repeated information in the steps below.  That's intentional, because even though it makes it look like this is a really long document, it means you can just work through it for each repo (os2, addons, harvester-installer, dashboard, harvester) without having to refer to generic instructions and then accidetnally miss a step ;-)
+## Introduction
 
-To create a harvester release:
+There are three types of Harvester release:
 
-1. Bump components (charts and image tags)
-   - These generally happen in daily development and changes are merged
-     into the [stable branches](Branch-Strategy).
-   - TODO: describe specifically what to check here
-2. Bump `os2`:
+- Sprint release, e.g.: `v1.4.0-dev-20240916`.  This is a snapshot of
+  the current state of development on that date.
+- Release candidate, e.g.: `v1.4.0-rc1`.  This is what we plan to turn
+  into a formal release, assuming it's feature complete and nobody finds any
+  showstopper bugs.
+- Formal release, e.g.: `v1.4.0`.  This is complete and ready for general use.
+
+The procedure for creating a release of any type is essentially the same,
+with some extra steps necessary for formal releases.  As Harvester consists
+of many components, each of these need to be tagged, then all are combined
+into a given release.  In brief, the release procedure is:
+
+1. Check underyling component versions (node-disk-manager, etc.)
+2. Bump [os2](https://github.com/harvester/os2) if necessary to include updated system packages
+3. Tag [addons](https://github.com/harvester/addons)
+4. Tag [harvester-installer](https://github.com/harvester/harvester-installer)
+5. Tag [dashboard](https://github.com/harvester/dashboard)
+6. Create a new [harvester](https://github.com/harvester/harvester) release branch
+7. Create a release PR on that branch with an extra commit to tie the addons,
+   harvester-installer, and dashboard tags to this release
+8. _Formal releases only:_ Get QA sign-off, create release notes PR, update docs
+9. Tag the harvester release
+10. Wait for ISO build then add release notes
+11. _Formal releases only:_ Update support matrix and upgrade responder
+
+When creating sprint releases and release candidates, be sure to check the
+"Set as a pre-release" box on the GitHub release page.  For formal releases,
+check the "Set as the latest release" box, provided it really _is_ the latest
+release (e.g. after we release v1.4.0 and set it as the latest release, if we
+subsequently release v1.3.3, we would _not_ set that as the latest release,
+because we want to encourage new users to use v1.4.0, rather than something
+from the v1.3.x series).
+
+Full details of the release procedure follow below.  There is a fair amount of
+repetition in several of the steps.  While this makes the document longer that
+it might strictly need to be, it should mean you can work through all the steps
+one after another without having to refer back to generic instructions and
+then potentially accidentally skip something.
+
+## Release Procedure in Detail
+
+Note: the various `git` command examples below assume you have remotes set
+up so that "upstream" refers to a repository in the harvester organisation
+and that "origin" refers to your personal fork.
+
+1. Check underlying component versions (node-disk-manager, etc.)
+   - Updates to these generally happen as part of regular daily development
+     and changes are merged into the [stable branches](Branch-Strategy).
+   - Important files in the [harvester](https://github.com/harvester/harvester) repo are:
+     - `deploy/charts/harvester/Chart.{yaml,lock}` (chart versions)
+     - `deploy/charts/harvester/charts/*tgz` (chart tarballs)
+     - `deploy/charts/harvester/values.yaml` (image tags)
+   - A good example of a stable branch PR which updates all of the above is
+     https://github.com/harvester/harvester/pull/6925
+   - If any underlying component has important changes for this release, but
+     the harvester repo is still using an older version, work with the component owner to update the charts and image tags appropriately.
+
+2. Bump `os2` if necessary to include updated system packages:
    - Check the "Package differences" actions to see if there are new package
      updates: https://github.com/harvester/os2/actions/workflows/diff.yml
    - The diffs are in output of the "Run container-diff" step of the various
@@ -145,7 +194,12 @@ To create a harvester release:
                                 package/upgrade-matrix.yaml \
                                 scripts/build-iso \
                                 scripts/generate-addons
-     # ...make appropriate changes...
+     # Make appropriate changes to:
+     # - HARVESTER_UI_VERSION
+     # - HARVESTER_UI_PLUGIN_BUNDLED_VERSION
+     # - HARVESTER_INSTALLER_VERSION
+     # - HARVESTER_ADDONS_VERSION
+     # - list of versions in upgrade matrix
      ~/harvester/harvester> git commit -sm 'Release v1.4.0-rc1' \
                                 package/Dockerfile \
                                 package/upgrade-matrix.yaml \
@@ -156,7 +210,7 @@ To create a harvester release:
    - Then open a PR targeting the release branch, for example:
      https://github.com/harvester/harvester/pull/6956
    - Run smoke tests on the PR:
-     - TODO: insert link to smoke workflow
+     - https://github.com/bk201/harvester-works/actions/workflows/test-smoke-harvester.yml
      - Use parameters:
        - harvester_prs: your release PR, e.g.: https://github.com/harvester/harvester/pull/6956
        - extra_run_label: lab
@@ -166,12 +220,31 @@ To create a harvester release:
      results, and if they appear acceptable, upload the results zip file in
      a comment on the release PR.
    - Get the release PR reviewed and merged.
-8. TODO: insert steps here for formal releases:
+8. _Formal releases only:_ TODO: fill this in properly
    - Create a release notes PR
    - Get signoff from QA
    - Create upgrade page
    - Update README
-9. Tag the release
-   - TODO: fill this out
-10. TODO: More steps for formal releases go here
-     
+9. Tag the release on the release branch:
+   - Example:
+     ```shell
+     ~/harvester/harvester> git fetch upstream
+     ~/harvester/harvester> git tag -a v1.4.0-rc1 upstream/release-v1.4.0-rc1 -m 'Tag Harvester v1.4.0-rc1'
+     ~/harvester/harvester> git push upstream v1.4.0-rc1
+     ```
+   - Tagging the release will trigger CI to build and publish ISO images.  This will
+     also create a draft release on GitHub for the version just tagged.
+10. Add release notes to the GitHub release page.
+11. _Formal releases only:_ TODO: fill this in properly
+    - Update support matrix and upgrade responde
+
+## How to Generate / Write Release Notes
+
+TODO: write this section
+
+## Everything You Ever Wanted to Know About `git cherry -v` but Were Afraid to Ask
+
+TODO: 
+- Explain how this is the most useful `git` command you will ever encounter
+  when working with multiple release branches
+- Think of a less silly title for this section of the document
