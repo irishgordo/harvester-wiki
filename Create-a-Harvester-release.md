@@ -275,7 +275,7 @@ The `git-cherry` man page starts with the following description:
 It goes on to provide some usage examples, but these can be a bit
 confusing in some respects.  A simpler way to think about it is to
 not use the `upstream` and `head` terminology, but instead refer to
-those as branch `A` and branch `B`.  At some point inthe past, those
+those as branch `A` and branch `B`.  At some point in the past, those
 two branches forked, i.e. they have a common ancestor, but since then
 they have potentially diffent set of commits.
 
