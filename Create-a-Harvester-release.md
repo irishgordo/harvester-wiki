@@ -242,9 +242,142 @@ and that "origin" refers to your personal fork.
 
 TODO: write this section
 
-## Everything You Ever Wanted to Know About `git cherry -v` but Were Afraid to Ask
+## How to Use `git cherry -v` Effectively
 
-TODO: 
-- Explain how this is the most useful `git` command you will ever encounter
-  when working with multiple release branches
-- Think of a less silly title for this section of the document
+The `git-cherry` man page starts with the following description:
+
+ > ```
+ > NAME
+ >        git-cherry - Find commits yet to be applied to upstream
+ >
+ > SYNOPSIS
+ >        git cherry [-v] [<upstream> [<head> [<limit>]]]
+ >
+ > DESCRIPTION
+ >        Determine whether there are commits in <head>..<upstream>
+ >        that are equivalent to those in the range <limit>..<head>.
+ > ```
+
+It goes on to provide some usage examples, but these can be a bit
+confusing in some respects.  A simpler way to think about it is to
+not use the `upstream` and `head` terminology, but instead refer to
+those as branch `A` and branch `B`.  At some point inthe past, those
+two branches forked, i.e. they have a common ancestor, but since then
+they have potentially diffent set of commits.
+
+`git cherry -v A B` looks at both branches after the fork, and tells us:
+
+- The commits in `B` for which equivalent commits exist in `A`,
+  prefixed with a `-` symbol
+- The commits that are only in `B` prefixed with a `+` symbol.
+
+This is very helpful when trying to figure out what commits may still
+need to be backported from a repo's `master` or `main` branch to a
+stable release branch (e.g. `v1.4`), and vice versa in case there are
+somehow changes in a stable branch that might need forward porting to
+`master` or `main`.
+
+Here's an example using the `harvester-installer` repo:
+
+```shell
+~/harvester/harvester-installer> git cherry -v --abbrev=8 upstream/v1.4 upstream/master
++ c5abc939 build: minor rewording, fix harvester_path consistency
++ 9ea63a0c build: Add LOCAL_{ADDONS,HARVESTER}_SRC arguments
+- e7671672 Bump golang to v1.22
+- 36ea2bf0 vendor: move `mudler/yip` to `rancher/yip`
+- 5ffebedd Log validateConfig, PrepareWebooks and doInstall errors
+- 24a8e733 Add addon version check with the repo
+[...snipped many more lines of output...]
+```
+
+In the above output we can see that the first two commits (`c5abc939` and
+`9ea63a0c`) are prefixed with a `+` symbol, meaning they have been
+applied to `master` but haven't been backported to `v1.4`, whereas
+the following four commits exist in both branches.
+
+Now let's try the reverse:
+
+```shell
+~/harvester/harvester-installer> git cherry -v --abbrev=8 upstream/master upstream/v1.4
++ c3f79c03 Bump OS v1.4-20240705
++ 99f7bd20 Move harvester and add-on repos to the v1.4 branches
+- f872a10c Bump golang to v1.22
++ a1c2aec4 Bump OS v1.4-20240719
+- bd82c0ef Log validateConfig, PrepareWebooks and doInstall errors
+- 3b8fad60 vendor: move `mudler/yip` to `rancher/yip`
+[...snipped many more lines of output...]
+```
+
+In the above output we can see there's three commits applied to the `v1.4`
+branch that aren't in `master`, and three that are.  Note how the three
+commits that are applied to both branches have the same description as in
+the earlier output, just with different commit hashes.
+
+At this point, we need to figure out whether anything needs to be back-
+or forwards-ported.  For this purpose we can ignore all the lines prefixed
+with `-`.  Here's a complete example using harvester-installer:
+
+```shell
+~/harvester/harvester-installer> git cherry -v --abbrev=8 upstream/v1.4 upstream/master | grep '^+'
++ c5abc939 build: minor rewording, fix harvester_path consistency
++ 9ea63a0c build: Add LOCAL_{ADDONS,HARVESTER}_SRC arguments
++ 8d366c52 Bump depended dhcp client package
++ 677447c8 leverage generateTemplates capability of harvester/addons
++ e80ee9a7 Update monitoring and logging addon with template generation (#792)
++ f0b21b99 allow installation to external disks, configure multipathd and extra kernel arguments
++ 1a33e22b chore: Configure Mergify to open backport PRs by labels [skip ci]
+
+~/harvester/harvester-installer> git cherry -v --abbrev=8 upstream/master upstream/v1.4 | grep '^+'
++ c3f79c03 Bump OS v1.4-20240705
++ 99f7bd20 Move harvester and add-on repos to the v1.4 branches
++ a1c2aec4 Bump OS v1.4-20240719
++ e148c838 leverage generateTemplates capability of harvester/addons
++ 6f96c053 Bump OS v1.4-20240801
++ 95b72007 Update monitoring and logging addon with template generation (#792)
++ c240c652 allow installation to external disks, configure multipathd and extra kernel arguments
++ 3f9513b7 Bump OS v1.4-20240830
++ 00d3a70a Bump OS v1.4-20240916
++ 467a3ca5 Bump OS v1.4-20240923
++ e7aa395f Bump OS v1.4-20241001
++ 5b619437 Bump OS v1.4-20241009
++ 5797d309 Bump OS v1.4-20241016
++ d65a8a8b Bump OS v1.4-20241023
++ 42fc086f Bump OS v1.4-20241105
+```
+
+In the case of harvester-installer, the "Bump OS" commits are only
+ever applied to the stable branch, so we don't care that they're not in
+`master`.  Likewise the "Move harvester and add-on repos to the v1.4
+branches" commit.
+
+The two build-related commits are fine to only exist in `master`, as they're
+not important for the v1.4 release.  It wouldn't _hurt_ to backport them,
+but there's really no need.
+
+The "Bump depended dhcp client package" commit is from
+<https://github.com/harvester/harvester-installer/pull/779>. At the time
+of writing this is part of some ongoing work in
+https://github.com/harvester/harvester-installer/pull/767 which is why
+it was never backported to v1.4.
+
+The remaining three commits ("leverage generateTemplates capability of
+harvester/addons", "Update monitoring and logging addon with template
+generation" and "allow installation to external disks, configure
+multipathd and extra kernel arguments") are interesting, because those
+look like things that we want in both branches.  Why does `git cherry`
+tell us that each branch has a commit that isn't in the other branch,
+but with matching descriptions?  This happens when there's some
+subtle difference in the code necessary between the two branches which
+means that the commits are not quite identical.  It can be instructive
+to experiment with commands like
+`diff -u <(git show 677447c8) <(git show e148c838)` to view the
+differences between two commits with the same description.  In the
+case of the three interesting commits here, the differencs are due to
+branch names and dependency versions, so not something we need to worry
+about.
+
+Similar oddities can also show up when multiple commits are made in one
+branch, but are then squashed into a single commit when backporting to
+another branch.  In this case it's a matter of double checking that all
+the right changes made it in by looking at and comparing the individual
+commits, or sets of commits.
