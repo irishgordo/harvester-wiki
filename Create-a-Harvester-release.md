@@ -345,9 +345,9 @@ with `-`.  Here's a complete example using harvester-installer:
 + 42fc086f Bump OS v1.4-20241105
 ```
 
-In the case of harvester-installer, the "Bump OS" commits are only
-ever applied to the stable branch, so we don't care that they're not in
-`master`.  Likewise the "Move harvester and add-on repos to the v1.4
+In the case of harvester-installer, "Bump OS" commits are only ever applied
+to stable branches (`v1.4` in this example), so we don't care that they're
+not in `master`.  Likewise the "Move harvester and add-on repos to the v1.4
 branches" commit.
 
 The two build-related commits are fine to only exist in `master`, as they're
@@ -372,7 +372,7 @@ means that the commits are not quite identical.  It can be instructive
 to experiment with commands like
 `diff -u <(git show 677447c8) <(git show e148c838)` to view the
 differences between two commits with the same description.  In the
-case of the three interesting commits here, the differencs are due to
+case of the three interesting commits here, the differences are due to
 branch names and dependency versions, so not something we need to worry
 about.
 
