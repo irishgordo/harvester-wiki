@@ -220,11 +220,18 @@ and that "origin" refers to your personal fork.
      results, and if they appear acceptable, upload the results zip file in
      a comment on the release PR.
    - Get the release PR reviewed and merged.
-8. _Formal releases only:_ TODO: fill this in properly
-   - Create a release notes PR
+8. _Formal releases only:_ (TODO: confirm/verify these steps)
+   - Create a release notes PR in https://github.com/harvester/release-notes/pulls
+     - Check if there's a "New contributor issue" in https://github.com/harvester/release-notes/issues
+     - Remove unused contributors
+     - Update known issues and components
+     - cc project owner and technical write to review
    - Get signoff from QA
-   - Create upgrade page
+   - Create upgrade page for the release
+     - e.g. https://docs.harvesterhci.io/v1.3/upgrade/v1-2-2-to-v1-3-1
    - Update README
+     - Update versions: https://github.com/harvester/harvester?tab=readme-ov-file#releases
+     - Update screenshots
 9. Tag the release on the release branch:
    - Example:
      ```shell
@@ -235,12 +242,19 @@ and that "origin" refers to your personal fork.
    - Tagging the release will trigger CI to build and publish ISO images.  This will
      also create a draft release on GitHub for the version just tagged.
 10. Add release notes to the GitHub release page.
-11. _Formal releases only:_ TODO: fill this in properly
-    - Update support matrix and upgrade responde
+11. _Formal releases only:_ (TODO: confirm/verify these steps)
+    - Update supported-versions (for security scanning)
+      - https://github.com/harvester/harvester/blob/master/misc/support-versions.txt
+    - Update support matrix
+    - Publish a new version to the upgrade responder a few days after
+      the release (the delay is just in case anyone reports a critical
+      issue)
 
 ## How to Generate / Write Release Notes
 
-TODO: write this section
+Use the `harvester-release` tool from https://github.com/harvester/release
+
+TODO: fill in details
 
 ## How to Use `git cherry -v` Effectively
 
