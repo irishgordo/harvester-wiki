@@ -69,7 +69,7 @@ N/A
 v1.6.0 (July 2025)
 -----
 * Dependent Component Upgrade
-  * K8s - v1.3x
+  * K8s - v1.33
   * Longhorn - v1.9
   * Rancher - TBU (v2.1x)
   * KubeVirt - TBU (v1.x)
