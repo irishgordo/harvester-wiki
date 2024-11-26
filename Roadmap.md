@@ -27,7 +27,7 @@ v1.4.0 (November 2024)
 v1.4.1 (December 2024)
 -----
 * Dependent Component Upgrade
-  * K8s - v1.30
+  * K8s - v1.30 (If v1.4.0 is considered stable, proceed with this update; otherwise, remain on version v1.29.)
   * Longhorn - TBU (v1.7.x)
   * Rancher - TBU (v2.9.x)
   * KubeVirt - TBU (v1.2.x)
