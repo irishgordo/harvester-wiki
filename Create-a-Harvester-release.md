@@ -210,7 +210,7 @@ and that "origin" refers to your personal fork.
    - Then open a PR targeting the release branch, for example:
      https://github.com/harvester/harvester/pull/6956
    - Run smoke tests on the PR:
-     - https://github.com/bk201/harvester-works/actions/workflows/test-smoke-harvester.yml
+     - https://github.com/harvester/release/actions/workflows/test-smoke-harvester-pr.yml
      - Use parameters:
        - harvester_prs: your release PR, e.g.: https://github.com/harvester/harvester/pull/6956
        - extra_run_label: lab
