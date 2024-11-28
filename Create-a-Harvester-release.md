@@ -220,7 +220,7 @@ and that "origin" refers to your personal fork.
      results, and if they appear acceptable, upload the results zip file in
      a comment on the release PR.
    - Get the release PR reviewed and merged.
-8. _Formal releases only:_ (TODO: confirm/verify these steps)
+8. _Formal releases only:_
    - Create a release notes PR in https://github.com/harvester/release-notes/pulls
      - Check if there's a "New contributor issue" in https://github.com/harvester/release-notes/issues
      - Remove unused contributors
@@ -232,6 +232,7 @@ and that "origin" refers to your personal fork.
    - Update README
      - Update versions: https://github.com/harvester/harvester?tab=readme-ov-file#releases
      - Update screenshots
+   - See https://github.com/harvester/harvester/issues/6969 for an example of the above using the v1.4.0 release.
 9. Tag the release on the release branch:
    - Example:
      ```shell
