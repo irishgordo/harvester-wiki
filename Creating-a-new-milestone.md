@@ -1,7 +1,9 @@
-## Create a GitHub milestone and Zenhub release
+## Create a GitHub milestone
 
 - Create a GitHub milestone, for example, `v1.4.0`.
-- Create a Zenhub release, for example, `v1.4.0`. Note the GitHub milestone and Zenhub release name and due date should be identical.
+  - Update the due date.
+  - Add RC dates when RC release dates are decided.
+  - Add "TBD" if the dates are not firm yet.
 
 ## Create stable branches
 
@@ -55,6 +57,7 @@ The following example assumes we will release Harvester `v1.4.0` soon.
         - Ask some developers to review and merge the PRs.
 - [harvester/dashboard](https://github.com/harvester/dashboard)
     - Ask the UI developer to create the `release-harvester-v1.4` branch.
+    - **TODO** UI extension.
 - [harvester/harvester](https://github.com/harvester/harvester)
     - For this new branch
         - Update installer branch: https://github.com/harvester/harvester/blob/95b4f9dc3c63421bcb5cfff5fd579c0cee7424b3/scripts/build-iso#L10
