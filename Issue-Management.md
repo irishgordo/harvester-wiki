@@ -29,8 +29,17 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
 
 - **Backlog** (Maintainer)
   - The issue will be included in the corresponding milestone.
+  - If the feature or bug is complex, Add the `require/HEP` label.
+
 - **Analysis/Design** (Assignee)
+  - The assignee starts working on the issue.
+  - Add a HEP and create a HEP discussion meeting if there is a `require/HEP` label.
+
+
+
 - **Implement** (Assignee, QA)
+  - The assignee starts working on the issue.
+
 - **Review** (Assignee)
 - **Icebox** (Maintainer, Assignee)
 - **Ready For Testing** (Assignee)
