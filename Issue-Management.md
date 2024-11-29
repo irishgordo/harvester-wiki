@@ -13,8 +13,12 @@ Harvester issues are managed with the GitHub project [Harvester Sprint](https://
       - `priority/*`
         - `priority/0` for regression.
         - `priority/0` for customer issues first.
-      - `backport-needed/*`: if the issue needs to backport to a specific version.
-      - `require-ui/*`: if the issue needs some UI changes. For pure UI issues without backend change, please use `area/ui` label.
+      - `backport-needed/*`: the issue needs to be backported to a specific version.
+      - `require/ui-*`: the issue needs UI changes. For pure UI issues without backend change, please use `area/ui` label.
+      - `require/doc`: the issue needs a document change. Please leave a comment on how we want the doc made.
+      - `require/release-note`: the issue needs to be mentioned in the release note. Please add a comment on why we need to mention it.
+      - `not-require/release-note`: The issue will not be listed in the release note. Suitable for CI or chore changes.
+      - `not-require/test-plan`: Don't create a issue in the `harvester/tests` repo.
     - Add a milestone only when:
       - You are a QA and the bug is a regression. Or the bug is critical and needs to be included in a milestone.
       - You are a PM or maintainer and decide to include the issue in a milestone.
