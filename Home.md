@@ -16,7 +16,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 ## Project Management
 
-- [[Issue flow]]
+- [[Issue Management]]
 
 ## Release guide
 
