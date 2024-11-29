@@ -62,5 +62,6 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
 
 
 - **Closed** (QA, Maintainer, Assignee)
-  - An issue is validated and all related works (UI and doc) are finished.
+  - An issue is validated and all related works (UI, doc, issue to track pending improvement) are finished.
+
 
