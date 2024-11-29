@@ -57,6 +57,7 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
 
 - **Testing** (QA)
   - QA is verifying an issue.
+  - QA should self-assign the issue.
   - QA must move an issue back to the **Implement** status if the issue validation fails.
 
 
