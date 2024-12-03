@@ -10,6 +10,10 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
   - A newly created issue goes here.
   - When creating an issue, you should
     - Select the correct issue **type**.
+    - **Customer/Downstream issues**
+      - Make sure there is a corresponding issue in the downstream ticket system.
+      - Do not expose any customer information in the GitHub issue: including screenshots, support bundles, and logs.
+      - (TODO) Check this page for more info.
     - Add **labels** to the issue.
       - `kind/*`, `severity/*`, `area/*`, and `reproduce/*` are required.
       - `priority/*`
@@ -22,7 +26,7 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
       - `require/doc`: the issue needs a document change. Please leave a comment on how we want the doc made.
       - `require/release-note`: the issue needs to be mentioned in the release note. Please add a comment on why we need to mention it.
       - `not-require/release-note`: the issue will not be listed in the release note. Suitable for CI or chore changes.
-      - `not-require/test-plan`: don't create an issue in the `harvester/tests` repo.
+      - `not-require/test-plan`: don't create an issue in the `harvester/tests` repo.     
     - Add a **milestone** only when:
       - You are a QA and the bug is a regression. Or the bug is critical and needs to be included in a milestone.
       - You are a PM or maintainer and decide to include the issue in a milestone.
