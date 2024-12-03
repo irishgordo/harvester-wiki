@@ -13,7 +13,7 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
     - **Customer/Downstream issues**
       - Make sure there is a corresponding issue in the downstream ticket system.
       - Do not expose any customer information in the GitHub issue: including screenshots, support bundles, and logs.
-      - (TODO) Check this page for more info.
+      - Check the internal confluence page for more info: `INTERNAL_CONFLUENCE_URL/x/OYJ7Qw` --> `Create a Harvester GitHub issue` section.
     - Add **labels** to the issue.
       - `kind/*`, `severity/*`, `area/*`, and `reproduce/*` are required.
       - `priority/*`
@@ -69,3 +69,9 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
   - An issue is validated and all related works (UI, doc, issue to track pending improvement) are finished.
 
 
+## Sprint management
+
+- Before each sprint, the assignees must add a sprint to the issues they plan to work on.
+- When a sprint ends, the sprint fields of issues in these statuses will be clean: **New Issues**, **Analysis and Design**, **Implement**. The assignee must add a new sprint to the unfinished issues.
+- When a sprint ends, the sprint fields of issues in these statuses will be moved to the next sprint: **Review**.
+- The sprint fields of issues in these statuses will not be touched when a sprint ends: **Ready For Testing**, **Testing**, and **Closed**.
