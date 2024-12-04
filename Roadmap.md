@@ -57,11 +57,11 @@ v1.5.0 (March 2025)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
 * Volume Encryption (GA)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
-* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-* ARM Support (GA)
 
 **Waiting to review**
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
+* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
+* ARM Support (GA)
 
 **Planed to re-prioritize**
 N/A
