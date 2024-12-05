@@ -74,6 +74,8 @@ v1.6.0 (July 2025)
   * Rancher - TBU (v2.1x)
   * KubeVirt - TBU (v1.x)
   * SLE Micro - TBU (v6.x)
+
+**Waiting to review**
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Third-party CNI support
