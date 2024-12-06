@@ -53,15 +53,15 @@ v1.5.0 (March 2025)
   * SLE Micro - TBU (v5.5)
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
-* [DR Volume](https://github.com/harvester/harvester/issues/1850)
-* [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
-* Volume Encryption (GA)
+* ARM Support
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 
 **Waiting to review**
+* [DR Volume](https://github.com/harvester/harvester/issues/1850)
+* [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
+* Volume Encryption (GA)
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-* ARM Support (GA)
 
 **Planed to re-prioritize**
 N/A
