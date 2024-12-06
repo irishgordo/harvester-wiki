@@ -39,7 +39,7 @@
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * Volume Encryption (GA)
 
-**Waiting to Review**
+### Waiting to Review
   * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 
 ## Harvester v1.6.0 (July 2025)
@@ -51,7 +51,7 @@
   * KubeVirt - TBU (v1.x)
   * SLE Micro - TBU (v6.x)
 
-**Waiting to Review**
+### Waiting to Review
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
