@@ -32,11 +32,12 @@
   * Rancher - TBU (v2.10)
   * KubeVirt - TBU (v1.3)
   * SLE Micro - TBU (v5.5)
-  * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
-  * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
-  * ARM Support (GA)
-  * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
-  * Volume Encryption (GA)
+
+* [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
+* [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
+* ARM Support (GA)
+* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
+* Volume Encryption (GA)
 
 **Waiting to Review**
   * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
