@@ -3,8 +3,10 @@
 > 
 > For precise release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 
-v1.4.1 (December 2024)
------
+# Upcoming Releases
+
+## Harvester v1.4.1 (December 2024)
+
 * Dependent Component Upgrade
   * K8s - v1.30
     *  If v1.4.0 is considered stable, proceed with this update; otherwise, remain on version v1.29.)
@@ -13,8 +15,8 @@ v1.4.1 (December 2024)
   * KubeVirt - TBU (v1.2.x)
   * SLE Micro - v5.5
 
-v1.4.2 (January 2025, before v1.5.0)
------
+## Harvester v1.4.2 (January 2025, before v1.5.0)
+
 * Dependent Component Upgrade
   * K8s - v1.31
   * Longhorn - TBU (v1.7.x)
@@ -22,8 +24,8 @@ v1.4.2 (January 2025, before v1.5.0)
   * KubeVirt - TBU (v1.2.x)
   * SLE Micro - v5.5
 
-v1.5.0 (March 2025)
------
+## Harvester v1.5.0 (March 2025)
+
 * Dependent Component Upgrade
   * K8s - v1.32
   * Longhorn - v1.8
@@ -39,8 +41,8 @@ v1.5.0 (March 2025)
 **Waiting to Review**
   * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 
-v1.6.0 (July 2025)
------
+## Harvester v1.6.0 (July 2025)
+
 * Dependent Component Upgrade
   * K8s - v1.33
   * Longhorn - v1.9
@@ -63,22 +65,14 @@ v1.6.0 (July 2025)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 
-v1.7.0 (November 2025)
------
+## Harvester v1.7.0 (November 2025)
+
 TBU
 
-Future
-------
-* [[ENHANCEMENT] HA for Vcluster](https://github.com/harvester/harvester/issues/4492)
-* Enhanced Integration with Rancher for massive edge deployments
-* Fleet management for Harvester (Experimental)
-* [Harvester Support DR Volumes](https://github.com/harvester/harvester/issues/1850)
-* Third-party Backup Solution support (note: general or specific backup integration)
-
-Past releases
+# Previous releases
 ---
 
-v1.4.0 (November 2024)
+## Harvester v1.4.0 (November 2024)
 -----
 * Dependent Component Upgrade
   * K8s - v1.29
@@ -98,7 +92,7 @@ v1.4.0 (November 2024)
 * [Volume Encryption](https://github.com/harvester/harvester/issues/3129) (Experimental)
 * [Third-Party Storage for Diskless Servers](https://github.com/harvester/harvester/issues/5150)
 
-Harvester v1.3.2 (September 2024)
+## Harvester v1.3.2 (September 2024)
 -----
 * Dependent Component Upgrade
   * K8s - v1.28
@@ -109,7 +103,7 @@ Harvester v1.3.2 (September 2024)
 * Stabilization
 * Security patches
 
-Harvester v1.3.1 (June 2024)
+## Harvester v1.3.1 (June 2024)
 ---------------------
 * Dependent Component Upgrade
   * K8s v1.27
