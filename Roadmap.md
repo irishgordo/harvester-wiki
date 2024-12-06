@@ -51,20 +51,14 @@ v1.5.0 (March 2025)
   * Rancher - TBU (v2.10)
   * KubeVirt - TBU (v1.3)
   * SLE Micro - TBU (v5.5)
-* [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
-* [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
-* ARM Support
-* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
+  * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
+  * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
+  * ARM Support (GA)
+  * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
+  * Volume Encryption (GA)
 
-**Waiting to review**
-* [DR Volume](https://github.com/harvester/harvester/issues/1850)
-* [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
-* Volume Encryption (GA)
-* [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
-* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-
-**Planed to re-prioritize**
-N/A
+**Waiting to Review**
+  * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 
 v1.6.0 (July 2025)
 -----
@@ -75,7 +69,10 @@ v1.6.0 (July 2025)
   * KubeVirt - TBU (v1.x)
   * SLE Micro - TBU (v6.x)
 
-**Waiting to review**
+**Waiting to Review**
+* [DR Volume](https://github.com/harvester/harvester/issues/1850)
+* [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
+* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Third-party CNI support
