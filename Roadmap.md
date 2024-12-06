@@ -3,27 +3,6 @@
 > 
 > For precise release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 
-
-v1.4.0 (November 2024)
------
-* Dependent Component Upgrade
-  * K8s - v1.29
-  * Longhorn - v1.7.1
-  * Rancher - v2.9.1
-  * KubeVirt - v1.2.2
-  * SLE Micro - v5.5
-* [Local volume Support w/o Live Migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
-* [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
-* [Restore VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
-* [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
-* [CPU Pinning](https://github.com/harvester/harvester/issues/2305)
-* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
-* [Improving Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
-* [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
-* [Longhorn v2 Data Engine support](https://github.com/harvester/harvester/issues/5274) (Experimental)
-* [Volume Encryption](https://github.com/harvester/harvester/issues/3129) (Experimental)
-* [Third-Party Storage for Diskless Servers](https://github.com/harvester/harvester/issues/5150)
-
 v1.4.1 (December 2024)
 -----
 * Dependent Component Upgrade
@@ -98,6 +77,26 @@ Future
 
 Past releases
 ---
+
+v1.4.0 (November 2024)
+-----
+* Dependent Component Upgrade
+  * K8s - v1.29
+  * Longhorn - v1.7.1
+  * Rancher - v2.9.1
+  * KubeVirt - v1.2.2
+  * SLE Micro - v5.5
+* [Local volume Support w/o Live Migration](https://github.com/harvester/harvester/issues/5724) (Experimental)
+* [RWX volume for Guest Cluster Workload](https://github.com/harvester/harvester/issues/1992)
+* [Restore VMs into a new Harvester cluster](https://github.com/harvester/harvester/issues/2237)
+* [Scheduling of VM Backups](https://github.com/harvester/harvester/issues/2756)
+* [CPU Pinning](https://github.com/harvester/harvester/issues/2305)
+* [USB Passthrough​](https://github.com/harvester/harvester/issues/1710)
+* [Improving Maintenance Mode](https://github.com/harvester/harvester/issues/5069)
+* [VM Snapshot Space Management](https://github.com/harvester/harvester/issues/4478)
+* [Longhorn v2 Data Engine support](https://github.com/harvester/harvester/issues/5274) (Experimental)
+* [Volume Encryption](https://github.com/harvester/harvester/issues/3129) (Experimental)
+* [Third-Party Storage for Diskless Servers](https://github.com/harvester/harvester/issues/5150)
 
 Harvester v1.3.2 (September 2024)
 -----
