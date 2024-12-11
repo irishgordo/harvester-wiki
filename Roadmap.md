@@ -32,15 +32,15 @@
   * Rancher - TBU (v2.11)
   * KubeVirt - TBU (v1.3)
   * SLE Micro - TBU (v5.5)
-
-* [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
-* [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
-* ARM Support (GA)
+* Thrid-party Storage Support (Preview)
+  - [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
+* ARM Support (Preview)
+  - TBU
+* Volume Encryption for Longhorn V1 Data Engine (GA)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
-* Volume Encryption (GA)
 
 ### Waiting to Review
-  * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
+N/A
 
 ## Harvester v1.6.0 (July 2025)
 
@@ -52,6 +52,7 @@
   * SLE Micro - TBU (v6.x)
 
 ### Waiting to Review
+* [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
@@ -60,7 +61,7 @@
 * Third-party CNI support
 * Cisco Discovery Protocol and LLDP Support
 * Improve Security by default on Rancher OS v2
-
+* [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * Local volume support w/ live migration (GA)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
