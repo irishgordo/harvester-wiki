@@ -8,6 +8,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 ## Harvester Roadmap
 
 - [[Roadmap]]
+- [[Harvester Feature Maturity]]
 
 ## Dev guides
 
