@@ -5,7 +5,7 @@
 
 # Upcoming Releases
 
-## Harvester v1.4.1 (December 2024)
+## Harvester v1.4.1 (January 2025)
 
 * Dependent Component Upgrade
   * K8s - v1.30
@@ -15,7 +15,7 @@
   * KubeVirt - TBU (v1.2.x)
   * SLE Micro - v5.5
 
-## Harvester v1.4.2 (January 2025, before v1.5.0)
+## Harvester v1.4.2 (February 2025, before v1.5.0)
 
 * Dependent Component Upgrade
   * K8s - v1.31
