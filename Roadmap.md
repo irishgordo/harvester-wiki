@@ -37,8 +37,8 @@
 * ARM Support (Preview)
   - TBU
 * Volume Encryption for Longhorn V1 Data Engine (GA)
-- [Live Migration progress](https://github.com/harvester/harvester/issues/4352)
-* [Support load balancers on non-management interfaces for guest Kubernetes clusters](https://github.com/harvester/harvester/issues/5486)
+- [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
+* [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 
 ### Waiting to Review
 N/A
