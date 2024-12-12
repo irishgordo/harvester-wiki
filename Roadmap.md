@@ -37,7 +37,6 @@
 * ARM Support (Preview)
   - TBU
 * Volume Encryption for Longhorn V1 Data Engine (GA)
-* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 
 ### Waiting to Review
 N/A
@@ -52,6 +51,7 @@ N/A
   * SLE Micro - TBU (v6.x)
 
 ### Waiting to Review
+* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
