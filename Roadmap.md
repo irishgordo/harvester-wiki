@@ -31,7 +31,7 @@
   * Longhorn - v1.8
   * Rancher - TBU (v2.11)
   * KubeVirt - TBU (v1.3)
-  * SLE Micro - TBU (v5.5 or v6.x)
+  * SLE Micro - TBU (v6.x)
 * Thrid-party Storage Support (Preview)
   - [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
 * ARM Support (Preview)
