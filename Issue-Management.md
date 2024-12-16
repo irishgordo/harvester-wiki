@@ -1,5 +1,3 @@
-**NOTE: WIP**
-
 Harvester issues are managed with the GitHub project [Harvester Sprint](https://github.com/orgs/harvester/projects/7).
 
 ## Issue status
@@ -26,11 +24,14 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
       - `require/doc`: the issue needs a document change. Please leave a comment on how we want the doc made.
       - `require/release-note`: the issue needs to be mentioned in the release note. Please add a comment on why we need to mention it.
       - `not-require/release-note`: the issue will not be listed in the release note. Suitable for CI or chore changes.
-      - `not-require/test-plan`: don't create an issue in the `harvester/tests` repo.     
+      - `not-require/test-plan`: don't create an issue in the `harvester/tests` repo.
+      - `require/external-update`: the issue requires a change outside Harvester. For example, a Rancher backend change.
+      - `require/rancher-ui`: the issue requires a change in the Rancher UI.
     - Add a **milestone** only when:
       - You are a QA and the bug is a regression. Or the bug is critical and needs to be included in a milestone.
       - You are a PM or maintainer and decide to include the issue in a milestone.
-      - Add the label `candidate/vx.y.z` if you wish to include this issue in a milestone.
+      - Add the label `candidate/vx.y.z` to include this issue in a milestone.
+
 
 - **Backlog** (Maintainer)
   - An issue with the status will be included in the corresponding milestone.
