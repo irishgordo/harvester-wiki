@@ -68,6 +68,8 @@ N/A
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
+* [Allow upgrade when there's VMs in the cluster that's can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
+
 
 ## Harvester v1.7.0 (November 2025)
 
@@ -95,6 +97,7 @@ TBU
 * [Longhorn v2 Data Engine support](https://github.com/harvester/harvester/issues/5274) (Experimental)
 * [Volume Encryption](https://github.com/harvester/harvester/issues/3129) (Experimental)
 * [Third-Party Storage for Diskless Servers](https://github.com/harvester/harvester/issues/5150)
+
 
 ## Harvester v1.3.2 (September 2024)
 -----
