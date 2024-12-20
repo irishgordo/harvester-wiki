@@ -10,6 +10,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 - [[Roadmap]]
 - [[Harvester Feature Maturity]]
 
+
 ## Dev guides
 
 - [[Branch Strategy]]
@@ -23,6 +24,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 - [[Creating a new milestone]]
 - [[Create a Harvester release]]
+- [[Known issues]]
 
 ## Dev Resources
 
