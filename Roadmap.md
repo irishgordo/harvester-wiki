@@ -29,8 +29,8 @@
 * Dependent Component Upgrade
   * K8s - v1.32
   * Longhorn - v1.8
-  * Rancher - TBU (v2.11)
-  * KubeVirt - TBU (v1.3)
+  * Rancher - v2.10
+  * KubeVirt - v1.4
   * SLE Micro - TBU (v6.x)
 * Thrid-party Storage Support (Preview)
   - [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
@@ -48,8 +48,8 @@ N/A
 * Dependent Component Upgrade
   * K8s - v1.33
   * Longhorn - v1.9
-  * Rancher - TBU (v2.1x)
-  * KubeVirt - TBU (v1.x)
+  * Rancher - v2.11
+  * KubeVirt - v1.5
   * SLE Micro - TBU (v6.x)
 
 ### Waiting to Review
