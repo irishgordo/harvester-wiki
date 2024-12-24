@@ -10,9 +10,9 @@
 * Dependent Component Upgrade
   * K8s - v1.30
     *  If v1.4.0 is considered stable, proceed with this update; otherwise, remain on version v1.29.)
-  * Longhorn - TBU (v1.7.x)
-  * Rancher - TBU (v2.9.x)
-  * KubeVirt - TBU (v1.2.x)
+  * Longhorn - v1.7.2
+  * Rancher - v2.9.3
+  * KubeVirt - v1.2.2
   * SLE Micro - v5.5
 
 ## Harvester v1.4.2 (February 2025, before v1.5.0)
@@ -20,18 +20,18 @@
 * Dependent Component Upgrade
   * K8s - v1.31
   * Longhorn - TBU (v1.7.x)
-  * Rancher - TBU (v2.10.x)
-  * KubeVirt - TBU (v1.2.x)
+  * Rancher - v2.9.3
+  * KubeVirt - v1.2.2
   * SLE Micro - v5.5
 
 ## Harvester v1.5.0 (March 2025)
 
 * Dependent Component Upgrade
   * K8s - v1.32
-  * Longhorn - v1.8
-  * Rancher - v2.10
-  * KubeVirt - v1.4
-  * SLE Micro - TBU (v6.x)
+  * Longhorn - v1.8.x
+  * Rancher - v2.10.x
+  * KubeVirt - v1.4.x
+  * SLE Micro - v6.x
 * Thrid-party Storage Support (Preview)
   - [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
 * ARM Support (Preview)
