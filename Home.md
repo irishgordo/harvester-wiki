@@ -8,21 +8,17 @@
 - [[Roadmap]]
 - [[Harvester Feature Maturity]]
 
-
-## Dev guides
+## Release Management
 
 - [[Branch Strategy]]
-
-## Project Management
-
-- [[Issue Management]]
-
-## Release guide
-
 - [[Release Schedule & Support]]
 - [[Creating a new milestone]]
 - [[Create a Harvester release]]
 - [[Known issues]]
+
+## Project Management
+
+- [[Issue Management]]
 
 ## Dev Resources
 
@@ -37,18 +33,14 @@
 - [[Upgrading from an unsupported version]]
 - [[Misc]]
 
-## Dev images
+## Dev Images
+
+> Note:
+> * There is no support or guarantee available for those dev and sprint release images.
+> * Feel free to report issues regarding the dev build images.
 
 For daily-build dev ISOs, you can find them on:
 - The master build **unstable** image is available at: https://releases.rancher.com/harvester/master/harvester-master-amd64.iso
 - The `v*` branch ISOs are available at:  https://releases.rancher.com/harvester/v1.4/harvester-v1.4-amd64.iso
 - The sprint releases. You can check sprint releases at https://github.com/harvester/harvester/releases. They are named like `v1.4.0-dev-<date>`.
 
-> Note:
-> * There is no support or guarantee available for those dev and sprint release images.
-> * Feel free to report issues regarding the dev build images.
-
-
-## Deprecated pages
-- [[Harvester API Test]]
-- [[Authn Initialization Automation]]
