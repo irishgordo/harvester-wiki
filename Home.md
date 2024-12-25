@@ -14,7 +14,6 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 ## Dev guides
 
 - [[Branch Strategy]]
-- [[Repositories]]
 
 ## Project Management
 
