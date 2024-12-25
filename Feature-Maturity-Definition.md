@@ -1,10 +1,10 @@
 The maturity of a Harvester feature can be categorized into these stages:
 
-### Experimental
+### Experimental (alpha)
 
   The feature is for testing purposes. It might cause data loss, and the UX/API can change in the later releases. The feature is not supported, but bug reports are welcome.
 
-### Technical Preview
+### Technical Preview (beta)
 
   The feature is more stable and ready for public preview. UX/API is not supposed to change after entering GA. The feature is supported with best effort, bug reports are welcome.
 
