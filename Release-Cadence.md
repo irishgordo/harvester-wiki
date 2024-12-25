@@ -13,31 +13,31 @@ vX.Y.(1-Z) release is classified as a prime release and follows the support life
 ## Release Cadence
 
 * 4-month cadence
-* Mar(3), Jul(7), Nov(11)
-* Patch release will be a 1.5-month release cadence with best efforts
+* March (3), July (7), November (11)
+* Patch releases will follow a 1.5-month cadence on a best-effort basis
 
 ## Dependency Adoption Cadence
 
 ### Dependency Release Cadence
 
-* RKE2: Apr(4) Aug(8) Dec(12) 
-  * RKE2 is following the same release cadence as upstream K8s
+* RKE2: April (4), August (8), December (12)
+  * RKE2 follows the same release cadence as upstream Kubernetes (K8s).
 
-* Longhorn: Jan(1) May(5) Sep(9)
-  * From 1.8, 18 months support period
+* Longhorn: January (1), May (5), September (9)
+  * Starting with version 1.8, there is an 18-month support period.
 
 * Rancher: Mar(3) Jul(7) Nov(11) 
-  * From 2.9, 18 months support period. 
-  * Support RKE2 v<n-1> ~ v<n-4>
+  * Starting with version 2.9, there is an 18-month support period.
+  * Supports RKE2 versions from v<n-1> to v<n-4>.
 
 * Harvester: Mar(3) Jul(7) Nov(11) 
-  * From 1.5, 18 months support period
+  * Starting with version 1.5, there is an 18-month support period.
 
 * KubeVirt: Mar(3) Jul(7) Nov(11) 
 
 * SLE Micro: Biannual release
-  * First and second half-year release. 
-  * 4 years maintenance period)
+  * Released in the first and second half of the year.
+  * Support a 4-year maintenance period.
 
 ### Adoption Strategy
 
