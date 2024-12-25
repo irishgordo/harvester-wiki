@@ -4,11 +4,11 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 
 ### Community Release
 
-x.y.z release is considered a community release. x.y community support ends when version vX.(Y+1).1 is released.
+**x.y.z** release is considered a community release. **x.y** community support ends when version **x.(y+1).1** is released.
 
 ### Prime Release
 
-x.y.[1-z] release is classified as a prime release and follows the support lifecycle of 6 months of active support followed by 12 months of maintenance support (ex: critical or CVE issues).
+**x.y.[1-z]** release is classified as a prime release and follows the support lifecycle of 6 months of active support followed by 12 months of maintenance support (ex: critical or CVE issues).
 
 ## Release Cadence
 
@@ -48,15 +48,14 @@ x.y.[1-z] release is classified as a prime release and follows the support lifec
 
 To ensure dependencies are supported during the Harvester release support period, adopt the following strategies using best efforts:
 
-For components released before the Harvester release, use the latest release, n. 
-* Longhorn n
+For components released before the Harvester release, use the latest release, **n**. 
+* Longhorn
 
-For components released after the Harvester release, use the n-1 release instead.
-* RKE2 n-1
-* Rancher n-1
-* KubeVirt n-1
-* KubeVirt n-1
-* SLE Micro n-1
+For components released after the Harvester release, use the **n-1** release instead.
+* RKE2
+* Rancher
+* KubeVirt
+* SLE Micro
 
 
 
