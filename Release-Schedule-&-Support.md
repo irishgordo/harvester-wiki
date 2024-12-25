@@ -46,7 +46,7 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 
 ### Adoption Policy
 
-To ensure dependencies are supported during the Harvester release support period, adopt the following strategies using best efforts:
+To ensure dependencies are supported during the Harvester release support period, adopt the following strategies:
 
 For components released before the Harvester release, use the latest release, **n**. 
 * Longhorn
