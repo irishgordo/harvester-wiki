@@ -56,6 +56,7 @@ For components released after the Harvester release, use the **n-1** release ins
 * KubeVirt
 * SLE Micro
 
+For external Rancher support, each Rancher version will be supported to manage the corresponding Harvester version released in the same month. When upgrading the managed Harvester clusters, users must upgrade Rancher first to the supported version, followed by Harvester.
 
 
 
