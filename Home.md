@@ -3,7 +3,7 @@
 * The latest release is Harvester [![Releases](https://img.shields.io/github/release/harvester/harvester/all.svg)](https://github.com/harvester/harvester/releases).
 * Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
-## Harvester Roadmap
+## Roadmap
 
 - [[Roadmap]]
 - [[Harvester Feature Maturity]]
