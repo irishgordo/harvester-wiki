@@ -27,15 +27,15 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 * Longhorn: January (1), May (5), September (9)
   * Has 18-month support period since 1.5.
 
-* Rancher: Mar(3) Jul(7) Nov(11) 
+* Rancher: March (3), July(7), November (11) 
   * Starting with version 2.9, there is an 18-month support period.
   * Support RKE2 versions from version n-1 to n-4. (n means the upcoming/latest version)
   * Has an 18-month support period since 2.9.
 
-* Harvester: Mar(3) Jul(7) Nov(11) 
+* Harvester: March (3), July(7), November (11) 
   * Starting with version 1.5, there is an 18-month support period.
 
-* KubeVirt: Mar(3) Jul(7) Nov(11) 
+* KubeVirt: March (3), July(7), November (11) 
   * Support the recent three Kubernetes releases. For example, KubeVirt 1.4 supports K8s 1.31, 1.30, and 1.29, as K8s 1.33 is released after 1.4.
   * [KubeVirt Support Matrix](https://github.com/kubevirt/sig-release/blob/main/releases/k8s-support-matrix.md)
   * Has a 14-month support period aligning with the Kubernetes support period.
