@@ -1,9 +1,7 @@
-**Welcome to the Harvester Wiki!**
+## Welcome to the Longhorn Wiki!
 
-The wiki is used for development documentation.
-
-Check https://docs.harvesterhci.io/ for the Harvester user documentation.
-
+* The latest release is Harvester [![Releases](https://img.shields.io/github/release/harvester/harvester/all.svg)](https://github.com/harvester/harvester/releases).
+* Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 ## Harvester Roadmap
 
