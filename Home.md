@@ -13,7 +13,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 ## Dev guides
 
-- [[Branch Strategy]]
+- [[Release Schedule & Support]]
 
 ## Project Management
 
