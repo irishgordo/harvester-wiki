@@ -35,7 +35,7 @@
 
 ## Dev Images
 
-> Note:
+> [!warning]
 > * There is no support or guarantee available for those dev and sprint release images.
 > * Feel free to report issues regarding the dev build images.
 
