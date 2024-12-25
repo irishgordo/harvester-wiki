@@ -13,7 +13,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 ## Dev guides
 
-- [[Release Schedule & Support]]
+- [[Branch Strategy]]
 
 ## Project Management
 
@@ -21,7 +21,7 @@ Check https://docs.harvesterhci.io/ for the Harvester user documentation.
 
 ## Release guide
 
-- [[Release Strategy]]
+- [[Release Schedule & Support]]
 - [[Creating a new milestone]]
 - [[Create a Harvester release]]
 - [[Known issues]]
