@@ -44,7 +44,7 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
   * Released in the first and second half of the year.
   * Has a 4-year support period.
 
-### Adoption Strategy
+### Adoption Policy
 
 To ensure dependencies are supported during the Harvester release support period, adopt the following strategies using best efforts:
 
