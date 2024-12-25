@@ -12,9 +12,8 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 
 ## Release Cadence
 
-* 4-month cadence
-* March (3), July (7), November (11)
-* Patch releases will follow a 1.5-month cadence on a best-effort basis
+* 4-month minor release cadence. March (3), July (7), November (11)
+* 1.5-month patch release cadence with best efforts
 
 ## Dependency Adoption Cadence
 
