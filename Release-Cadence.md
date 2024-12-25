@@ -4,11 +4,11 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 
 ### Community Release
 
-vX.Y.Z release is considered a community release. vX.Y community support ends when version vX.(Y+1).1 is released.
+x.y.z release is considered a community release. x.y community support ends when version vX.(Y+1).1 is released.
 
 ### Prime Release
 
-vX.Y.(1-Z) release is classified as a prime release and follows the support lifecycle of 6 months of active support followed by 12 months of maintenance support (ex: critical or CVE issues).
+x.y.[1-z] release is classified as a prime release and follows the support lifecycle of 6 months of active support followed by 12 months of maintenance support (ex: critical or CVE issues).
 
 ## Release Cadence
 
@@ -21,30 +21,42 @@ vX.Y.(1-Z) release is classified as a prime release and follows the support life
 ### Dependency Release Cadence
 
 * RKE2: April (4), August (8), December (12)
-  * RKE2 follows the same release cadence as upstream Kubernetes (K8s).
+  * Follows the same release cadence as upstream Kubernetes.
+  * Has a 14-month support period: 12 months of active support followed by 2 months of maintenance support.
 
 * Longhorn: January (1), May (5), September (9)
-  * Starting with version 1.8, there is an 18-month support period.
+  * Has 18-month support period since 1.5.
 
 * Rancher: Mar(3) Jul(7) Nov(11) 
   * Starting with version 2.9, there is an 18-month support period.
-  * Supports RKE2 versions from v<n-1> to v<n-4>.
+  * Support RKE2 versions from version n-1 to n-4. (n means the upcoming/latest version)
+  * Has an 18-month support period since 2.9.
 
 * Harvester: Mar(3) Jul(7) Nov(11) 
   * Starting with version 1.5, there is an 18-month support period.
 
 * KubeVirt: Mar(3) Jul(7) Nov(11) 
+  * Support the recent three Kubernetes releases. For example, KubeVirt 1.4 supports K8s 1.31, 1.30, and 1.29, as K8s 1.33 is released after 1.4.
+  * [KubeVirt Support Matrix](https://github.com/kubevirt/sig-release/blob/main/releases/k8s-support-matrix.md)
+  * Has a 14-month support period aligning with the Kubernetes support period.
 
 * SLE Micro: Biannual release
   * Released in the first and second half of the year.
-  * Support a 4-year maintenance period.
+  * Has a 4-year support period.
 
 ### Adoption Strategy
 
-* Use
+To ensure dependencies are supported during the Harvester release support period, adopt the following strategies using best efforts:
 
-(RKE2 v<n-1>, Rancher v<n-1>, KubeVirt v<n-1>)
+For components released before the Harvester release, use the latest release, n. 
+* Longhorn n
 
+For components released after the Harvester release, use the n-1 release instead.
+* RKE2 n-1
+* Rancher n-1
+* KubeVirt n-1
+* KubeVirt n-1
+* SLE Micro n-1
 
 
 
