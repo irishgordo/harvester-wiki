@@ -1,4 +1,4 @@
-## Welcome to the Longhorn Wiki!
+**Welcome to the Longhorn Wiki!**
 
 * The latest release is Harvester [![Releases](https://img.shields.io/github/release/harvester/harvester/all.svg)](https://github.com/harvester/harvester/releases).
 * Check https://docs.harvesterhci.io/ for the Harvester user documentation.
