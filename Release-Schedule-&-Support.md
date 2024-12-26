@@ -58,7 +58,7 @@ For components released after the Harvester release, use the **n-1** release ins
 
 ## External Rancher Support
 
-For external Rancher support, each Rancher version will be supported to manage the corresponding Harvester version released in the same month. When upgrading the managed Harvester clusters, users must upgrade Rancher first to the supported version, followed by Harvester.
+For external Rancher support, each Rancher version will be supported to manage the corresponding Harvester version released in the same month. When upgrading the managed Harvester clusters, users must upgrade Rancher first to the supported version, followed by Harvester upgrade.
 
 When Rancher versions reach EOM (6 months) for active support, only critical and CVE issues are prioritized for fixing in the Harvester-Rancher integration functions (Virtualization Management).
 
