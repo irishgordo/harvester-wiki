@@ -56,7 +56,17 @@ For components released after the Harvester release, use the **n-1** release ins
 * KubeVirt
 * SLE Micro
 
+## External Rancher Support
+
 For external Rancher support, each Rancher version will be supported to manage the corresponding Harvester version released in the same month. When upgrading the managed Harvester clusters, users must upgrade Rancher first to the supported version, followed by Harvester.
+
+When Rancher versions reach EOM (6 months) for active support, only critical and CVE issues are prioritized for fixing in the Harvester-Rancher integration functions (Virtualization Management).
+
+### Support Matrix
+
+- Harvester 1.3/1.4 -> Rancher 2.9 and 2.10
+- Harvester 1.5 -> Rancher 2.11 (lifecycle alignment)
+- Harvester 1.6 -> Rancher 2.12 (lifecycle alignment)
 
 
 
