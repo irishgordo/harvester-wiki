@@ -15,7 +15,7 @@
   * KubeVirt - v1.2.2
   * SLE Micro - v5.5
 
-## Harvester v1.3.3 (February 2025, before v1.4.2)
+## Harvester v1.3.3 (TBD)
 
 * Dependent Component Upgrade
   * K8s - v1.28
