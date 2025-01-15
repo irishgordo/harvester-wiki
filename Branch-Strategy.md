@@ -28,7 +28,7 @@ Here is the proposed workflow:
 - When we start working on a new milestone `v1.x.0`. Each dependency should create a `v1.x` branch. Codes for the minor releases must be backported to the branch.
 - Sprint releases (before the first RC `v1.x.y-rc1`)
   - Each dependency publishes images with the tag like `v1.x.y-dev.1` (and `v1.x.y-dev.2` so on). The release is on demand.
-  - Each dependency publishes charts with version lie  `v1.x.y-dev.0` (and `v1.x.y-dev.1` so on). The release is on demand.
+  - Each dependency publishes charts with version lie  `v1.x.y-dev.1` (and `v1.x.y-dev.2` so on). The release is on demand.
   - The dependency chart owner must update the [dependency charts](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/Chart.yaml) and image tags in the [`values.yaml` files](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/values.yaml) in the harvester/harvester repo. The operation must be done on the master and stable branches.
   - The add-on owner must update the add-on chart and image tag in the [`addons repo`](https://github.com/harvester/addons/blob/main/version_info). The operation must be done on the main and stable branches.
 - RC releases: nothing needs to be done here. The `v1.x.y-dev.z` versions are OK.
