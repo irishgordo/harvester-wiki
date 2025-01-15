@@ -36,7 +36,7 @@ Here is the proposed workflow:
   - Bump all dependencies/add-ons charts' version to `v1.x.y` and confirm charts are published.
   - Bump all dependencies/add-ons charts' image tags to `v1.x.y` and confirm images are published.
   - Update dependency charts and image tags in the `values.yaml` file in the stable branch (harvester/harvester).
-  - Update dependency charts and image tags in the `values.yaml` file in the stable branch (harvester/addons).
+  - Update dependency charts and image tags in the `version_info` file in the stable branch (harvester/addons).
   
 
 
