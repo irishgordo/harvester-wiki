@@ -14,6 +14,7 @@ The following example assumes we will release Harvester `v1.4.0` soon.
 - Harvester components
     - Components include dependency charts and add-ons.
     - Component owners have to create a stable branch.
+    - Create a stable branch in https://github.com/harvester/charts. For example, use `release` for the latest milestone `v1.5` and create a new branch `release-v1.4` for the previous milestone.
     - For each component, the component owner has to bump the minor version. This applies to both component charts and image tags.
         - For example, in Harvester `v1.3.x`, the harvester-node-disk-manager component has
             - chart version `0.6.0` https://github.com/harvester/harvester/blob/4e7387e8611c36f8165f331f74b17ae212fbddf3/deploy/charts/harvester/Chart.yaml#L33
