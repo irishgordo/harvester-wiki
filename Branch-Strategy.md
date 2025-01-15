@@ -31,7 +31,7 @@ Here is the proposed workflow:
   - Each dependency publishes charts with version lie  `v1.x.y-dev.1` (and `v1.x.y-dev.2` so on). The release is on demand.
   - The dependency chart owner must update the [dependency charts](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/Chart.yaml) and image tags in the [`values.yaml` files](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/values.yaml) in the harvester/harvester repo. The operation must be done on the master and stable branches.
   - The add-on owner must update the add-on chart and image tag in the [`addons repo`](https://github.com/harvester/addons/blob/main/version_info). The operation must be done on the main and stable branches.
-- RC releases: nothing needs to be done here. The `v1.x.y-dev.zz` versions are OK.
+- RC releases: nothing needs to be done here. The `v1.x.y-dev.z` versions are OK.
 - Formal release: the release captain must initiate an automatic task (TO ADD) to
   - Bump all dependencies/add-ons charts' version to `v1.x.y` and confirm charts are published.
   - Bump all dependencies/add-ons charts' image tags to `v1.x.y` and confirm images are published.
