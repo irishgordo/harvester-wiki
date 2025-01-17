@@ -68,3 +68,4 @@ The following example assumes we will release Harvester `v1.4.0` soon.
         - Update components’ image tags [in the values.yaml file](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/values.yaml)
             - Sample: https://github.com/harvester/harvester/pull/6128/commits/3f0e9ed94272bd555245e353ba17a3bd7e732913
             - An easier way is to copy the file from the previous version’s stable branch
+        - Update mergify.yml to let Mergify bot auto-create backport PRs if certain conditions are met, e.g., for v1.5, add this https://github.com/harvester/harvester/blob/d3f5e936313b9530f5ff7d6cdc4572d60fd62555/.github/mergify.yml#L2-L11
