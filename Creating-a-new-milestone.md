@@ -65,7 +65,8 @@ The following example assumes we will release Harvester `v1.4.0` soon.
         - Update UI-indexes in the **settings** and **Dockerfile**, like https://github.com/harvester/harvester/pull/5857/files
         - Update addons branch (since v1.4)
             - https://github.com/harvester/harvester/blob/9c0a3a17f42831b590a92f3743ac027a66a25b8d/scripts/generate-addons#L8
-        - Update components’ image tags [in the values.yaml file](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/values.yaml)
+        - Update components’ chart and image tags in the [`Chart.yaml`](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/Chart.yaml) and [`values.yaml`](https://github.com/harvester/harvester/blob/master/deploy/charts/harvester/values.yaml) files, respectively
             - Sample: https://github.com/harvester/harvester/pull/6128/commits/3f0e9ed94272bd555245e353ba17a3bd7e732913
             - An easier way is to copy the file from the previous version’s stable branch
+            - Note: If there are any dependency chart updates in `harvester/harvester`'s `Chart.yaml` file, please remember to run `helm dependency update` and exclude any unnecessary tarball updates in your commit.
         - Update mergify.yml to let Mergify bot auto-create backport PRs if certain conditions are met, e.g., for v1.5, add this https://github.com/harvester/harvester/blob/d3f5e936313b9530f5ff7d6cdc4572d60fd62555/.github/mergify.yml#L2-L11
