@@ -41,6 +41,7 @@ The following example assumes we will release Harvester `v1.4.0` soon.
         - Update add-ons branch (since v1.4)
             - https://github.com/harvester/harvester-installer/blob/8ed87a5023061308b575227125a351061e6d5161/scripts/build#L33
             - https://github.com/harvester/harvester-installer/blob/8ed87a5023061308b575227125a351061e6d5161/scripts/build-bundle#L15
+            - https://github.com/harvester/harvester-installer/blob/3c989a886f971dcebe8a8c427e7c21550e056a48/scripts/test#L10
         - Sample PR: https://github.com/harvester/harvester-installer/pull/761
         - Update the harvester branch (before v1.4)
             - https://github.com/harvester/harvester-installer/blob/6267f1893b02b4302d1b7b924f7d378b8cce47d9/scripts/build#L14
