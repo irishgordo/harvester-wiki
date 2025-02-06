@@ -29,7 +29,7 @@
 * Dependent Component Upgrade
   * K8s - v1.32
   * Longhorn - v1.8.x
-  * Rancher - v2.10.x
+  * Rancher - v2.10.x (External is v2.11.x)
   * KubeVirt - v1.4.x
   * SLE Micro - v6.x
 * Thrid-party Storage Support (Preview)
