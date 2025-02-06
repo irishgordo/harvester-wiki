@@ -37,8 +37,7 @@
 * ARM Support (Preview)
   - TBU
 * Volume Encryption for Longhorn V1 Data Engine (GA)
-- [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
-* [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
+
 
 ### Waiting to Review
 N/A
@@ -52,7 +51,10 @@ N/A
   * KubeVirt - v1.5
   * SLE Micro - TBU (v6.x)
 
+- [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
+
 ### Waiting to Review
+* [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
