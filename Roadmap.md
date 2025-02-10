@@ -32,7 +32,7 @@
   * Rancher - v2.10.x (External is v2.11)
   * KubeVirt - v1.4.x
   * SLE Micro - v6.x
-* Thrid-party Storage Support (Preview)
+* Enablement for Third-party Storage
   - [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
 * ARM Support (Preview)
   - TBU
