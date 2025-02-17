@@ -22,7 +22,7 @@
   * Rancher - v2.10.2 (External is v2.11)
   * KubeVirt - v1.4.0
   * SLE Micro - v5.5
-* Enablement for Third-party Storage
+* Third-party Storage Enablement
   * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
   * [Longhorn v2 data engine - boot volume and backing image support](https://github.com/harvester/harvester/issues/7521)
   * [Longhorn v2 data engine - live migration ](https://github.com/harvester/harvester/issues/7522)
