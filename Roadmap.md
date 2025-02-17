@@ -8,7 +8,7 @@
 ## Harvester v1.4.2 (February 2025, before v1.5.0)
 
 * Dependent Component Upgrade
-  * K8s - v1.31/v1.30
+  * K8s - v1.31
   * Longhorn - v1.7.3
   * Rancher - v2.10.1/v2.9.3
   * KubeVirt - v1.3.1
@@ -18,9 +18,9 @@
 
 * Dependent Component Upgrade
   * K8s - v1.32
-  * Longhorn - v1.8.x
-  * Rancher - v2.10.x (External is v2.11)
-  * KubeVirt - v1.4.x
+  * Longhorn - v1.8.1
+  * Rancher - v2.10.2 (External is v2.11)
+  * KubeVirt - v1.4.0
   * SLE Micro - v5.5
 * Enablement for Third-party Storage
   * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
