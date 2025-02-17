@@ -42,6 +42,7 @@ N/A
   * SLE Micro - v6.x
 * [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
 * Volume Encryption for Longhorn V1 Data Engine (GA)
+* Volume Encryption for Longhorn V2 Data Engine 
 
 ### Waiting to Review
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
