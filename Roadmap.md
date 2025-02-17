@@ -5,16 +5,6 @@
 
 # Upcoming Releases
 
-## Harvester v1.4.1 (January 2025)
-
-* Dependent Component Upgrade
-  * K8s - v1.30
-    *  If v1.4.0 is considered stable, proceed with this update; otherwise, remain on version v1.29.)
-  * Longhorn - v1.7.2
-  * Rancher - v2.9.3
-  * KubeVirt - v1.2.2
-  * SLE Micro - v5.5
-
 ## Harvester v1.4.2 (February 2025, before v1.5.0)
 
 * Dependent Component Upgrade
@@ -33,11 +23,11 @@
   * KubeVirt - v1.4.x
   * SLE Micro - v5.5
 * Enablement for Third-party Storage
-  - [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
+  * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
+  * [Longhorn v2 data engine - boot volume and backing image support](https://github.com/harvester/harvester/issues/7521)
+  * [Longhorn v2 data engine - live migration ](https://github.com/harvester/harvester/issues/7522)
+  * [NFS/shared storage for virtual machines ](https://github.com/harvester/harvester/issues/2272)
 * ARM Support (Preview)
-  - TBU
-* Volume Encryption for Longhorn V1 Data Engine (GA)
-
 
 ### Waiting to Review
 N/A
@@ -50,13 +40,12 @@ N/A
   * Rancher - v2.11  (External is v2.12)
   * KubeVirt - v1.5
   * SLE Micro - v6.x
-
-- [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
+* [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
+* Volume Encryption for Longhorn V1 Data Engine (GA)
 
 ### Waiting to Review
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
-* [NFS for VM disks](https://github.com/harvester/harvester/issues/2272)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
@@ -88,6 +77,15 @@ TBU
 
 # Previous releases
 ---
+## Harvester v1.4.1 (January 2025)
+
+* Dependent Component Upgrade
+  * K8s - v1.30
+    *  If v1.4.0 is considered stable, proceed with this update; otherwise, remain on version v1.29.)
+  * Longhorn - v1.7.2
+  * Rancher - v2.9.3
+  * KubeVirt - v1.2.2
+  * SLE Micro - v5.5
 
 ## Harvester v1.4.0 (November 2024)
 -----
