@@ -19,11 +19,11 @@ Harvester has many dependencies:
 - [Add-ons](https://github.com/harvester/addons/blob/main/version_info)
   - Charts live at https://github.com/harvester/charts.
 
-!!!!! ~~~~~ WIP WIP WIP ~~~~ !!!!!
+### Versioning
 
-Starting from Harvester v1.5.0, we want to sync the Harvester-maintained dependencies' versions with the Harvester version. Each dependency in Harvester v1.5.0 must versioned as v1.5.0 for both charts and image tags.
+Starting from Harvester v1.5.0, we want to sync the Harvester-maintained dependencies' versions with the Harvester version. Each dependency in Harvester v1.5.0 must versioned as v1.5.0 for both charts and image tags (except for harvester-cloud-provider and harvester-csi-driver as they are not direct dependency of Harvester and have different release cadence).
 
-Here is the proposed workflow:
+Here is the workflow:
 
 - When we start working on a new milestone `v1.x.0`. Each dependency should create a `v1.x` branch. Codes for the minor releases must be backported to the branch.
 - Sprint releases (before the first RC `v1.x.y-rc1`)
