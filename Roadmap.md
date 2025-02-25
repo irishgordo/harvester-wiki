@@ -56,7 +56,7 @@ N/A
 * [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
 * [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
 * Third-party CNI support
-* Cisco Discovery Protocol and LLDP Support
+* [Cisco Discovery Protocol and LLDP Support](https://github.com/harvester/harvester/issues/2554)
 * Improve Security by default on Rancher OS v2
 * [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
 * Local volume support w/ live migration (GA)
