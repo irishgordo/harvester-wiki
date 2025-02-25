@@ -7,7 +7,7 @@
 |---|---|
 | Cluster Size | 3 nodes |
 | CPU | AMD EPYC 7513 |
-| Memory | 128 GB |
+| Memory | 512 GB |
 | Network | 40 Gb |
 | Disk | Samsung 980PRO 2TB |
 | Harvester | v1.4.0 |
