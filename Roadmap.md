@@ -8,7 +8,7 @@
 
 # Upcoming Releases
 
-## Harvester v1.4.2 (February 2025, before v1.5.0)
+## Harvester v1.4.2 (March 2025, before v1.5.0)
 
 * Dependent Component Upgrade
   * K8s - v1.31
