@@ -39,6 +39,7 @@ Rand Read: `IOEngine=libaio, BS=4k, iodepth=32, numjobs=4, direct=1, runtime=300
 
 ### Performance - Linux VM
 VM Configuration: 8 CPU, 16GB Memory
+Distro: Ubuntu 22.04.5
 
 Tuning parameters:
 | Components | Tuning Value |
@@ -86,6 +87,8 @@ _This feature comes with Longhorn v1.8.0 and Harvester v1.5.0. Here, we use the 
 
 ### Performance - Windows VM
 VM Configuration: 8 CPU, 16GB Memory
+Windows Distro: Windows Server 2022
+virtio-win: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.262-2/
 
 Tuning parameters:
 | Components | Tuning Value |
