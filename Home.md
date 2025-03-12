@@ -36,6 +36,7 @@
 - [[Leveraging rancher logging for Collecting Upgrade related Logs]]
 - [[Upgrading from an unsupported version]]
 - [[Misc]]
+- [[CI]]
 
 ## Dev Images
 
