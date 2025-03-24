@@ -249,7 +249,7 @@ and that "origin" refers to your personal fork.
     - Update support matrix
     - Publish a new version to the upgrade responder a few days after
       the release (the delay is just in case anyone reports a critical
-      issue)
+      issue), you can check https://SUSE_INTERNAL_CONFLUENCE/display/HARV/Harvester+upgrade+responder
 
 ## How to Generate / Write Release Notes
 
