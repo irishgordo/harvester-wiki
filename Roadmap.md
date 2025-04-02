@@ -9,7 +9,6 @@
 # Upcoming Releases
 
 ## Harvester v1.5.0 (April 2025)
-
 * Dependent Component Upgrade
   * K8s - v1.32.3
   * Longhorn - v1.8.1
@@ -62,7 +61,6 @@
 * [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 * [Allow upgrade when there's VMs in the cluster that's can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
-
 
 ## Harvester v1.7.0
 
