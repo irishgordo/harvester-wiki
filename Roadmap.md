@@ -68,7 +68,7 @@
 
 TBU
 
-# Previous releases
+# Previous Releases
 ---
 
 ## Harvester v1.4.2 (March 2025)
