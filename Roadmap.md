@@ -11,9 +11,9 @@
 ## Harvester v1.5.0 (April 2025)
 
 * Dependent Component Upgrade
-  * K8s - v1.32
+  * K8s - v1.32.3
   * Longhorn - v1.8.1
-  * Rancher - v2.10.2 (External is v2.11)
+  * Rancher - v2.11.0 (External is v2.11)
   * KubeVirt - v1.4.0
   * SLE Micro - v5.5
 * Third-party Storage Enablement
@@ -22,6 +22,15 @@
   * [Longhorn v2 data engine - boot volume and backing image support](https://github.com/harvester/harvester/issues/7521)
   * [Longhorn v2 data engine - live migration ](https://github.com/harvester/harvester/issues/7522)
 * ARM Support
+
+## Harvester v1.4.3
+
+* Dependent Component Upgrade
+  * K8s - v1.31.4
+  * Longhorn - v1.7.3
+  * Rancher - v2.10.4
+  * KubeVirt - v1.3.1
+  * SLE Micro - v5.5
 
 ### Waiting to Review
 N/A
