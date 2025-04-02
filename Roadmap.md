@@ -32,9 +32,6 @@
   * KubeVirt - v1.3.1
   * SLE Micro - v5.5
 
-### Waiting to Review
-N/A
-
 ## Harvester v1.6.0
 
 * Dependent Component Upgrade
