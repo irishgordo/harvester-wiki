@@ -4,20 +4,11 @@
 > For precise release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 >
 > Regarding the release cadence, please refer to [Release Schedule](https://github.com/harvester/harvester/wiki/Release-Schedule-&-Support). 
-> In general, there are three minor releases per year, occurring in March, July, and November.
+> In general, there are three minor releases per year, occurring in April, August, and December.
 
 # Upcoming Releases
 
-## Harvester v1.4.2 (March 2025, before v1.5.0)
-
-* Dependent Component Upgrade
-  * K8s - v1.31
-  * Longhorn - v1.7.3
-  * Rancher - v2.10.1/v2.9.3
-  * KubeVirt - v1.3.1
-  * SLE Micro - v5.5
-
-## Harvester v1.5.0 (March 2025)
+## Harvester v1.5.0 (April 2025)
 
 * Dependent Component Upgrade
   * K8s - v1.32
@@ -35,7 +26,7 @@
 ### Waiting to Review
 N/A
 
-## Harvester v1.6.0 (July 2025)
+## Harvester v1.6.0
 
 * Dependent Component Upgrade
   * K8s - v1.33
@@ -48,6 +39,7 @@ N/A
 * Volume Encryption for Longhorn V2 Data Engine 
 
 ### Waiting to Review
+
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
@@ -66,21 +58,22 @@ N/A
 * [Allow upgrade when there's VMs in the cluster that's can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
 
 
-## Harvester v1.7.0 (November 2025)
+## Harvester v1.7.0
 
 TBU
 
-## Harvester v1.3.3 (TBD)
-
-* Dependent Component Upgrade
-  * K8s - v1.28
-  * Longhorn - v1.6.4
-  * Rancher - v2.8.4
-  * KubeVirt - v1.1.1
-  * SLE Micro - v5.4
-
 # Previous releases
 ---
+
+## Harvester v1.4.2 (March 2025)
+
+* Dependent Component Upgrade
+  * K8s - v1.31
+  * Longhorn - v1.7.3
+  * Rancher - v2.10.1/v2.9.3
+  * KubeVirt - v1.3.1
+  * SLE Micro - v5.5
+
 ## Harvester v1.4.1 (January 2025)
 
 * Dependent Component Upgrade
