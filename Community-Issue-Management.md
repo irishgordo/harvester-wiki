@@ -28,9 +28,8 @@ If an issue seems more like a question, consider converting it into a discussion
 
 For all resolved issues, just add to Backlog milestone. For urgent issues needed to tackle soon, especially Bug, just add to the upcoming feature milestone (like v1.6.0 fro example).
 
-## GitHub Discussions
+## Flow
 
-For GitHub discussions, the goal is to provide answers to questions and, when necessary, convert them into bug or feature requests.
 
 ### Sprint and Status Flow
 
