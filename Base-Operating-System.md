@@ -27,12 +27,12 @@ Finally, [harvester-installer](https://github.com/harvester/os2) uses the os2 im
 
 Branches of harvester-installer and os2 map to harvester-os container images as follows:
 
-| harvester-installer | os2       | rancher/harvester-os |
-| ------------------- | --------- | -------------------- |
-| master              | sle-micro | rancher/harvester-os:sle-micro-head |
-| v1.5                | harvester-v1.5.x | rancher/harvester-os:v1.5-YYYYMMDD |
-| v1.4                | harvester-v1.4.x | rancher/harvester-os:v1.4-YYYYMMDD |
-| v1.3                | harvester-v1.3.x | rancher/harvester-os:v1.3-YYYYMMDD |
+| harvester-installer | os2       | rancher/harvester-os | Image Published |
+| ------------------- | --------- | -------------------- | --------- |
+| master              | sle-micro | rancher/harvester-os:sle-micro-head | daily (automatic)
+| v1.5                | harvester-v1.5.x | rancher/harvester-os:v1.5-YYYYMMDD | when tagged |
+| v1.4                | harvester-v1.4.x | rancher/harvester-os:v1.4-YYYYMMDD | when tagged |
+| v1.3                | harvester-v1.3.x | rancher/harvester-os:v1.3-YYYYMMDD | when tagged |
 
 Specific Harvester releases map to specific tags, for example:
 
@@ -41,3 +41,6 @@ Specific Harvester releases map to specific tags, for example:
 | v1.5.0-rc3          | v1.5-20250324 | rancher/harvester-os:v1.5-20250324
 | v1.4.2              | v1.4-20250311 | rancher/harvester-os:v1.4-20250311
 | v1.3.2              | v1.3-20240904 | rancher/harvester-os:v1.3-20240904
+
+Harvester's daily ISO builds from the master branch will always use the latest rancher/harvester-os:sle-micro-head image.
+
