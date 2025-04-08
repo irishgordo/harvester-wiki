@@ -19,6 +19,7 @@ Community issue review statuses:
 - **Pending user response:** Awaiting further details from the user.
 - **Team review required:** Indicates that the issue needs discussion with the team during the community issue meeting.
 - **Resolved/Scheduled:** Indicates the issue is well-understood and scheduled for development or has been determined not to be fixed.
+- **Closed:** Indicates the issue has been determined not to be fixed.
 - **Ice Box:** Denotes that the root cause of the issue is yet to be determined.
 
 It is good to provide a response to the user by commenting on the issue, outlining the progress and the potential actions to be taken. This not only acknowledges the user's issue but also clarifies potential actions being considered.
