@@ -24,9 +24,8 @@ Community issue review statuses:
 
 It is good to provide a response to the user by commenting on the issue, outlining the progress and the potential actions to be taken. This not only acknowledges the user's issue but also clarifies potential actions being considered.
 
-If an issue seems more like a question, consider converting it into a discussion.
+For all resolved issues without milestone, just add to Planning milestone.
 
-For all resolved issues, just add to Backlog milestone. For urgent issues needed to tackle soon, especially Bug, just add to the upcoming feature milestone (like v1.6.0 fro example).
 
 ## Flow
 
@@ -86,6 +85,5 @@ flowchart LR
     F --> E
 ```
 
-Respond to user questions, and if a discussion seems to revolve around an existing bug or feature request, encourage the user to create a GitHub issue or create one for the user.
 
 
