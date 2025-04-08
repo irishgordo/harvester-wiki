@@ -71,7 +71,7 @@ flowchart LR
     style F fill:#d9d9d9
 ```
 
-### General flow relation between [Community Review Sprint](https://github.com/orgs/harvester/projects/19/) and [Harvester Sprint](https://github.com/orgs/harvester/projects/7)
+### General flow relation between [Community Issue Review](https://github.com/orgs/harvester/projects/10) and [Harvester Sprint](https://github.com/orgs/harvester/projects/7)
 
 ```mermaid
 flowchart LR
