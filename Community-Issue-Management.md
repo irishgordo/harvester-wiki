@@ -18,7 +18,7 @@ Community issue review statuses:
 - **In progress:** Active issue review.
 - **Pending user response:** Awaiting further details from the user.
 - **Team review required:** Indicates that the issue needs discussion with the team during the community issue meeting.
-- **Resolved/Scheduled:** Indicates the issue is well-understood and scheduled for development or has been determined not to be fixed.
+- **Resolved/Scheduled:** Indicates the issue is well-understood and scheduled for development.
 - **Closed:** Indicates the issue has been determined not to be fixed.
 - **Ice Box:** Denotes that the root cause of the issue is yet to be determined.
 
