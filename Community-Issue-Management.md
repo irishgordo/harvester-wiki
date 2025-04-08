@@ -46,7 +46,7 @@ For GitHub discussions, the goal is to provide answers to questions and, when ne
 
 ```mermaid
 flowchart LR
-    A[Waiting For Reporter] -->|need investigation| B[In Progress]
+    A[Pending User Response] -->|need investigation| B[In Progress]
     A -->|need more information| B
     A -->|stale for 2 month| F[Closed]
 
@@ -54,7 +54,7 @@ flowchart LR
 
 
     B -->|need discussion| C[Team Review Required]
-    B -->|milestoned| D[Resolved]
+    B -->|milestoned| D[Resolved/Scheduled]
     B -->|invalid or wontfix| F
     B -->|need more information| A
     B -->|need investigation| C
