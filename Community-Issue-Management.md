@@ -76,7 +76,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     A[Newly Created Issue] --> B{ Who is creator? }
-    B -- Community Users --> C[Added to Community Review Sprint project ]
+    B -- Community Users --> C[Added to Community Issue Review project ]
     B -- Team Members --> G{Is milestone set?}
     G -- Yes --> D[Added to Harvester Sprint project]
     G -- No --> H[Add Planning milestone]
