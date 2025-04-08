@@ -18,7 +18,6 @@ Community issue review statuses:
 - **In progress:** Active issue review.
 - **Pending user response:** Awaiting further details from the user.
 - **Team review required:** Indicates that the issue needs discussion with the team during the community issue meeting.
-- **Backlog candidate:** Suggests the issue is a potential feature or bug for development, awaiting placement in the milestone.
 - **Resolved/Scheduled:** Indicates the issue is well-understood and scheduled for development or has been determined not to be fixed.
 - **Ice Box:** Denotes that the root cause of the issue is yet to be determined.
 
