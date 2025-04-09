@@ -9,7 +9,7 @@
 
 ## GitHub Issues
 
-Review the GitHub issues ensure clarity in the issue description, and understand how the user encountered the problem. If the description appears to be unclear, kindly ask the user to provide additional information, such as step-by-step instructions to reproduce the issue or a support bundle. If the user encounters difficulty attaching the support bundle to the issue, suggest the user to send it to [harvester-support-bundle@suse.com](mailto:harvester-support-bundle@suse.com). Title format is "[Issue xxxx] Support Bundle".
+Review the GitHub issues ensure clarity in the issue description, and understand how the user encountered the problem. If the description appears to be unclear, kindly ask the user to provide additional information, such as step-by-step instructions to reproduce the issue or a support bundle. If the user encounters difficulty attaching the support bundle to the issue, suggest the user to send it to [harvester-support-bundle@suse.com](mailto:harvester-support-bundle@suse.com). The subject format is `[Issue xxxx] Support Bundle`.
 
 Check for existing issues to determine if there is a duplication. Users running older Harvester versions may face known issues specific to those versions. Therefore, we can review the codebase and existing issues to confirm if the problem has already been addressed.
 
