@@ -23,7 +23,7 @@ The baseos container images from OBS are always the latest and greatest for a gi
 
 On top of baseos, we have [os2](https://github.com/harvester/os2), which takes the above container images, adds additional files necessary for [Elemental](https://github.com/rancher/elemental-toolkit/) configuration, and extra software that isn't packaged as an RPM, such as `rancherd`.  Releases in the os2 repo are tagged periodically by the release captain for each Harvester release (see [[Create a Harvester release]]).  There are Github actions in place to publish os2 images to [rancher/harvester-os](https://hub.docker.com/r/rancher/harvester-os) and [rancher/nvidia-driver-toolkit](https://hub.docker.com/r/rancher/harvester-nvidia-driver-toolkit/) on Docker Hub.
 
-Finally, [harvester-installer](https://github.com/harvester/os2) uses the os2 images from [rancher/harvester-os](https://hub.docker.com/r/rancher/harvester-os) to package everything up into the Harvester installer ISO.
+Finally, [harvester-installer](https://github.com/harvester/harvester-installer) uses the os2 images from [rancher/harvester-os](https://hub.docker.com/r/rancher/harvester-os) to package everything up into the Harvester installer ISO.
 
 Branches of harvester-installer and os2 map to harvester-os container images as follows:
 
