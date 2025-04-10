@@ -18,7 +18,7 @@ Community issue review statuses:
 - **In progress:** Active issue review.
 - **Pending user response:** Awaiting further details from the user.
 - **Team review required:** Indicates that the issue needs discussion with the team during the community issue meeting.
-- **Resolved/Scheduled:** Indicates the issue is well-understood and scheduled for development.
+- **Resolved:** Indicates the issue is well-understood and scheduled for development.
 - **Closed:** Indicates the issue has been determined not to be fixed.
 - **Ice Box:** Denotes that the root cause of the issue is yet to be determined.
 
@@ -36,11 +36,9 @@ For all resolved issues without milestone, just add to Planning milestone.
 |---------------------------------------------|-------------------------|------------|--------------|
 | created                                     | non-team member     | New        | to current      |
 | milestoned                                  | team member         | Resolved   | to current      |
-| closed                                      | team member         | Resolved   | to current      |
-| closed not planned                          | team member         | Closed     | not changed  |
-| closed                                      | non-team member     | Closed     | not changed  |
-| reopened                                    | any user                | In Progress| to current      |
-| comment added or edited +<br>Status is not Resolved and not Closed | non-team member     | In Progress| to current      |
+| closed                                      | any one             | Closed     | not changed  |
+| reopened                                    | any user            | In Progress| to current      |
+| comment added or edited +<br>Status is not Resolved and not Closed| non-team member | In Progress| to current  |
 | labeled as invalid, wontfix or duplicated   | team member         | Closed     | not changed  |
 
 ```mermaid
