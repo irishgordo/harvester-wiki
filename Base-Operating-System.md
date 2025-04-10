@@ -58,3 +58,39 @@ Here's some examples:
 - We need to do something strange and weirdly specific as in [change order of interface startup](https://github.com/harvester/harvester-installer/pull/868).  This change was made in harvester-installer.
 
 In all cases, changes should be made first to the dev or master project or branch, then backported or submitted to whatever release projects or branches are appropriate.
+
+## How to Cheat When You Need to Change Something for Development Purposes
+
+Given the way the build process is structured, it can be tricky to make experimental changes to the base OS for development purposes.  For example, to add a new package:
+
+1. Branch baseos on OBS and make whatever changes are required. Images from your branch will be published to registry.opensuse.org/home/YOUR_USERNAME/branches/isv/rancher/harvester/os/dev/main/baseos:latest.
+2. Fork os2 and update its [Dockerfile](https://github.com/harvester/os2/blob/65dfa111ba82c2fdb98d9d024a4330b535be2c3e/Dockerfile#L3) to build based on your image above, then build and push your os2 image your personal account on Dockerhub or a local registry.
+3. Fork harvester-installer and update BASE_OS_IMAGE in [package-harvester-os](https://github.com/harvester/harvester-installer/blob/b5a284fccd5720d3b4bf81368902e07c595cb524/scripts/package-harvester-os#L26) to refer to your custom os2 image above.
+4. Run `make` to build an ISO.
+
+Instead of doing all that, it's easier to cheat and just make all required changes directly in your fork of harvester-installer.  Once you've validated that your changes work, they can be submitted individually to wherever they really need to go, be it baseos on OBS, or os2 or harvester-installer on Github.
+
+The problem with cheating like this is that the baseos container image doesn't have any software repositories configured.  This is fine when building on OBS, which automatically makes the correct repositories available in the build environment, but it doesn't work for local builds.  To work around this, we can add the publically available openSUSE repositories.  These are not 100% identical to those used when baseos is builton OBS, but they should generally be close enough for quick develompent or testing work.  Here's what you need to do in harvester-installer if you want to try adding some extra packages:
+
+```diff
+diff --git a/package/harvester-os/Dockerfile b/package/harvester-os/Dockerfile
+index ba37af2..9e480bb 100644
+--- a/package/harvester-os/Dockerfile
++++ b/package/harvester-os/Dockerfile
+@@ -1,6 +1,14 @@
+ ARG BASE_OS_IMAGE
+ FROM ${BASE_OS_IMAGE}
+ 
++RUN \
++    zypper addrepo http://download.opensuse.org/distribution/leap/15.5/repo/oss/ oss && \
++    zypper addrepo http://download.opensuse.org/update/leap/15.5/oss update-oss && \
++    zypper addrepo http://download.opensuse.org/update/leap/15.5/backports update-backports && \
++    zypper addrepo http://download.opensuse.org/update/leap/15.5/sle update-sle && \
++    zypper --gpg-auto-import-keys refresh && \
++    zypper install -y INSERT EXTRA PACKAGES TO INSTALL HERE
++
+ ```
+
+Then, run `make` to build your ISO image.
+
+_NOTE: This is ONLY appropriate for local development or testing purposes.  DO NOT INCLUDE `zypper addrepo` lines when submitting your final changes back to baseos on OBS.  Thank you :-)_
