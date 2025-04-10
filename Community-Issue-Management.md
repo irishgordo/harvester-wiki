@@ -51,14 +51,13 @@ flowchart LR
 
 
     B -->|need discussion| C[Team Review Required]
-    B -->|milestoned| D[Resolved/Scheduled]
+    B -->|milestoned| D[Resolved]
     B -->|invalid or wontfix| F
     B -->|need more information| A
     B -->|need investigation| C
 
     C -->|invalid or wontfix| F
-    
-    D --> F
+   
 
     style A fill:#f4cccc
     style B fill:#fff2cc
