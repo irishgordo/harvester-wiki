@@ -36,7 +36,7 @@ For all resolved issues without milestone, just add to Planning milestone.
 |---------------------------------------------|-------------------------|------------|--------------|
 | created                                     | non-team member     | New        | to current      |
 | milestoned                                  | team member         | Resolved   | to current      |
-| closed                                      | any one             | Closed     | not changed  |
+| closed                                      | any user             | Closed     | not changed  |
 | reopened                                    | any user            | In Progress| to current      |
 | comment added or edited +<br>Status is not Resolved and not Closed| non-team member | In Progress| to current  |
 | labeled as invalid, wontfix or duplicated   | team member         | Closed     | not changed  |
