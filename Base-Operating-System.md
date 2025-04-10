@@ -54,7 +54,7 @@ From time to time, we need to make changes to the base operating system.  Where 
 Here's some examples:
 
 - Extra packages are required, as in [[BUG] helm missing from Harvester install](https://github.com/harvester/harvester/issues/4518) and [[FEATURE] Update nvidia-driver-toolkit build to support FIPS-enabled OS](https://github.com/harvester/harvester/issues/8006).  These changes were made in projects on OBS.
-- We need to tweak some OS configuration files as in [fix: ensure machine-id, initiatorname.iscsi and host{id,nqn} are unique](https://github.com/harvester/os2/pull/190), or we need to update some included software that isn't packaged as an RPM as in [feat: bump Rancherd to v0.5.0-rc1](https://github.com/harvester/os2/pull/192).  These changes were made in o2.
+- We need to tweak some OS configuration files as in [fix: ensure machine-id, initiatorname.iscsi and host{id,nqn} are unique](https://github.com/harvester/os2/pull/190), or we need to update some included software that isn't packaged as an RPM as in [feat: bump Rancherd to v0.5.0-rc1](https://github.com/harvester/os2/pull/192).  These changes were made in os2.
 - We need to do something strange and weirdly specific as in [change order of interface startup](https://github.com/harvester/harvester-installer/pull/868).  This change was made in harvester-installer.
 
 In all cases, changes should be made first to the dev or master project or branch, then backported or submitted to whatever release projects or branches are appropriate.
