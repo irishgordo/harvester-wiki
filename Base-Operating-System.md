@@ -44,3 +44,17 @@ Specific Harvester releases map to specific tags, for example:
 
 Harvester's daily ISO builds from the master branch will always use the latest rancher/harvester-os:sle-micro-head image.
 
+## Where to Make Changes
+
+From time to time, we need to make changes to the base operating system.  Where to make the change depends on how broad or generic it is:
+
+- If we need to add or remove packages from the OS, we do it in baseos and/or baseos-headers in [isv:Rancher:Harvester:OS](https://build.opensuse.org/project/subprojects/isv:Rancher:Harvester:OS) on [OBS](https://build.opensuse.org/).
+- If we need to tweak configuration, or if for some other reason we have packages that can't be handled on OBS, we do it in either [os2](https://github.com/harvester/os2) or [harvester-installer](https://github.com/harvester/harvester-installer).
+
+Here's some examples:
+
+- Extra packages are required, as in [[BUG] helm missing from Harvester install](https://github.com/harvester/harvester/issues/4518) and [[FEATURE] Update nvidia-driver-toolkit build to support FIPS-enabled OS](https://github.com/harvester/harvester/issues/8006).  These changes were made in projects on OBS.
+- We need to tweak some OS configuration files as in [fix: ensure machine-id, initiatorname.iscsi and host{id,nqn} are unique](https://github.com/harvester/os2/pull/190), or we need to update some included software that isn't packaged as an RPM as in [feat: bump Rancherd to v0.5.0-rc1](https://github.com/harvester/os2/pull/192).  These changes were made in o2.
+- We need to do something strange and weirdly specific as in [change order of interface startup](https://github.com/harvester/harvester-installer/pull/868).  This change was made in harvester-installer.
+
+In all cases, changes should be made first to the dev or master project or branch, then backported or submitted to whatever release projects or branches are appropriate.
