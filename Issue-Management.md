@@ -1,12 +1,21 @@
 ## Introduction
 
-We manage issues in two separate projects:
+We manage issues in two separate workflows:
 
-- [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management)
-- [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management)
+- [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management) (Harvester Sprint Project #7)
+- [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) Community Sprint Project (#10)
 
 The core concept is that an issue can be added to the **Harvester Developer Issue Management** once it contains **sufficient information** and **has been assigned a milestone**.
 
+The general flow is as follows:
+
+- When an issue is created:
+  - If the creator is not a member of the organization, the issue is added to the [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
+  - If the creator is a member of the organization, the issue is added to the [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management) with the default Planning milestone.
+- Once an issue in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) has sufficient information and has been assigned a milestone:
+  - Update status to `Resolved` status in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
+  - Move it to [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management)
+- If the issue is addressed, please close it directly.
 
 ## Automation Workflow
 
@@ -42,17 +51,7 @@ QA Sprint (Project #20):
 - Move issues with the “In Review” status to the next sprint
 - Remove issues from the current sprint if their status is not In Review or Done
 
-### Status Management
-
-Harvester Sprint: Uses statuses like Review, Ready For Testing, Testing, Closed
-
-Community Sprint: Primarily uses the “New” status
-
-QA Sprint: Uses “In Review” and “Done” statuses
-
-### Issue Lifecycle Management
-
-Stale Management:
+### Issue Stale Management
 
 - Runs daily at 1:30 AM to check activity of issues and PRs
 - If there’s no activity for 30 days:
