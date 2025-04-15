@@ -7,14 +7,6 @@ We manage issues in two separate projects:
 
 The core concept is that an issue can be added to the **Harvester Developer Issue Management** once it contains **sufficient information** and **has been assigned a milestone**.
 
-The general flow is as follows:
-
-- When an issue is created:
-
-  - If the creator is not a member of the organization, the issue is added to the [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
-
-  - If the creator is a member of the organization, the issue is added to the [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management) with the default Planning milestone.
-
 
 ## Automation Workflow
 
@@ -25,7 +17,7 @@ When a new issue is created, the system automatically categorizes it based on th
 Harvester Team Members:
 
 - Automatically added to the Harvester Sprint Project (#7)
-- If no milestone is set, automatically assign the “Planning” milestone
+- If no milestone is set, automatically assign the default “Planning” milestone
 - If the issue is labeled with kind/test, it will not be added to the project
 
 Community Contributors:
