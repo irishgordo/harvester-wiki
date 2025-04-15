@@ -13,7 +13,7 @@ The general flow is as follows:
   - If the creator is not a member of the organization, the issue is added to the [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
   - If the creator is a member of the organization, the issue is added to the [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management) with the default Planning milestone.
 - Once an issue in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) has sufficient information and has been assigned a milestone:
-  - Update status to `Resolved` status in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
+  - Update status to `Resolved` in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
   - Move it to [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management)
 - If the issue is addressed, please close it directly.
 
