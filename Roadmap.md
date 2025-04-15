@@ -12,7 +12,7 @@
 * Dependent Component Upgrade
   * K8s - v1.32.3
   * Longhorn - v1.8.1
-  * Rancher - v2.11.0 (External is v2.11)
+  * Rancher - v2.11.0 (embedded & external)
   * KubeVirt - v1.4.0
   * SLE Micro - v5.5
 * Third-party Storage Enablement
@@ -25,7 +25,7 @@
 ## Harvester v1.4.3
 
 * Dependent Component Upgrade
-  * K8s - v1.31.4
+  * K8s - [v1.31.7+rke2r1](https://github.com/rancher/rke2/releases/tag/v1.31.7%2Brke2r1)
   * Longhorn - v1.7.3
   * Rancher - v2.10.4
   * KubeVirt - v1.3.1
@@ -36,15 +36,20 @@
 * Dependent Component Upgrade
   * K8s - v1.33
   * Longhorn - v1.9
-  * Rancher - v2.11  (External is v2.12)
+  * Rancher - v2.12 (embedded & external)
   * KubeVirt - v1.5
-  * SLE Micro - v6.x
+  * SLE Micro - v5.5
 * [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
 * Volume Encryption for Longhorn V1 Data Engine (GA)
+
+## Harvester v1.7.0
+
+TBU
+
+# Product Backlog
+
+* SLE Micro 6.x Upgrade
 * Volume Encryption for Longhorn V2 Data Engine 
-
-### Waiting to Review
-
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
@@ -62,9 +67,6 @@
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 * [Allow upgrade when there's VMs in the cluster that's can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
 
-## Harvester v1.7.0
-
-TBU
 
 # Previous Releases
 ---
