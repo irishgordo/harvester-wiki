@@ -255,6 +255,8 @@ and that "origin" refers to your personal fork.
 
 Use the `harvester-release` tool from https://github.com/harvester/release
 
+See https://github.com/harvester/release/tree/main/docs for details.
+
 TODO: fill in details
 
 ## How to Use `git cherry -v` Effectively
