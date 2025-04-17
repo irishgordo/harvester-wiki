@@ -197,7 +197,7 @@ and that "origin" refers to your personal fork.
      # Make appropriate changes to:
      # - HARVESTER_UI_VERSION
      # - HARVESTER_UI_PLUGIN_BUNDLED_VERSION
-     # - HARVESTER_INSTALLER_VERSION
+     # - HARVESTER_INSTALLER_REF
      # - HARVESTER_ADDONS_VERSION
      # - list of versions in upgrade matrix
      ~/harvester/harvester> git commit -sm 'Release v1.4.0-rc1' \
