@@ -22,16 +22,19 @@ The general flow is as follows:
 
 ```mermaid
 flowchart LR
-    A[Newly Created Issue] --> B{ Who is creator? }
-    B -- Community Users --> C[Added to Community Issue Review project ]
+    A[Newly Created Issue] --> B{Who is creator?}
+    B -- Community Users --> C[Added to Community Issue Review project]
     B -- Team Members --> G{Is milestone set?}
+    
     G -- Yes --> D[Added to Harvester Sprint project]
     G -- No --> H[Add Planning milestone]
     H --> D
-    C --> E{Is milestone set? }
-    E -- Yes --> D
-    E -- No --> F[Discuss milestone with team]
-    F --> E
+
+    C --> I[Discuss with users and team members]
+    I --> J{Is it development-related?}
+    J -- No, it's Q&A --> K[No milestone needed. Close it after answering]
+    J -- Yes --> L[Set milestone]
+    L --> D
 ```
 
 
