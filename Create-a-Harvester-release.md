@@ -221,11 +221,11 @@ and that "origin" refers to your personal fork.
      a comment on the release PR.
    - Get the release PR reviewed and merged.
 8. _Formal releases only:_
-   - Create a release notes PR in https://github.com/harvester/release-notes/pulls
+   - Create a release notes PR in https://github.com/harvester/release-notes/pulls, for instance: https://github.com/harvester/release-notes/pull/35
      - Check if there's a "New contributor issue" in https://github.com/harvester/release-notes/issues
      - Remove unused contributors
      - Update known issues and components
-     - cc project owner and technical write to review
+     - cc project owner and technical writer to review
    - Get signoff from QA
    - Create upgrade page for the release
      - e.g. https://docs.harvesterhci.io/v1.3/upgrade/v1-2-2-to-v1-3-1
