@@ -255,7 +255,7 @@ and that "origin" refers to your personal fork.
 
 Use the `harvester-release` tool from https://github.com/harvester/release
 
-See https://github.com/harvester/release/tree/main/docs for details.
+See https://github.com/harvester/release/blob/main/docs/create-release-notes.md for details.
 
 TODO: fill in details
 
