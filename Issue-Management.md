@@ -17,6 +17,24 @@ The general flow is as follows:
   - Move it to [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management)
 - If the issue is addressed, please close it directly.
 
+
+## General flow relation between [Community Issue Review](https://github.com/orgs/harvester/projects/10) and [Harvester Sprint](https://github.com/orgs/harvester/projects/7)
+
+```mermaid
+flowchart LR
+    A[Newly Created Issue] --> B{ Who is creator? }
+    B -- Community Users --> C[Added to Community Issue Review project ]
+    B -- Team Members --> G{Is milestone set?}
+    G -- Yes --> D[Added to Harvester Sprint project]
+    G -- No --> H[Add Planning milestone]
+    H --> D
+    C --> E{Is milestone set? }
+    E -- Yes --> D
+    E -- No --> F[Discuss milestone with team]
+    F --> E
+```
+
+
 ## Automation Workflow
 
 ### Issue Creation and Auto-Categorization
