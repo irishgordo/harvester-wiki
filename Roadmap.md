@@ -11,7 +11,7 @@
 ## Harvester v1.4.3
 
 * Dependent Component Upgrade
-  * K8s - [v1.31.7+rke2r1](https://github.com/rancher/rke2/releases/tag/v1.31.7%2Brke2r1)
+  * K8s - v1.31.7+rke2r1
   * Longhorn - v1.7.3
   * Rancher - v2.10.3
   * KubeVirt - v1.3.1
