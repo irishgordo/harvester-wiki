@@ -19,15 +19,31 @@
 
 ## Harvester v1.6.0
 
+> [!Important]
+> The scope has not been finalized yet. The items below are tentatively planned for the release.
+
 * Dependent Component Upgrade
   * K8s - v1.33
   * Longhorn - v1.9
   * Rancher - v2.12 (embedded & external)
   * KubeVirt - v1.5
   * SLE Micro - v5.5
+* [Kube-OVN integration for SDN](https://github.com/harvester/harvester/issues/7397)
+  * [[FEATURE] Kube-OVN install opreator](https://github.com/harvester/harvester/issues/7936)
+  * [[FEATURE] Network microsegregation via network policy](https://github.com/harvester/harvester/issues/7381)
+  * [[FEATURE] VXLAN support](https://github.com/harvester/harvester/issues/2322)
+* [3rd-party storage enhancements](https://github.com/harvester/harvester/issues/8026)
+  * [[FEATURE] Extend vm-import-controller to support 3rd party CSI #8074](https://github.com/harvester/harvester/issues/8074)
+  * [[FEATURE] 3rd party CSI support for guest clusters provisioned by rancher #8075](https://github.com/harvester/harvester/issues/8075)
+  * [[FEATURE] Harvester CSI changes for supporting 3rd party CSI volumes for guest workloads #8076](https://github.com/harvester/harvester/issues/8076)
+  * [[FEATURE] Expose CDI settings in Harvester to allow fine-tuning CDI settings for day 2 operations #8077](https://github.com/harvester/harvester/issues/8077)
+* [[FEATURE] Airgap Upgrade via ISO upload](https://github.com/harvester/harvester/issues/8078)
+* [[FEATURE] Live migration network](https://github.com/harvester/harvester/issues/5848)
 * [[FEATURE] Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
 * [[FEATURE] Longhorn v2 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
 * [[FEATURE] Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
+* [[FEATURE] Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
+* [[FEATURE] Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
 
 ## Harvester v1.7.0
 
@@ -35,25 +51,23 @@ TBU
 
 # Product Backlog
 
-* SLE Micro 6.x Upgrade
-* Volume Encryption for Longhorn V2 Data Engine 
-* [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
-* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
+- Backup/restore of 3rd party storage
+- Change Longhorn resource reservations for customers only using 3rd party storage
+- Observability Extension (Tech Preview)
+- [Allow upgrade when there are VMs in the cluster that can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
+- Storage Live Migration
+- Hugepage support 
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
+* SLE Micro 6.x Upgrade
+* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
 * [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
 * [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-* [CIS Security Benchmark for Linux (Hypervisor) ](https://github.com/harvester/harvester/issues/2392)
-* [unattend.xml support for Windows](https://github.com/harvester/harvester/issues/1836)
-* [Third-party CNI support](https://github.com/harvester/harvester/issues/7197)
-* [Cisco Discovery Protocol and LLDP Support](https://github.com/harvester/harvester/issues/2554)
-* Improve Security by default on Rancher OS v2
-* [Harvester VXLAN support](https://github.com/harvester/harvester/issues/2322)
-* Local volume support w/ live migration (GA)
 * [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
-* [vCluster addon GA](https://github.com/harvester/harvester/issues/5821)
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
-* [Allow upgrade when there's VMs in the cluster that's can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
-
+* Dynamic VM rebalancing across hosts
+* Shared Disk between VMs
+* Volume Encryption for Longhorn V2 Data Engine 
+* [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 
 # Previous Releases
 ---
