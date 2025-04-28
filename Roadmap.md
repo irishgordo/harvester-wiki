@@ -35,8 +35,9 @@
 * [3rd-party storage enhancements](https://github.com/harvester/harvester/issues/8026)
   * [[FEATURE] Extend vm-import-controller to support 3rd party CSI #8074](https://github.com/harvester/harvester/issues/8074)
   * [[FEATURE] 3rd party CSI support for guest clusters provisioned by rancher #8075](https://github.com/harvester/harvester/issues/8075)
-  * [[FEATURE] Harvester CSI changes for supporting 3rd party CSI volumes for guest workloads #8076](https://github.com/harvester/harvester/issues/8076)
-  * [[FEATURE] Expose CDI settings in Harvester to allow fine-tuning CDI settings for day 2 operations #8077](https://github.com/harvester/harvester/issues/8077)
+  * [[FEATURE] Harvester CSI changes for supporting 3rd party CSI volumes for guest workloads](https://github.com/harvester/harvester/issues/8076)
+  * [[FEATURE] Expose CDI settings in Harvester to allow fine-tuning CDI settings for day 2 operations](https://github.com/harvester/harvester/issues/8077)
+  * [[FEATURE] Online resize of disks/volumes attached to virtual machines](https://github.com/harvester/harvester/issues/2811)
 * [[FEATURE] Airgap Upgrade via ISO upload](https://github.com/harvester/harvester/issues/8078)
 * [[FEATURE] Live migration network](https://github.com/harvester/harvester/issues/5848)
 * [[FEATURE] Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
@@ -44,7 +45,7 @@
 * [[FEATURE] Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
 * [[FEATURE] Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
 * [[FEATURE] Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
-* [[FEATURE] Add VLAN network for VM to support multiple or all VLANID ](https://github.com/harvester/harvester/issues/766)
+* [[FEATURE] Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
 
 ## Harvester v1.7.0
 
