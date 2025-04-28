@@ -42,7 +42,6 @@
 * [Live migration network](https://github.com/harvester/harvester/issues/5848)
 * [Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
 * [Longhorn v2 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
-* [Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
 * [Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
 * [Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
 * [Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
@@ -69,6 +68,7 @@
 * Dynamic VM rebalancing across hosts
 * Shared Disk between VMs
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
+* [Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
 
 # Previous Releases
 ---
