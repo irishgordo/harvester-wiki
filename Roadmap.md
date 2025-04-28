@@ -44,6 +44,7 @@
 * [[FEATURE] Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
 * [[FEATURE] Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
 * [[FEATURE] Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
+* [[FEATURE] Add VLAN network for VM to support multiple or all VLANID ](https://github.com/harvester/harvester/issues/766)
 
 ## Harvester v1.7.0
 
