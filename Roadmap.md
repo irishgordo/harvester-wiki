@@ -17,6 +17,15 @@
   * KubeVirt - v1.3.1
   * SLE Micro - v5.5
 
+## Harvester v1.5.1
+
+* Dependent Component Upgrade
+  * K8s - v1.32.x
+  * Longhorn - v1.8.1
+  * Rancher - v2.11.x (embedded & external)
+  * KubeVirt - v1.4.0
+  * SLE Micro - v5.5
+
 ## Harvester v1.6.0
 
 > [!Important]
