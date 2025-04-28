@@ -25,8 +25,9 @@
   * Rancher - v2.12 (embedded & external)
   * KubeVirt - v1.5
   * SLE Micro - v5.5
-* [Live Migration Progress Awareness](https://github.com/harvester/harvester/issues/4352)
-* Volume Encryption for Longhorn V1 Data Engine (GA)
+* [[FEATURE] Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
+* [[FEATURE] Longhorn v2 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
+* [[FEATURE] Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
 
 ## Harvester v1.7.0
 
