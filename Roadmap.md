@@ -89,9 +89,9 @@
 ## Harvester v1.4.2 (March 2025)
 
 * Dependent Component Upgrade
-  * K8s - v1.31
-  * Longhorn - v1.7.3
-  * Rancher - v2.10.1/v2.9.3
+  * K8s - v1.31.4+rke2r1
+  * Longhorn - v1.7.2
+  * Rancher - v2.10.1
   * KubeVirt - v1.3.1
   * SLE Micro - v5.5
 
