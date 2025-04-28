@@ -8,20 +8,6 @@
 
 # Upcoming Releases
 
-## Harvester v1.5.0 (April 2025)
-* Dependent Component Upgrade
-  * K8s - v1.32.3
-  * Longhorn - v1.8.1
-  * Rancher - v2.11.0 (embedded & external)
-  * KubeVirt - v1.4.0
-  * SLE Micro - v5.5
-* Third-party Storage Enablement
-  * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
-  * [NFS/shared storage for virtual machines ](https://github.com/harvester/harvester/issues/2272)
-  * [Longhorn v2 data engine - boot volume and backing image support](https://github.com/harvester/harvester/issues/7521)
-  * [Longhorn v2 data engine - live migration ](https://github.com/harvester/harvester/issues/7522)
-* ARM Support
-
 ## Harvester v1.4.3
 
 * Dependent Component Upgrade
@@ -70,6 +56,20 @@ TBU
 
 # Previous Releases
 ---
+
+## Harvester v1.5.0 (April 2025)
+* Dependent Component Upgrade
+  * K8s - v1.32.3
+  * Longhorn - v1.8.1
+  * Rancher - v2.11.0 (embedded & external)
+  * KubeVirt - v1.4.0
+  * SLE Micro - v5.5
+* Third-party Storage Enablement
+  * [Third-party Storage for VM Boot Disk](https://github.com/harvester/harvester/issues/1199)
+  * [NFS/shared storage for virtual machines ](https://github.com/harvester/harvester/issues/2272)
+  * [Longhorn v2 data engine - boot volume and backing image support](https://github.com/harvester/harvester/issues/7521)
+  * [Longhorn v2 data engine - live migration ](https://github.com/harvester/harvester/issues/7522)
+* ARM Support
 
 ## Harvester v1.4.2 (March 2025)
 
