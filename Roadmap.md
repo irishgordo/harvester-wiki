@@ -56,7 +56,6 @@ TBU
 - Observability Extension (Tech Preview)
 - [Allow upgrade when there are VMs in the cluster that can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
 - Storage Live Migration
-- Hugepage support 
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
 * SLE Micro 6.x Upgrade
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
@@ -66,7 +65,6 @@ TBU
 * [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
 * Dynamic VM rebalancing across hosts
 * Shared Disk between VMs
-* Volume Encryption for Longhorn V2 Data Engine 
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 
 # Previous Releases
