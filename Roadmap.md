@@ -41,7 +41,7 @@
 * [Airgap Upgrade via ISO upload](https://github.com/harvester/harvester/issues/8078)
 * [Live migration network](https://github.com/harvester/harvester/issues/5848)
 * [Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
-* [Longhorn v2 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
+* [Longhorn v1 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
 * [Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
 * [Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
 * [Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
