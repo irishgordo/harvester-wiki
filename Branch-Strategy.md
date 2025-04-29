@@ -12,7 +12,7 @@ The harvester main repo has these branch types:
 
   A stable branch contains changes for a specific minor release. Bug fixes or enhancements must first be contributed to the `master` branch and then backported to a stable branch.
 
-- **Release branches** (`release/v1.4.0`, `release/v1.3.2`, `release/v1.4-dev-xxxx`)
+- **Release branches** (ex: `release/v1.4.0`, `release/v1.3.2`, `release/v1.4-dev-xxxx`)
 
   A release branch is used for cutting a formal release, release candidate, or a sprint release; it is checked out from a stable branch. For example, the `release/v1.4.0` branch is checked out from the `v1.4` branch. We add some useful commits, and then create a tag to publish the release.
 
