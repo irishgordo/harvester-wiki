@@ -21,8 +21,8 @@
 
 * Dependent Component Upgrade
   * K8s - v1.32.x
-  * Longhorn - v1.8.1
-  * Rancher - v2.11.x (embedded & external)
+  * Longhorn - v1.8.1/2
+  * Rancher - v2.11.1/2 (embedded & external)
   * KubeVirt - v1.4.0
   * SLE Micro - v5.5
 
