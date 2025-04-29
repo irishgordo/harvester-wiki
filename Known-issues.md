@@ -1,3 +1,6 @@
+## v1.5.0
+https://github.com/harvester/harvester/issues?q=is%3Aissue+label%3Aknown-issue-v1.5.0
+
 ## v1.4.2
 https://github.com/harvester/harvester/issues?q=is%3Aissue+label%3Aknown-issue-v1.4.2
 
