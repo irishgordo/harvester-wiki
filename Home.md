@@ -9,7 +9,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 
 # Releases
 - [[Roadmap]]
-- [[History History]]
+- [[Release History]]
 - [[Known Issues]]
 - [[Feature Maturity Definition]]
 
