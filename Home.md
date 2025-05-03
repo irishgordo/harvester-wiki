@@ -42,7 +42,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 
 ### Build & Development
 
-- [[Development Image]]
+- [[Prebuilt Image]]
 - [[Build ISO images]]
 - [[Speed up Harvester ISO build]]
 - [[Harvester Development Overview]]
