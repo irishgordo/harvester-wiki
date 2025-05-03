@@ -8,6 +8,7 @@ This wiki focuses on internal operations, including the following topics. For of
 We welcome and appreciate all contributions, including issue reporting, documentation improvements, code fixes, test enhancements, and more. For general topics or discussions, please raise them at https://github.com/harvester/harvester/discussions. 
 
 # Releases
+
 - [[Roadmap]]
 - [[Release History]]
 - [[Known Issues]]
@@ -27,6 +28,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 - [[Sprint Project Boards]]
 - [[Issue management]]
 - [[Development Process]]
+- [[Component Maintainers]]
 
 # Performance Benchmarks
 
