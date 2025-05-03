@@ -23,6 +23,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 
 - [[Sprint Project Boards]]
 - [[Issue management]]
+- [[Development Process]]
 
 # Performance Benchmarks
 
