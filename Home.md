@@ -51,9 +51,13 @@ We welcome and appreciate all contributions, including issue reporting, document
 - [[Leveraging Rancher logging for Collecting Upgrade related Logs]]
 - [[Upgrading from an unsupported version]]
 
-## DevOps and Testing
+## DevOps
 
 - [[CI]]
+
+## Testing
+
+TBU
 
 ## Others
 
