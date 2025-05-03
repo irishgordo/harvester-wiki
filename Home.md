@@ -32,7 +32,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 
 ## Development Resources
 
-### General
+### Guidance
 
 - [[Development Best Practices]]
 
