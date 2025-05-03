@@ -62,6 +62,11 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 > [!Important]
 > TBU
 
+## Harvester v1.8.0
+
+> [!Important]
+> TBU
+
 # Product Backlog
 
 - Backup/restore of 3rd party storage
