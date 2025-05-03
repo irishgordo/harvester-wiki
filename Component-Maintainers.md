@@ -10,7 +10,6 @@ https://github.com/harvester/docs | |
 https://github.com/harvester/eventrouter | |
 https://github.com/harvester/experimental-addons | |
 https://github.com/harvester/go-common | |
-https://github.com/harvester/go-harvester | |
 https://github.com/harvester/harvester | |
 https://github.com/harvester/harvester-csi-driver | |
 https://github.com/harvester/harvester-installer | |
