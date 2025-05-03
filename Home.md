@@ -28,19 +28,17 @@ We welcome and appreciate all contributions, including issue reporting, document
 
 - [[Harvester Performance Result]]
 
-# Resources
+# Development Resources
 
-## Development Resources
-
-### Guidance
+## Guidance
 
 - [[Development Best Practices]]
 
-### Environment Setup 
+## Environment Setup 
 
 - [[Setting Up Harvester Development Environment]]
 
-### Build & Development
+## Build & Development
 
 - [[Development Image]]
 - [[Build ISO images]]
@@ -51,11 +49,11 @@ We welcome and appreciate all contributions, including issue reporting, document
 - [[Leveraging Rancher logging for Collecting Upgrade related Logs]]
 - [[Upgrading from an unsupported version]]
 
-### DevOps and Testing
+## DevOps and Testing
 
 - [[CI]]
 
-### Others
+## Others
 
 - [[Misc]]
 
