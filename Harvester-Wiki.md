@@ -1,8 +1,9 @@
-* The latest release is Harvester [![Releases](https://img.shields.io/github/release/harvester/harvester/all.svg)]
+> [!Note]
+> The latest release is ![Releases](https://img.shields.io/github/release/harvester/harvester/all.svg).
 
 This wiki focuses on internal operations, including the following topics. For official user documentation, please visit https://docs.harvesterhci.io/. For enterprise-supported documentation provided by SUSE, please refer to https://documentation.suse.com/cloudnative/virtualization/.
 
-We welcome and appreciate all kinds of contributions, including issue reporting, documentation improvements, code fixes, test enhancements, and more. For general topics or discussions, please raise them at https://github.com/harvester/harvester/discussions. 
+We welcome and appreciate all contributions, including issue reporting, documentation improvements, code fixes, test enhancements, and more. For general topics or discussions, please raise them at https://github.com/harvester/harvester/discussions. 
 
 # Releases
 - [[Roadmap]]
