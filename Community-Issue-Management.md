@@ -1,3 +1,6 @@
+> [!Important]
+> The workflows described below may change over time. For the exact settings, please refer to the [Community Sprint](https://github.com/orgs/harvester/projects/10/views/9) project board. Each status includes a brief description explaining its purpose.
+
 # Duty Duration
 
 * A sprint, 2 weeks
