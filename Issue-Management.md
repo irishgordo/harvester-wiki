@@ -1,11 +1,12 @@
-## Introduction
+> [!Note]
+> About each sprint project, please check [[Sprint Project Boards]]. 
 
 We manage issues in two separate workflows:
 
-- [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management) (Harvester Sprint Project #7)
-- [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) (Community Sprint Project (#10)
+* [Harvester Sprint - Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management)
+* [Community Sprint - Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management)
 
-The core concept is that an issue can be added to the **Harvester Developer Issue Management** once it contains **sufficient information** and **has been assigned a milestone**.
+The core concept is that an issue can be added to the **Harvester Sprint** once it contains **sufficient information** and **has been assigned a milestone**.
 
 The general flow is as follows:
 
