@@ -2,7 +2,7 @@
 > - No support or guarantees are provided for development and sprint release images.
 > - Feel free to report issues related to the development build images.
 
-# What's Development Image
+# What's Prebuilt Image
 
 Daily builds, sprint releases, and non-GA release images are all categorized as Development Images.
 
