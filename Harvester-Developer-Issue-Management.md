@@ -1,3 +1,6 @@
+> [!Important]
+> The workflows described below may change over time. For the exact settings, please refer to the [Harvester Sprint](https://github.com/orgs/harvester/projects/7) project board. Each status includes a brief description explaining its purpose.
+
 Harvester issues are managed with the GitHub project [Harvester Sprint](https://github.com/orgs/harvester/projects/7).
 
 ## Issue status
