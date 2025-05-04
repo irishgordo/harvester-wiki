@@ -69,11 +69,11 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 
 # Product Backlog
 
-- Backup/restore of 3rd party storage
-- Change Longhorn resource reservations for customers only using 3rd party storage
-- Observability Extension (Tech Preview)
-- [Allow upgrade when there are VMs in the cluster that can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
-- Storage Live Migration
+* Backup/restore of 3rd party storage
+* Change Longhorn resource reservations for customers only using 3rd party storage
+* Observability Extension (Tech Preview)
+* [Allow upgrade when there are VMs in the cluster that can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
+* Storage Live Migration
 * [DR Volume](https://github.com/harvester/harvester/issues/1850)
 * SLE Micro 6.x Upgrade
 * [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
