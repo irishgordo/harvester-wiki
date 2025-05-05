@@ -22,6 +22,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 - [[Release Process|Create a Harvester release]]
 - [[Backport Policy]]
 - [[Release & QA Captains]]
+- [[Release Testing Process]]
 
 # Project Management
 
