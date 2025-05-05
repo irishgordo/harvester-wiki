@@ -17,6 +17,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 # Release Management
 
 - [[Release Cadence & Support]]
+- [[Release Backlog Planning Process]]
 - [[Branch Strategy]]
 - [[Branch Management|Creating a new milestone]]
 - [[Release Process|Create a Harvester release]]
