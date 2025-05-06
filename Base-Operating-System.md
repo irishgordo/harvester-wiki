@@ -1,6 +1,6 @@
 ## Overview
 
-Harvester's base operating system is derived from [SUSE Linux Micro](https://www.suse.com/products/micro/).
+Harvester's base operating system is derived from [SUSE Linux Micro](https://www.suse.com/products/micro/), specifically the [registry.suse.com/suse/sle-micro/5.5:latest](https://registry.suse.com/repositories/suse-sle-micro-5-5) image.
 
 Container images for the base OS (and headers, needed for nvidia-driver-toolkit) are built in subprojects of [isv:Rancher:Harvester:OS](https://build.opensuse.org/project/subprojects/isv:Rancher:Harvester:OS) on [OBS](https://build.opensuse.org/), and published on [registry.opensuse.org](https://registry.opensuse.org/cgi-bin/cooverview?srch_term=project%3D%5Eisv%3ARancher%3AHarvester%3AOS%3A+container%3D.*). The subprojects are named for Harvester versions, and produce two images (baseos and baseos-headers) for each version stream of Harvester, plus the "Dev" or next version.  These images are automatically rebuilt when the underlying SL Micro image or any included packages are updated.
 
