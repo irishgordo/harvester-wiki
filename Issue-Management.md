@@ -46,19 +46,10 @@ flowchart LR
 
 When a new issue is created, the system automatically categorizes it based on the creator’s identity:
 
-Harvester Team Members:
+- [Harvester Team Members](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-update-harvester-projects.yaml)
+- [Community Coordinators](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-update-community-projects.yaml)
 
-* Automatically added to the Harvester Sprint Project (#7)
-* If no milestone is set, automatically assign the default “Planning” milestone
-* If the issue is labeled with kind/test, it will not be added to the project
-
-Community Coordinators:
-
-* Automatically added to the Community Sprint Project (#10)
-* Automatically set Status to “New”
-* Automatically set Sprint to the current sprint
-
-### Sprint Cycle Management
+### [Sprint Cycle Management](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-update-issue-sprint.yml)
 
 Sprint updates are automatically executed every Sunday at 20:00.
 
@@ -75,14 +66,10 @@ QA Sprint (Project #20):
 * Move issues with the “In Review” status to the next sprint
 * Remove issues from the current sprint if their status is not In Review or Done
 
-### Issue Stale Management
+### [Issue Stale Management](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-stale.yml)
 
 * Runs daily at 1:30 AM to check activity of issues and PRs
-* If there’s no activity for 30 days:
-   * Add the status/stale label
-   * Post a warning comment indicating it will be closed in 5 days
-* If still no activity after 5 days:
-   * Automatically close the issue/PR and post a closing comment
+* Close unactivated issues and PRs
 
 Exemption Rules:
 
@@ -91,10 +78,6 @@ Exemption Rules:
 * Issues with a milestone
 * Draft PRs
 
-### Backport Issue Management
+### [Backport Issue Management](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
 
-Triggered when a `backport-needed/` label is removed:
-
-* Automatically searches for the corresponding version's backport issue
-* Search for issues with titles in the format: `[backport {version}] {original title}`
-* If a matching backport issue is found, automatically close it
+Sometimes, older versions might need to be patched due to CVEs or bug fixes. We'll use the backport-needed/xxx label to help us create the corresponding issue.
