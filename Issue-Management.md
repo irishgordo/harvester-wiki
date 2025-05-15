@@ -71,13 +71,7 @@ QA Sprint (Project #20):
 * Runs daily at 1:30 AM to check activity of issues and PRs
 * Close unactivated issues and PRs
 
-Exemption Rules:
-
-* Issues/PRs that are assigned to someone
-* Issues with labels like kind/enhancement, kind/feature, require/investigate
-* Issues with a milestone
-* Draft PRs
 
 ### [Backport Issue Management](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
 
-Sometimes, older versions might need to be patched due to CVEs or bug fixes. We'll use the backport-needed/xxx label to help us create the corresponding issue.
+Sometimes, older versions might need to be patched due to CVEs or bug fixes. We'll use the `backport-needed/xxx` label to help us create the corresponding issue.
