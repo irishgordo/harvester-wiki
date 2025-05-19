@@ -72,6 +72,13 @@ QA Sprint (Project #20):
 * Close unactivated issues and PRs
 
 
-### [Backport Issue Management](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
+### [Automatically create issue ](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
 
-Sometimes, older versions might need to be patched due to CVEs or bug fixes. We'll use the `backport-needed/xxx` label to help us create the corresponding issue.
+There are three types automatic creation:
+
+- Backport Issue:  
+    The older versions might need to be patched due to CVEs or bug fixes. We'll use the `backport-needed/xxx` label to help us create the corresponding issue.
+- UI Issue:  
+    When an issue needs a UI changes, adding `require/ui` label creates an UI issue. It won't take any effect when issue contains a `area/ui` label.
+- E2E Issue:
+    When an issues needs an E2E tests, adding `require/auto-e2e-test`` label creates an E2E issue in harvester/tests repository.
