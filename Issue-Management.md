@@ -72,7 +72,7 @@ QA Sprint (Project #20):
 * Close unactivated issues and PRs
 
 
-### [Automatically create issue ](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
+### [Automatically create issue by label](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
 
 There are three types automatic creation:
 
