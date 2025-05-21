@@ -78,7 +78,7 @@ QA Sprint (Project #20):
 There are three types automatic creation:
 
 - Backport Issue:  
-    The older versions might need to be patched due to CVEs or bug fixes. We'll use the `backport-needed/xxx` label to help us create the corresponding issue.
+    The older versions might need to be patched due to CVEs or bug fixes. We'll use the `backport-needed/xxx` label to help us create the corresponding issue. Please check [Backport-Policy](https://github.com/harvester/harvester/wiki/Backport-Policy) for more details.
 - UI Issue:  
     When an issue needs a UI changes, adding `require/ui` label creates an UI issue. It won't take any effect when issue contains a `area/ui` label.
 - E2E Issue:  
