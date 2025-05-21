@@ -18,6 +18,11 @@ If a community issue is well-defined and clarified, we add it to the Harvester S
   * Update status to `Resolved` in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
 * If the issue is addressed, please close it directly.
 
+
+> [!IMPORTANT]  
+- Please make sure to fill in the milestone field when opening an issue.
+
+
 ## Issues From [Community Issue Review](https://github.com/orgs/harvester/projects/10) To [Harvester Sprint](https://github.com/orgs/harvester/projects/7)
 
 ```mermaid
