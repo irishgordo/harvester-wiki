@@ -49,12 +49,12 @@ Issues managed in the Harvester Sprint project have status. The statuses are des
 
 - **Implement** (Assignee, QA)
   - The assignee starts working on an issue.
-  - If the issue has a `require/ui-*` label, the backend engineer needs to work with the UI engineer engineer. The UI engineer must update the corresponding UI issue accordingly.
+  - If the issue has a `require/ui` label, the backend engineer needs to work with the UI engineer engineer. The UI engineer must update the corresponding UI issue accordingly.
   - If the issue has a `require/doc` label, the backend engineer needs to work with the technical writer to create a document.
 
 - **Review** (Assignee)
   - The assignee to an issue finishes implementation and works (PRs) are ready for review.
-  - If the issue has a `require/ui-*` label, its UI implementation needs to be ready for review too.
+  - If the issue has a `require/ui` label, its UI implementation needs to be ready for review too.
   - If the issue has a `require/doc` label, it's better to have a draft doc PR for review.
   - The assignee must fill in the "Pre Ready-For-Testing Checklist" in the PR ([example](https://github.com/harvester/harvester/issues/6618#issuecomment-2372714261)). The comment must have clear reproduction steps and a test plan.
 
