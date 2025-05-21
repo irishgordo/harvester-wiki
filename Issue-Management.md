@@ -6,7 +6,7 @@ We manage two types of issues from different sources:
 - Community users - Managed via [Community Sprint - Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management)
 - Harvester Team members - Managed via [Harvester Sprint - Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management)
 
-If a community issue is well-defined and clarified, we add it to the Harvester Sprint.
+If a community issue is well-defined and clarified, we add it to the Harvester Sprint for development.
 
 
 ## General Issue Flow
