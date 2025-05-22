@@ -11,7 +11,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 
 - [[Roadmap]]
 - [[Release History]]
-- [[Known Issues]]
+- [[Release Known Issues]]
 - [[Feature Maturity Definition]]
 
 # Release Management
