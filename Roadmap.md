@@ -3,7 +3,7 @@
 > 
 > For tentative planned release schedules, please refer to the milestones page at https://github.com/harvester/harvester/milestones.
 >
-> Regarding the release cadence, please refer to [[Release Cadence|Release Schedule & Support]]. 
+> Regarding the release cadence, please refer to [[Release Cadence|(https://github.com/harvester/harvester/wiki/Release-Cadence-%26-Support). 
 > In general, there are three minor releases per year, occurring in _**April, August, and December**_.
 
 This page primarily outlines the [upcoming release roadmap](#upcoming-releases) and highlighted items in the [product backlog](#product-backlog). For previous releases, please refer to [[Release History]].
