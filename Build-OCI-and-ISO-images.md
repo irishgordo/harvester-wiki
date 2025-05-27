@@ -28,9 +28,9 @@ make build-iso
 +  Using local docker cache via ENV **USE_LOCAL_IMAGES** (do not rely on any of the above)
 
 ```bash
-(1) git clone ...
+(1) git clone ... # clone the repo
 (2) git checkout -b brancher-name ... # add code and commit
-(3) make && make package && make package-webhook && make package-upgrade
+(3) make # it calls scripts/default (make package && make package-webhook && make package-upgrade)
 #3 images (harvester, harvester-webhook,harvester-upgrade) taged as `brancher-name-head` are available on local docker cache
 (4) export USE_LOCAL_IMAGES=brancher-name-head
 (5) make build-iso
