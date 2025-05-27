@@ -22,7 +22,7 @@ If a community issue is well-defined and clarified, we add it to the Harvester S
   
   * If the creator is a member of the organization(SUSE org), the issue is assigned with the `require/pm-review` label and added to [Product Backlog Triage](https://github.com/orgs/harvester/projects/2)
 
-* Once an issue in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) has sufficient information and has been assigned a milestone:
+* Once an issue in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) has sufficient information **for development**:
   
   * Update status to `Resolved` in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
 
