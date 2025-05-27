@@ -50,7 +50,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 ## Build & Development
 
 - [[Development Image]]
-- [[Build ISO images]]
+- [[Build OCI and ISO images]]
 - [[Speed up Harvester ISO build]]
 - [[Harvester Development Overview]]
 - [[Example: Adding new API object types and controllers]]
