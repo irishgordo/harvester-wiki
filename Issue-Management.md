@@ -17,7 +17,7 @@ If a community issue is well-defined and clarified, we add it to the Harvester S
 * When an issue is created:
   * If the creator is not a member of the organization, the issue is added to the [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
   * If the creator is a member of the organization(harvester org), the issue is added to the [Harvester Developer Issue Management](https://github.com/harvester/harvester/wiki/Harvester-Developer-Issue-Management) with the default Planning milestone.
-  * If the creator is a member of the organization(SUSE org), the issue is assigned with the `require/pm-review` label
+  * If the creator is a member of the organization(SUSE org), the issue is assigned with the `require/pm-review` label and added to [Product Backlog Triage](https://github.com/orgs/harvester/projects/2)
 * Once an issue in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management) has sufficient information and has been assigned a milestone:
   * Update status to `Resolved` in [Community Issue Management](https://github.com/harvester/harvester/wiki/Community-Issue-Management).
 
