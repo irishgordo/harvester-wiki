@@ -92,4 +92,4 @@ There are three types automatic creation:
     When an issue needs a UI changes, adding `require/ui` label creates an UI issue. It won't take any effect when issue contains a `area/ui` label.
 
 - E2E Issue:  
-    When an issues needs an E2E tests, adding `require/auto-e2e-test`` label creates an E2E issue in harvester/tests repository.
+    When an issues needs an E2E tests, adding `require/auto-e2e-test` label creates an E2E issue in harvester/tests repository.
