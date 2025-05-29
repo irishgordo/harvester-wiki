@@ -47,7 +47,7 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 
 To ensure dependencies are supported during the Harvester release support period, adopt the following strategies:
 
-For components released before the Harvester release, use the latest release, **n**. 
+For components released before the Harvester release, use the latest minor release, **n**. 
 * Longhorn
 
 For components released after the Harvester release, use the **n-1** release instead.
