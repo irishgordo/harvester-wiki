@@ -24,7 +24,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 - [[Backport Policy]]
 - [[Release & QA Captains]]
 - [[Release Testing Process]]
-- [[Compoent Update Policy]]
+- [[Component & Library Update Policy]]
 
 # Project Management
 
