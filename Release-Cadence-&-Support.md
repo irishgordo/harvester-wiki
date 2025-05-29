@@ -13,7 +13,7 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 ## Release Cadence
 
 * 4-month minor release cadence. April, August, December
-* 1.5-month patch release cadence with best efforts
+* 2-month patch release cadence with best efforts
 
 ## Dependency Adoption Cadence
 
@@ -24,7 +24,7 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
   * Has a 14-month support period: 12 months of active support followed by 2 months of maintenance support.
 
 * Longhorn: January, May, September
-  * Has 18-month support period since 1.5.
+  * Has an 18-month support period since 1.5.
 
 * Rancher: March, July, November 
   * Starting with version 2.9, there is an 18-month support period.
