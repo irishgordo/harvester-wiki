@@ -22,5 +22,5 @@ For each feature or minor release, the versions of the following components and 
 > `N` refers to the latest minor version.
 
 * Go version: N
-* K8s libraries: N-1 (aligning with the version we used for the underlying RKE2)
+* K8s libraries: N-1 (aligning with the version for the underlying RKE2)
 * BCI base image: N
