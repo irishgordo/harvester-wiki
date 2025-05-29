@@ -49,10 +49,10 @@ To ensure dependencies are supported during the Harvester release support period
 
 For components released before the Harvester release, use the latest minor release, **n**. 
 * Longhorn
+* Rancher
 
 For components released after the Harvester release, use the **n-1** release instead.
 * RKE2
-* Rancher
 * KubeVirt
 * SLE Micro
 
