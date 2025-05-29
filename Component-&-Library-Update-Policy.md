@@ -16,7 +16,7 @@ For each feature or minor release, the versions of the following components and 
 * RKE2: N-1
 * SLE Micro: N-1
 
-## Primary Libraries and Langugage Runtimes
+## Primary Library, Language Runtime and Image Updates
 
 > [!Note]
 > `N` refers to the latest minor version.
