@@ -10,7 +10,7 @@ We welcome and appreciate all contributions, including issue reporting, document
 # Releases
 
 - [[Roadmap]]
-- [[Harvester-v1.5.0-Compatibility-Matrix]]
+- [[Harvester v1.5.0 Compatibility Matrix]]
 - [[Release History]]
 - [[Release Known Issues]]
 - [[Feature Maturity Definition]]
