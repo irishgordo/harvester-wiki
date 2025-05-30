@@ -4,7 +4,7 @@ This matrix outlines the compatibility between different versions of Harvester a
 
 RKE1 is now EOL (end of life) on Harvester v1.5.0. You can find more specifics and recommended steps [here](https://www.suse.com/support/kb/doc/?id=000021513).
 
-### Upgrading guidance:
+### Upgrading guidance
 
 When upgrading from Harvester v1.4.2 to v1.5.x, it is recommended to upgrade Rancher first. Then you can upgrade Harvester.
 
