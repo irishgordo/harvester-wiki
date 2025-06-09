@@ -10,15 +10,6 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 
 # Upcoming Releases
 
-## Harvester v1.4.3
-
-* Dependent Component Upgrade
-  * K8s - v1.31.7+rke2r1
-  * Longhorn - v1.7.3
-  * Rancher - v2.10.3
-  * KubeVirt - v1.3.1
-  * SLE Micro - v5.5
-
 ## Harvester v1.5.1
 
 * Dependent Component Upgrade
