@@ -31,7 +31,7 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
   * KubeVirt - v1.5
   * SLE Micro - v5.5
 * [Kube-OVN integration for SDN](https://github.com/harvester/harvester/issues/7397)
-  * [Kube-OVN install opreator](https://github.com/harvester/harvester/issues/7936)
+  * [Kube-OVN install operator](https://github.com/harvester/harvester/issues/7936)
   * [Virtual Switch/Router](https://github.com/harvester/harvester/issues/7332)
   * [Network microsegmentation via network policy](https://github.com/harvester/harvester/issues/7381)
   * [VXLAN support](https://github.com/harvester/harvester/issues/2322)
