@@ -70,3 +70,26 @@ We can build harvester ISO images in [harvester](https://github.com/harvester/ha
         ```
         ENV DAPPER_RUN_ARGS "-v /var/run/docker/containerd/containerd.sock:/run/containerd/containerd.sock -v /path/to/local/harvester/repo:/go/src/github.com/harvester/harvester"
         ```
+
+### Troubleshooting
+* BuildKit errors in spite of having it installed:
+    ```
+    $ make
+    ...
+    ...
+    failed to fetch metadata: fork/exec /go/src/github.com/harvester/harvester/.docker/cli-plugins/docker-buildx: no such file or directory
+
+    ERROR: BuildKit is enabled but the buildx component is missing or broken.
+        Install the buildx component to build images with BuildKit:
+        https://docs.docker.com/go/buildx/
+    FATA[0113] exit status 1
+    make: *** [Makefile:11: default] Error 1
+    ```
+    Try building without BuildKit if you face this error. To do so, run commands above after removing the `.docker` directory from your git repository's root. It was copied using the command `cp ~/.docker . -r`. Another option is to move it into a separate backup directory.
+    ```sh
+    # option 1: remove the .docker directory
+    $ rm -rf /path/to/harvester/git/repository/.docker
+
+    # option 2: move it into a separate directory for backup
+    $ mv /path/to/harvester/git/repository/.docker /path/to/harvester/git/repository/docker.bkp
+    ```
