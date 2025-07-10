@@ -1,5 +1,6 @@
 # Releases
 
+* [Harvester v1.5.1](#harvester-v151) - June 2025
 * [Harvester v1.4.3](#harvester-v143) - May 2025
 * [Harvester v1.5.0](#harvester-v150) - April 2025
 * [Harvester v1.4.2](#harvester-v142) - March 2025
@@ -22,6 +23,15 @@
 * [Harvester v1.0.0](#harvester-v100) - December 2021
 * [Harvester v0.3.0](#harvester-v100) - October 2021
 * [Harvester v0.2.0](#harvester-v100) - April 2021
+
+## Harvester v1.5.1
+
+* Dependent Component Upgrade
+  * K8s - v1.32.4
+  * Longhorn - v1.8.2
+  * Rancher - v2.11.2 (embedded & external)
+  * KubeVirt - v1.4.0
+  * SLE Micro - v5.5
 
 ## Harvester v1.4.3
 
