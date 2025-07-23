@@ -26,7 +26,7 @@ Starting with Harvester 1.5, the release cadence and component dependencies will
 * Longhorn: January, May, September
   * Has an 18-month support period since 1.9.
 
-* Rancher: March, July, November 
+* Rancher: March, July, November (SUSE Rancher Prime - April, August, December)
   * Starting with version 2.9, there is an 18-month support period.
   * Support RKE2 versions from version n-1 to n-4. (n means the upcoming/latest version)
   * Has an 18-month support period since 2.9.
