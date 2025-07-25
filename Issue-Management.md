@@ -62,15 +62,15 @@ When a new issue is created, the system automatically categorizes it based on th
 
 Sprint updates are automatically executed every Sunday at 20:00.
 
-Harvester Sprint (Project #7):
+[Harvester Sprint](https://github.com/orgs/harvester/projects/7):
 * Move issues with the “Review” status to the next sprint
 * Remove issues from the current sprint if their status is not one of: Review, Ready For Testing, Testing, or Closed
 
-Community Sprint (Project #10):
+[Community Sprint](https://github.com/orgs/harvester/projects/10):
 
 * Move issues with the “New” status to the next sprint
 
-QA Sprint (Project #20):
+[QA Sprint](https://github.com/orgs/harvester/projects/20):
 
 * Move issues with the “In Review” status to the next sprint
 * Remove issues from the current sprint if their status is not In Review or Done
