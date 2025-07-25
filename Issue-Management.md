@@ -40,7 +40,7 @@ flowchart LR
 
     C --> I[Discuss with users and team members]
     I --> J{Is it development-related?}
-    J -- No, it's Q&A --> K[No milestone needed. Close it after answering.
+    J -- No, it's Q&A --> K[No milestone needed. Close it after answering]
     J -- Yes --> L[Set milestone]
     L --> D
 ```
