@@ -8,7 +8,6 @@ We manage two types of issues from different sources:
 
 If a community issue is well-defined and clarified, we add it to the Harvester Sprint for development.
 
-
 ## General Issue Flow
 
 > [!Important]
@@ -31,7 +30,7 @@ If a community issue is well-defined and clarified, we add it to the Harvester S
 
 ```mermaid
 flowchart LR
-    A[Newly Created Issue] --> B{Who is creator?}
+    A[Newly Created Issue] --> B{Who is the creator?}
     B -- Community Users --> C[Added to Community Issue Review project]
     B -- Team Members --> G{Is milestone set?}
     
@@ -41,7 +40,7 @@ flowchart LR
 
     C --> I[Discuss with users and team members]
     I --> J{Is it development-related?}
-    J -- No, it's Q&A --> K[No milestone needed. Close it after answering]
+    J -- No, it's Q&A --> K[No milestone needed. Close it after answering.
     J -- Yes --> L[Set milestone]
     L --> D
 ```
@@ -49,7 +48,7 @@ flowchart LR
 ## GitHub Action Workflows
 
 > [!Important]
-> The workflows described below may change over time. For the exact settings, please refer to the workflows defined in https://github.com/harvester/harvester/tree/master/.github/workflows/issue-management-*.yml.
+> Workflows are subject to change; refer to https://github.com/harvester/harvester/tree/master/.github/workflows/issue-management-*.yml for current settings.
 
 ### Issue Creation and Auto-Categorization
 
@@ -77,19 +76,19 @@ Sprint updates are automatically executed every Sunday at 20:00.
 
 ### [Issue Stale Management](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-stale.yml)
 
-* Runs daily at 1:30 AM to check activity of issues and PRs
+* Runs daily at 1:30 AM to check the activity of issues and PRs
 * Close unactivated issues and PRs
 
 
 ### [Automatically create issue by label](https://github.com/harvester/harvester/blob/master/.github/workflows/issue-management-create-issue-by-label.yaml)
 
-There are three types automatic creation:
+There are three types of automatic issue creation:
 
 - Backport Issue:  
     The older versions might need to be patched due to CVEs or bug fixes. We'll use the `backport-needed/xxx` label to help us create the corresponding issue. Please check [Backport-Policy](https://github.com/harvester/harvester/wiki/Backport-Policy) for more details.
 
 - UI Issue:  
-    When an issue needs a UI changes, adding `require/ui` label creates an UI issue. It won't take any effect when issue contains a `area/ui` label.
+    When an issue needs a UI change, adding `require/ui` label creates a UI issue. It will not take effect when the issue contains a `area/ui` label.
 
 - E2E Issue:  
-    When an issues needs an E2E tests, adding `require/auto-e2e-test` label creates an E2E issue in harvester/tests repository.
+    When an issue needs an E2E test, adding `require/auto-e2e-test` label creates an E2E issue in `harvester/tests` repository.
