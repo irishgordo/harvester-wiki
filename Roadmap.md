@@ -68,3 +68,4 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 * Shared Disk between VMs
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 * [Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
+* Kube-OVN Preivew
