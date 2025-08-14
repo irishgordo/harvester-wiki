@@ -37,13 +37,13 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 * [Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
 * [Longhorn v1 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
 * [Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
-* [Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
 
 ## Harvester v1.7.0
 
 > [!Important]
 > TBU
 * [Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
+* [Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
 
 ## Harvester v1.8.0
 
