@@ -41,7 +41,14 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 ## Harvester v1.7.0
 
 > [!Important]
-> TBU
+> The scope has not been finalized yet. The items below are tentatively planned for the release.
+
+* Dependent Component Upgrade
+  * K8s - RKE2 v1.34
+  * Longhorn - v1.10
+  * Rancher - v2.13
+  * KubeVirt - v1.6
+  * SLE Micro - v6.1/6.2
 * [Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
 * [Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
 
