@@ -12,9 +12,6 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 
 ## Harvester v1.6.0
 
-> [!Important]
-> The scope has not been finalized yet. The items below are tentatively planned for the release.
-
 * Dependent Component Upgrade
   * K8s - RKE2 v1.33
   * Longhorn - v1.9.1
@@ -55,7 +52,14 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 ## Harvester v1.8.0
 
 > [!Important]
-> TBU
+> The scope has not been finalized yet. The items below are tentatively planned for the release.
+
+* Dependent Component Upgrade
+  * K8s - RKE2 v1.35
+  * Longhorn - v1.11
+  * Rancher - v2.14
+  * KubeVirt - v1.7
+  * SLE Micro - v6.1/6.2
 
 # Product Backlog
 
