@@ -16,10 +16,10 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 > The scope has not been finalized yet. The items below are tentatively planned for the release.
 
 * Dependent Component Upgrade
-  * K8s - v1.33
-  * Longhorn - v1.9
-  * Rancher - v2.12 (embedded & external)
-  * KubeVirt - v1.5
+  * K8s - RKE2 v1.33
+  * Longhorn - v1.9.1
+  * Rancher - v2.12.0
+  * KubeVirt - v1.5.2
   * SLE Micro - v5.5
 * [Kube-OVN integration for SDN](https://github.com/harvester/harvester/issues/7397) - _**Experimental**_ 
   * [Kube-OVN install operator](https://github.com/harvester/harvester/issues/7936)
