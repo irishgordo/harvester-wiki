@@ -61,6 +61,18 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
   * KubeVirt - v1.7
   * SLE Micro - v6.1/6.2
 
+## Harvester v1.9.0
+
+> [!Important]
+> The scope has not been finalized yet. The items below are tentatively planned for the release.
+
+* Dependent Component Upgrade
+  * K8s - RKE2 v1.36
+  * Longhorn - v1.12
+  * Rancher - v2.15
+  * KubeVirt - v1.8
+  * SLE Micro - v6.1/6.2
+
 # Product Backlog
 
 * Backup/restore of 3rd-party storage
