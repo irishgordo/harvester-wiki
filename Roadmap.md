@@ -34,6 +34,7 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 * [Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
 * [Longhorn v1 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
 * [Allow adding other endpoint to tls-san in RKE2 config](https://github.com/harvester/harvester/issues/7716)
+* [CPU / Memory hotplug support](https://github.com/harvester/harvester/issues/5835#top)
 
 ## Harvester v1.7.0
 
