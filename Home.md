@@ -22,7 +22,6 @@ We welcome and appreciate all contributions, including issue reporting, document
 - [[Branch Management|Creating a new milestone]]
 - [[Release Process|Create a Harvester release]]
 - [[Backport Policy]]
-- [[Release & QA Captains]]
 - [[Release Testing Process]]
 - [[Component & Library Update Policy]]
 
