@@ -40,7 +40,7 @@ type DownloadURL struct {
 		},
 	})
 ```
-3. Run `go generate`. It will generate codes for clients, controllers, CRDs, etc.
+3. Run `make generate`. It will start a container that generates codes for clients, controllers, CRDs, etc.
 ```sh
 $ make generate
 # some output...
