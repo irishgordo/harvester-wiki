@@ -42,7 +42,7 @@ type DownloadURL struct {
 ```
 3. Run `go generate`. It will generate codes for clients, controllers, CRDs, etc.
 ```sh
-$ go generate
+$ make generate
 # some output...
 $ git status
 On branch downloadurl
