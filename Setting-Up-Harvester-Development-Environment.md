@@ -119,13 +119,7 @@ Click the `Run` menu option and select `Edit Configurations`. Click the + to add
 
 ## A few tips to boost your dev productivity
 ### Scale the Harvester pod down to 0
-By default, there are 3 Harvester pod get deployed with the Harvester installation, you will need to scale the pod number down to 0 to test the controller logic at `pkg/controller/master`.
-
-First of all, you need to remove the `management.cattle.io/scale-available 3` annotation from the `harvester` deployment, you can edit it with the command:
-```
-kubectl edit deployment/harvester -n harvester-system
-```
-Then we can proceed with the scaling down:
+By default, there are 3 Harvester pod get deployed with the Harvester installation, you will need to scale the pod number down to 0 to test the controller logic at `pkg/controller/master`:
 ```
 kubectl scale --replicas=0 deployment/harvester -n harvester-system
 ```
