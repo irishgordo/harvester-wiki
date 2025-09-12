@@ -69,24 +69,7 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
   * SLE Micro - v6.1/6.2
 
 # Product Backlog
-
-* Backup/restore of 3rd-party storage
-* Change Longhorn resource reservations for customers only using 3rd party storage
-* Observability Extension (Tech Preview)
-* [Allow upgrade when there are VMs in the cluster that can't be Live Migrated](https://github.com/harvester/harvester/issues/6145)
-* Storage Live Migration
-* [DR Volume](https://github.com/harvester/harvester/issues/1850)
-* SLE Micro 6.x Upgrade
-* [Managed DHCP add-on](https://github.com/harvester/harvester/issues/6746) (Preview)
-* [Cluster Backup & Restore](https://github.com/harvester/harvester/issues/3263)
-* [Harvester install in maintenance mode](https://github.com/harvester/harvester/issues/4424)
-* [VM DHCP Controller GA](https://github.com/harvester/harvester/issues/5822)
-* [Baremetal Container Workload Support GA](https://github.com/harvester/harvester/issues/5820)
-* Dynamic VM rebalancing across hosts
-* Shared Disk between VMs
-* [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
-* [Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
-* Kube-OVN Preivew
+To be updated soon
 
 # Previous Releases
 
