@@ -10,31 +10,6 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 
 # Upcoming Releases
 
-## Harvester v1.6.0
-
-* Dependent Component Upgrade
-  * K8s - RKE2 v1.33
-  * Longhorn - v1.9.1
-  * Rancher - v2.12.0
-  * KubeVirt - v1.5.2
-  * SLE Micro - v5.5
-* [Kube-OVN integration for SDN](https://github.com/harvester/harvester/issues/7397) - _**Experimental**_ 
-  * [Kube-OVN install operator](https://github.com/harvester/harvester/issues/7936)
-  * [Virtual Switch/Router](https://github.com/harvester/harvester/issues/7332)
-  * [Network microsegmentation via network policy](https://github.com/harvester/harvester/issues/7381)
-  * [VXLAN support](https://github.com/harvester/harvester/issues/2322)
-* [3rd-party storage enhancements](https://github.com/harvester/harvester/issues/8026)
-  * [Extend vm-import-controller to support 3rd party CSI](https://github.com/harvester/harvester/issues/8074)
-  * [3rd party CSI support for guest clusters provisioned by rancher](https://github.com/harvester/harvester/issues/8075)
-  * [Harvester CSI changes for supporting 3rd party CSI volumes for guest workloads](https://github.com/harvester/harvester/issues/8076)
-  * [Expose CDI settings in Harvester to allow fine-tuning CDI settings for day 2 operations](https://github.com/harvester/harvester/issues/8077)
-  * [Online resize of disks/volumes attached to virtual machines](https://github.com/harvester/harvester/issues/2811)
-* [Airgap Upgrade via ISO upload](https://github.com/harvester/harvester/issues/8078)
-* [Live migration network](https://github.com/harvester/harvester/issues/5848)
-* [Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
-* [Longhorn v1 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
-* [CPU / Memory hotplug support](https://github.com/harvester/harvester/issues/5835)
-
 ## Harvester v1.7.0
 
 > [!Important]
@@ -48,6 +23,8 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
   * SLE Micro - v6.1/6.2
 * [Add hugepage support to Harvester](https://github.com/harvester/harvester/issues/5006)
 * [Add VLAN network for VM to support multiple or all VLAN IDs](https://github.com/harvester/harvester/issues/766)
+
+# Planned Release
 
 ## Harvester v1.8.0
 
@@ -92,3 +69,30 @@ This page primarily outlines the [upcoming release roadmap](#upcoming-releases) 
 * [Load Balancers on Non-Management Interfaces for Guest Clusters](https://github.com/harvester/harvester/issues/5486)
 * [Longhorn v2 data engine - volume encryption](https://github.com/harvester/harvester/issues/7523)
 * Kube-OVN Preivew
+
+# Previous Releases
+
+## Harvester v1.6.0
+
+* Dependent Component Upgrade
+  * K8s - RKE2 v1.33
+  * Longhorn - v1.9.1
+  * Rancher - v2.12.0
+  * KubeVirt - v1.5.2
+  * SLE Micro - v5.5
+* [Kube-OVN integration for SDN](https://github.com/harvester/harvester/issues/7397) - _**Experimental**_ 
+  * [Kube-OVN install operator](https://github.com/harvester/harvester/issues/7936)
+  * [Virtual Switch/Router](https://github.com/harvester/harvester/issues/7332)
+  * [Network microsegmentation via network policy](https://github.com/harvester/harvester/issues/7381)
+  * [VXLAN support](https://github.com/harvester/harvester/issues/2322)
+* [3rd-party storage enhancements](https://github.com/harvester/harvester/issues/8026)
+  * [Extend vm-import-controller to support 3rd party CSI](https://github.com/harvester/harvester/issues/8074)
+  * [3rd party CSI support for guest clusters provisioned by rancher](https://github.com/harvester/harvester/issues/8075)
+  * [Harvester CSI changes for supporting 3rd party CSI volumes for guest workloads](https://github.com/harvester/harvester/issues/8076)
+  * [Expose CDI settings in Harvester to allow fine-tuning CDI settings for day 2 operations](https://github.com/harvester/harvester/issues/8077)
+  * [Online resize of disks/volumes attached to virtual machines](https://github.com/harvester/harvester/issues/2811)
+* [Airgap Upgrade via ISO upload](https://github.com/harvester/harvester/issues/8078)
+* [Live migration network](https://github.com/harvester/harvester/issues/5848)
+* [Live migration progress awareness](https://github.com/harvester/harvester/issues/4352)
+* [Longhorn v1 data engine - volume encryption GA](https://github.com/harvester/harvester/issues/8148)
+* [CPU / Memory hotplug support](https://github.com/harvester/harvester/issues/5835)
